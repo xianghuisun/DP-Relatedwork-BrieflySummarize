@@ -15,38 +15,109 @@
 
 
 
+# 各个数据集上论文给出的实验结果（取最高得分）
+
+模型分类这一列将所有模型分为4类：
+
+| 模型分类     | 说明                                                         |
+| ------------ | ------------------------------------------------------------ |
+| DP+NER       | 这一类的模型既用了DP标签，也用了NER标签                      |
+| NER          | 这一类的模型仅仅用了NER标签                                  |
+| Multi-task   | 这一类的模型仅仅使用NER标签，额外的任务采用不需要标签的无监督任务 |
+| Cross-domain |                                                              |
+
+## Ontonotes 5.0
+
+| Model                                                        | 模型分类   | P     | R     | F1    |
+| ------------------------------------------------------------ | ---------- | ----- | ----- | ----- |
+| [A Joint Model for Named Entity Recognition With Sentence-Level Entity Type Attentions](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9388880) | Multi-task | 89.85 | 89.22 | 89.53 |
+| [Dependency-Guided LSTM-CRF Model for Named Entity Recognition](https://github.com/allanj/ner_with_dependency) | DP+NER     | 88.59 | 90.17 | 89.88 |
+| [Better Feature Integration for Named Entity Recognition](https://github.com/xuuuluuu/SynLSTM-for-NER) | DP+NER     | 90.14 | 91.58 | 90.85 |
+| [Named Entity Recognition as Dependency Parsing](https://github.com/juntaoy/biaffine-ner) | NER        | 91.1  | 91.5  | 91.3  |
+|                                                              |            |       |       |       |
+
+## CoNLL03
+
+| Model                                                        | 模型分类   | P     | R     | F1    |
+| ------------------------------------------------------------ | ---------- | ----- | ----- | ----- |
+| [Semi-supervised Multitask Learning for Sequence Labeling](https://github.com/marekrei/sequence-labeler) | Multi-task | -     | -     | 86.26 |
+| [Empower Sequence Labeling with Task-Aware Neural Language Model](https://github.com/LiyuanLucasLiu/LM-LSTM-CRF) | Multi-task | -     | -     | 91.85 |
+| [Dependency-Guided LSTM-CRF Model for Named Entity Recognition](https://github.com/allanj/ner_with_dependency) | DP+NER     | 92.2  | 92.5  | 92.4  |
+| [A Joint Model for Named Entity Recognition With Sentence-Level Entity Type Attentions](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9388880) | Multi-task | 92.17 | 92.51 | 92.73 |
+| [Named Entity Recognition as Dependency Parsing](https://github.com/juntaoy/biaffine-ner) | NER        | 93.7  | 93.3  | 93.5  |
+| [A Supervised Multi-Head Self-Attention Network for Nested Named Entity Recognition](https://github.com/xyxAda/Attention_NER) | Multi-task | -     | -     | 93.6  |
+|                                                              |            |       |       |       |
+
+## GENIA
+
+| Model                                                        | 模型分类   | P     | R    | F1   |
+| ------------------------------------------------------------ | ---------- | ----- | ---- | ---- |
+| [A Boundary-aware Neural Model for Nested Named Entity Recognition](https://github.com/thecharm/boundary-aware-nested-ner) | Multi-task | 75.9  | 73.6 | 74.7 |
+| [A Supervised Multi-Head Self-Attention Network for Nested Named Entity Recognition](https://github.com/xyxAda/Attention_NER) | Multi-task | 80.03 | 78.9 | 79.6 |
+| [Named Entity Recognition as Dependency Parsing](https://github.com/juntaoy/biaffine-ner) | NER        | 81.8  | 79.3 | 80.5 |
+|                                                              |            |       |      |      |
+
+**注：因为GENIA是嵌套实体数据集，所以该数据集上的实验模型通常不会考虑依存分析、跨领域。**
+
+**实验结果简要分析：**
+
+1. 每一篇论文尽量都避过了与其他论文相比
+2. 各个模型的实验配置大不相同，大多采用ELMo、BERT、char-level embedding以及依存分析依赖的embedding，然后拼接在一起。**（表格中列出的是最优结果，论文中的实验结果表明，如果不用BERT向量，效果下降2~3个点）**
+3. 每一个模型所用的具体实验参数配置在后面详细介绍
+4. 综合来看，[Named Entity Recognition as Dependency Parsing](https://github.com/juntaoy/biaffine-ner) 这篇论文在所有数据集上效果都是最好的。
 
 
-# 论文
+
+# 论文简要总结
 
 ## DP+NER
 
-| 论文                                                         | 会议       | 实验数据                                        | 实验结果（P\|R\|F1）                                         | 备注                                              |
-| ------------------------------------------------------------ | ---------- | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------- |
-| [Dependency-Guided LSTM-CRF Model for Named Entity Recognition](https://github.com/allanj/ner_with_dependency) | EMNLP 2019 | notonotes<br>CoNLL03                            | 88.53\|88.50\|88.52<br>92.20\|92.50\|92.40                   | <img width=400/>                                  |
-| [Better Feature Integration for Named Entity Recognition](https://github.com/xuuuluuu/SynLSTM-for-NER) | NAACL 2021 | notonotes<br>                                   | 88.96\|89.13\|89.04                                          |                                                   |
-| [A Boundary-aware Neural Model for Nested Named Entity Recognition](https://github.com/thecharm/boundary-aware-nested-ner) | ACL 2019   | GENIA                                           | 75.9 \|73.6 \|74.7                                           |                                                   |
-| [A Span-Based Model for Joint Overlapped and Discontinuous Named Entity Recognition](https://github.com/foxlf823/sodner) | ACL 2021   | ACE05<br>GENIA                                  | -\|-\|84.3<br>-\|-\|78.3                                     | 论文仅仅给出F1值的结果                            |
-| [Named Entity Recognition as Dependency Parsing](https://github.com/juntaoy/biaffine-ner) | ACL 2020   | ontonotes<br>ACE04<br>ACE05<br>GENIA<br>CoNLL03 | 91.1 \| 91.5 \| 91.3<br>87.3 \| 86.0 \| 86.7<br>85.2 \| 85.6 \| 85.4<br>81.8 \| 79.3 \| 80.5<br>93.7 \| 93.3 \| 93.5 | 使用了BERT-large作为词向量，**去掉后下降2.4个点** |
+DP+NER这里有三篇论文，其中两篇属于DP+NER，即：既需要DP标签，也需要NER标签。
 
-
-
-## CrossDomain
-
-| 论文                                                         | 会议      | source  | target                                                       | 备注                                                         |
-| ------------------------------------------------------------ | --------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [CrossNER: Evaluating Cross-Domain Named Entity Recognition](https://github.com/zliucr/CrossNER) | AAAI 2021 | CoNLL03 | 论文给出的5个[数据集](https://github.com/zliucr/CrossNER/tree/main/ner_data) | <img width=400/>论文收集公布了5个专业领域的NER数据集，而且也提供了对应的领域相关的[预训练语料](https://drive.google.com/drive/folders/1xDAaTwruESNmleuIsln7IaNleNsYlHGn?usp=sharing) |
-| [Cross-Domain NER using Cross-Domain Language Modeling](https://github.com/jiachenwestlake/Cross-Domain_NER) | ACL 2019  | CoNLL03 | [医疗数据集](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data) |                                                              |
+| 论文                                                         | 会议       | 实验设置                                                   | 备注                                          |
+| ------------------------------------------------------------ | ---------- | ---------------------------------------------------------- | --------------------------------------------- |
+| [Dependency-Guided LSTM-CRF Model for Named Entity Recognition](https://github.com/allanj/ner_with_dependency) | EMNLP 2019 | <img width=400/>输入向量为字符向量+依存分析向量+EMLo的拼接 | <img width=400/>用与不用ELMo向量相差1~2个点。 |
+| [Better Feature Integration for Named Entity Recognition](https://github.com/xuuuluuu/SynLSTM-for-NER) | NAACL 2021 | 输入向量为字符向量+依存分析向量+BERT+POS向量的拼接         | 用与不用BERT相差1~2个点                       |
+| [Named Entity Recognition as Dependency Parsing](https://github.com/juntaoy/biaffine-ner) | ACL 2020   | 输入向量为字符向量+fasttext+BERT的拼接                     | 使用了BERT-large，**去掉后下降2.4个点**。     |
 
 
 
 ## 多任务
 
-| 论文                                                         | 会议      | 任务1 | 任务2               | 备注                                                         |
-| ------------------------------------------------------------ | --------- | ----- | ------------------- | ------------------------------------------------------------ |
-| Neural Multi-Task Learning Framework to Jointly Model Medical Named Entity Recognition and Normalization | AAAI 2019 | NER   | NEN(命名实体规范化) | 实验所用数据：[NCBI](https://github.com/zhoubaohang/MTAAL/blob/main/dataset/NCBI/train.txt)、[BC5CDR](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-IOB)。这是两个医疗数据集。其中命名实体规范这个任务的标签是作者用工具包生成的，不是人工标注的。 |
-| [Multi-Task Adversarial Active Learning for Medical Named Entity Recognition and Normalization](https://github.com/zhoubaohang/MTAAL) | AAAI 2021 | NER   | NEN(命名实体规范化) | 实验数据集同上。**这篇论文的效果没有上篇好。**               |
-| Joint Learning of Named Entity Recognition and Entity Linking | 不知      | NER   | 实体链接            | **所用数据集是CoNNL03，baseline是92.34，加上多任务后是92.52** |
+多任务这里有五个模型，**均不需要额外的数据来实现多任务**。其中：
+
+- 有两篇是采用语言模型作为辅助任务。
+- 有一篇是让模型额外预测句子中有哪些实体标签。
+- 剩下两篇采用相同的做法，让模型先预测实体边界，然后预测实体边界span属于哪个实体类别。（个人认为不是多任务，但论文中就叫多任务。）
+
+| 论文                                                         | 会议      | 任务1 | 任务2                                    | 实验设置                                                     | 备注                                                         |
+| ------------------------------------------------------------ | --------- | ----- | ---------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Semi-supervised Multitask Learning for Sequence Labeling](https://github.com/marekrei/sequence-labeler) | ACL 2017  | NER   | LM                                       | <img width=400/>输入向量就是随机初始化的词向量，编码器是BiLSTM | 利用LM任务辅助NER。                                          |
+| [Empower Sequence Labeling with Task-Aware Neural Language Model](https://github.com/LiyuanLucasLiu/LM-LSTM-CRF) | AAAI 2018 | NER   | LM                                       | 输入向量Glove，编码器是BiLSTM                                | 也是利用LM辅助NER，与上一篇类似。代码2](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Sequence-Labeling) |
+| [A Joint Model for Named Entity Recognition With Sentence-Level Entity Type Attentions](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9388880) | IEEE 2021 | NER   | <img width=400/>预测句子中有哪些实体类型 | 输入向量是词向量+字符向量+BERT拼接                           | 任务2是论文提出的，即：除了预测句子中每一个单词的ner标签，额外预测这个句子中有哪些实体标签，即预测这个句子中是否存在NER、LOC还是ORG等。**这个任务的设计不需要额外数据标注**。 |
+
+**关于多任务NER，这里有两篇额外列出**，因为：
+
+1. 我觉得这种做法不算是多任务，感觉就是一个NER任务拆成了两步，但是论文中就叫多任务。
+2. 这两篇论文的方法类似。
+
+| 论文                                                         | 会议      | 实验设置                                  | 备注                                                         |
+| ------------------------------------------------------------ | --------- | ----------------------------------------- | ------------------------------------------------------------ |
+| [A Boundary-aware Neural Model for Nested Named Entity Recognition](https://github.com/thecharm/boundary-aware-nested-ner) | ACL 2019  | <img width=400/>输入向量是词向量+字符向量 | 论文的做法是，先预测实体边界，然后把这个边界内的词向量平均，进而预测这个span的实体类别。两个loss一起优化。 |
+| [A Supervised Multi-Head Self-Attention Network for Nested Named Entity Recognition](https://github.com/xyxAda/Attention_NER) | AAAI 2021 | 输入向量是字符向量+BERT                   | 和上一篇论文方法类似，先预测实体边界然后预测span类别。用不用BERT效果差2~3个点。 |
+
+
+
+
+
+## CrossDomain
+
+| 论文                                                         | 会议      | source  | target                                                       | 实验设置                                                     | 备注                                                         |
+| ------------------------------------------------------------ | --------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [CrossNER: Evaluating Cross-Domain Named Entity Recognition](https://github.com/zliucr/CrossNER) | AAAI 2021 | CoNLL03 | 论文给出的5个[数据集](https://github.com/zliucr/CrossNER/tree/main/ner_data) | <img width=400/>以政治领域为例：首先在搜集的政治领域语料库上采用掩码语言模型预训练，然后在政治领域的有标注NER数据上微调，来实现Cross-domain。 | <img width=400/>论文收集公布了5个专业领域的NER数据集，而且也提供了对应的领域相关的[预训练语料](https://drive.google.com/drive/folders/1xDAaTwruESNmleuIsln7IaNleNsYlHGn?usp=sharing) |
+| [Cross-Domain NER using Cross-Domain Language Modeling](https://github.com/jiachenwestlake/Cross-Domain_NER) | ACL 2019  | CoNLL03 | [医疗数据集](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data) |                                                              |                                                              |
+
+
 
 # 其它Github仓库
 
