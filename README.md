@@ -124,4 +124,5 @@ DP+NER这里有三篇论文，其中两篇属于DP+NER，即：既需要DP标签
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | https://github.com/yzhangcs/parser                           | 支持很多parsing的功能，可以直接转成Conll形式。**貌似支持将成分分析转换为依存分析的功能。** |
 | https://github.com/ShannonAI/mrc-for-flat-nested-ner/blob/master/ner2mrc/download.md | NER数据集 （包括ACE04、ACE05、GENIA、CoNLL2003以及Ontonotes），只不过是处理成MRC形式的 |
+| https://huggingface.co/dslim/bert-base-NER |transformers简单实现NER的教程|
 
