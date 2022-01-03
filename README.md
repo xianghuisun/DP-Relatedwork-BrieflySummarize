@@ -12,6 +12,7 @@
 | GENIA                    | [GENIA](https://github.com/thecharm/boundary-aware-nested-ner/tree/master/Our_boundary-aware_model/data/genia) | [链接]((https://github.com/thecharm/boundary-aware-nested-ner/tree/master/Our_boundary-aware_model/data/genia)) | 没有专用的训练集和测试集                                     |
 | CoNLL03                  | [CoNLL03](https://drive.google.com/file/d/1PUH2uw6lkWrWGfl-9wOAG13lvPrvKO25/view) | [链接1](https://github.com/ShannonAI/mrc-for-flat-nested-ner/blob/master/ner2mrc/download.md),[链接2](https://github.com/zliucr/CrossNER/tree/main/ner_data/conll2003) | 训练集：14041、测试集：3453、验证集：3250<br>实体类型有四个：PER、LOC、ORG、MISC |
 | BioNLP<br>NCBI<br>BC5CDR | [医疗数据集](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data) | [链接](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data) | 这类数据集大多用于Cross-domain和Multi-task NER               |
+| W-NUT                    | [官网](http://noisy-text.github.io/2017/emerging-rare-entities.html) | [链接](https://github.com/leondz/emerging_entities_17)       | 社交媒体类型的NER数据                                        |
 
 
 
@@ -83,29 +84,16 @@ DP+NER这里有三篇论文，其中两篇属于DP+NER，即：既需要DP标签
 
 ## 多任务
 
-多任务这里有五个模型，**均不需要额外的数据来实现多任务**。其中：
+多任务这里有3个模型，**均不需要额外的数据来实现多任务**。其中：
 
 - 有两篇是采用语言模型作为辅助任务。
 - 有一篇是让模型额外预测句子中有哪些实体标签。
-- 剩下两篇采用相同的做法，让模型先预测实体边界，然后预测实体边界span属于哪个实体类别。（个人认为不是多任务，但论文中就叫多任务。）
 
 | 论文                                                         | 会议      | 任务1 | 任务2                                    | 实验设置                                                     | 备注                                                         |
 | ------------------------------------------------------------ | --------- | ----- | ---------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [Semi-supervised Multitask Learning for Sequence Labeling](https://github.com/marekrei/sequence-labeler) | ACL 2017  | NER   | LM                                       | <img width=400/>输入向量就是随机初始化的词向量，编码器是BiLSTM | 利用LM任务辅助NER。                                          |
 | [Empower Sequence Labeling with Task-Aware Neural Language Model](https://github.com/LiyuanLucasLiu/LM-LSTM-CRF) | AAAI 2018 | NER   | LM                                       | 输入向量Glove，编码器是BiLSTM                                | 也是利用LM辅助NER，与上一篇类似。代码2](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Sequence-Labeling) |
 | [A Joint Model for Named Entity Recognition With Sentence-Level Entity Type Attentions](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9388880) | IEEE 2021 | NER   | <img width=400/>预测句子中有哪些实体类型 | 输入向量是词向量+字符向量+BERT拼接                           | 任务2是论文提出的，即：除了预测句子中每一个单词的ner标签，额外预测这个句子中有哪些实体标签，即预测这个句子中是否存在NER、LOC还是ORG等。**这个任务的设计不需要额外数据标注**。 |
-
-**关于多任务NER，这里有两篇额外列出**，因为：
-
-1. 我觉得这种做法不算是多任务，感觉就是一个NER任务拆成了两步，但是论文中就叫多任务。
-2. 这两篇论文的方法类似。
-
-| 论文                                                         | 会议      | 实验设置                                  | 备注                                                         |
-| ------------------------------------------------------------ | --------- | ----------------------------------------- | ------------------------------------------------------------ |
-| [A Boundary-aware Neural Model for Nested Named Entity Recognition](https://github.com/thecharm/boundary-aware-nested-ner) | ACL 2019  | <img width=400/>输入向量是词向量+字符向量 | 论文的做法是，先预测实体边界，然后把这个边界内的词向量平均，进而预测这个span的实体类别。两个loss一起优化。 |
-| [A Supervised Multi-Head Self-Attention Network for Nested Named Entity Recognition](https://github.com/xyxAda/Attention_NER) | AAAI 2021 | 输入向量是字符向量+BERT                   | 和上一篇论文方法类似，先预测实体边界然后预测span类别。用不用BERT效果差2~3个点。 |
-
-
 
 
 
@@ -118,11 +106,12 @@ DP+NER这里有三篇论文，其中两篇属于DP+NER，即：既需要DP标签
 
 
 
-# 其它Github仓库
+# 其它
 
 | 地址                                                         | 说明                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | https://github.com/yzhangcs/parser                           | 支持很多parsing的功能，可以直接转成Conll形式。**貌似支持将成分分析转换为依存分析的功能。** |
 | https://github.com/ShannonAI/mrc-for-flat-nested-ner/blob/master/ner2mrc/download.md | NER数据集 （包括ACE04、ACE05、GENIA、CoNLL2003以及Ontonotes），只不过是处理成MRC形式的 |
-| https://huggingface.co/dslim/bert-base-NER |transformers简单实现NER的教程|
+| https://github.com/juand-r/entity-recognition-datasets       | NER数据集，不局限于英文                                      |
+| https://arxiv.org/pdf/1812.09449.pdf                         | A Survey on Deep Learning for Named Entity Recognition       |
 
