@@ -36,7 +36,7 @@ CoNLLX的数据格式如下：
 
 ### 模型超参数配置
 
-- DGLSTM 采用两层BiLSTM，交互函数为MLP，epoch是100，初始学习率是0.01，输入向量为char-level+glove，为使用ELMo
+- DGLSTM 采用两层BiLSTM，交互函数为MLP，epoch是100，初始学习率是0.01，输入向量为char-level+glove，未使用ELMo
 - SynLSTM和原文参数配置相同。
 
 **由此可见，当标签真实可靠的情况下，SynLSTM比DGLSTM效果好，说明SynLSTM比DGLSTM更好的利用了依存分析的图特征，但是当标签出现误差时，SynLSTM反而效果不如DGLSTM，因此可以说SynLSTM比DGLSTM更加的依赖于真实标签**

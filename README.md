@@ -1,14 +1,14 @@
 # DP+NER-Relatedwork-BrieflySummarize
 简要总结下依存分析和实体识别的一些数据集以及相关工作
 
-
+**all_models文件夹下包含所有下列所有提及的模型**
 
 # 数据集
 
 | 数据集                   | 地址                                                         | 来源                                                         | 备注                                                         |
 | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | PTB-3.3.0                | [PTB-3.3.0](https://onedrive.live.com/?authkey=%21AP0Ob2Sm%2DO4Y%2DV8&cid=1DCA4A0FD060776E&id=1DCA4A0FD060776E%2160323&parId=1DCA4A0FD060776E%2158828&action=locate) | [链接](https://github.com/wangxinyu0922/Second_Order_Parsing/issues/1) |                                                              |
-| ontonotes                | [english](https://drive.google.com/file/d/1AAWnb5GlDiNMj3yNoaoQtoKHj7iSqNey/view)，[Chinese](https://drive.google.com/file/d/10t3XpZzsD67ji0a7sw9nHM7I5UhrJcdf/view) | [链接](https://github.com/allanj/ner_with_dependency)        | 没有专用的训练集和测试集                                     |
+| ontonotes                | [english](https://drive.google.com/file/d/1AAWnb5GlDiNMj3yNoaoQtoKHj7iSqNey/view)，[Chinese](https://drive.google.com/file/d/10t3XpZzsD67ji0a7sw9nHM7I5UhrJcdf/view) | [链接](https://github.com/allanj/ner_with_dependency)        | 训练、验证、测试的划分以[Pradhan et al.](https://aclanthology.org/W12-4501.pdf)为标准，因此可以认为是有专用的训练集和测试集的<br>其中训练集：59924、测试集：8262、验证集：8528 |
 | GENIA                    | [GENIA](https://github.com/thecharm/boundary-aware-nested-ner/tree/master/Our_boundary-aware_model/data/genia) | [链接]((https://github.com/thecharm/boundary-aware-nested-ner/tree/master/Our_boundary-aware_model/data/genia)) | 没有专用的训练集和测试集                                     |
 | CoNLL03                  | [CoNLL03](https://drive.google.com/file/d/1PUH2uw6lkWrWGfl-9wOAG13lvPrvKO25/view) | [链接1](https://github.com/ShannonAI/mrc-for-flat-nested-ner/blob/master/ner2mrc/download.md),[链接2](https://github.com/zliucr/CrossNER/tree/main/ner_data/conll2003) | 训练集：14041、测试集：3453、验证集：3250<br>实体类型有四个：PER、LOC、ORG、MISC |
 | BioNLP<br>NCBI<br>BC5CDR | [医疗数据集](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data) | [链接](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data) | 这类数据集大多用于Cross-domain和Multi-task NER               |
