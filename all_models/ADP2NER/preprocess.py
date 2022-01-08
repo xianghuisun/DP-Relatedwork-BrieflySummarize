@@ -6,6 +6,81 @@ import csv
 import transformers
 import sklearn.preprocessing
 
+def get_span_mask_label(args,sentence,tokenizer,attention_mask,relation,label2id,mode):
+    zero = [0 for i in range(args.max_length)]
+    span_mask=[ attention_mask for i in range(sum(attention_mask))]
+    span_mask.extend([ zero for i in range(sum(attention_mask),args.max_length)])
+    #span_mask=np.triu(np.array(span_mask)).tolist()#将下三角全部置0
+
+    span_label = [0 for i in range(args.max_length)]#label2id['O']=0
+    span_label = [span_label for i in range(args.max_length)]
+    span_label = np.array(span_label)
+    ner_relation = []
+    sentence=sentence.split(' ')
+    assert len(sentence)==len(relation)
+
+    new_relation=[]
+    idx=1
+    for i in range(len(sentence)):
+        _,_,tag=relation[i]
+        wordpiece=tokenizer.tokenize(sentence[i])
+        if len(wordpiece)==1:
+            new_relation.append((idx,idx,tag))
+            idx+=1
+        else:
+            for j in range(len(wordpiece)):
+                cur_tag=tag
+                if j>0:
+                    cur_tag='I-'+tag.split('-')[1] if tag!='O' else tag
+                new_relation.append((idx,idx,cur_tag))
+                idx+=1
+                if idx==args.max_length-2:
+                    break
+        if idx==args.max_length-2:
+            break
+
+    relation=new_relation
+
+    if mode == 'dp_train' or mode == 'dp_test':            
+        for start_idx, end_idx, rel in relation:
+            #print(start_idx, end_idx, rel)
+            span_label[start_idx, end_idx] = label2id[rel]
+    elif mode == 'ner_train' or mode == 'ner_test':
+        ner_relation = []
+        start_idx = 0
+        end_idx = 0
+        pre_label = 'O'
+        #relabelling
+        ent_tag='O'
+        relation.append((relation[-1][0]+1,relation[-1][0]+1,'O'))
+        for i, (idx,_,cur_label)in enumerate(relation):
+
+            if cur_label[0]=='O':
+                if pre_label[0]!='O' and pre_label[0]!='S':
+                    ner_relation.append((start_idx,idx-1,ent_tag))
+                    start_idx=idx
+
+            if cur_label[0]=='B':
+                if pre_label[0]=='O' or pre_label[0]=='S':
+                    start_idx=idx
+                    ent_tag=cur_label[2:]
+                if pre_label[0]=='I' or pre_label[0]=='E':
+                    ner_relation.append((start_idx,idx-1,ent_tag))
+                    start_idx=idx
+                    ent_tag=cur_label[2:]
+
+            pre_label=cur_label
+
+        
+        for start_idx, end_idx, rel in ner_relation:
+            if mode == 'ner_train':
+                for i in range(start_idx, end_idx+1):
+                    for j in range(start_idx, end_idx+1):
+                        span_label[i, j] = label2id[rel+'_sub']
+            #输入是wordpiece形式，但是输入的标签不能是wordpiece形式的
+            span_label[start_idx, end_idx] = label2id[rel+'_whole']
+    return span_mask,span_label,ner_relation
+
 class DataSet():
     def __init__(self, 
                 sentences: list, 
