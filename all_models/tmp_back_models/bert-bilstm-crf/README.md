@@ -36,10 +36,10 @@ python test.py
 
 ### Conll03 dev
 
-| Model           | Precision | Recall | F1    | bert         |
-| --------------- | --------- | ------ | ----- | ------------ |
-| BERT+Linear     | 0.937     | 0.948  | 0.943 | base-uncased |
-| BERT+BiLSTM+CRF | 0.933     | 0.945  | 0.939 | base-uncased |
+| Model       | Precision | Recall | F1    |
+| ----------- | --------- | ------ | ----- |
+| BERT+Linear | 0.937     | 0.948  | 0.943 |
+|             |           |        |       |
 
 
 

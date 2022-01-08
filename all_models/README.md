@@ -45,8 +45,12 @@ python test.py
 
 ### Conll03 test
 
-| Model       | Precision | Recall | F1    |
-| ----------- | --------- | ------ | ----- |
-| BERT+Linear | 0.892     | 0.912  | 0.902 |
-|             |           |        |       |
+| Model                         | Precision | Recall | F1     | bert         |
+| ----------------------------- | --------- | ------ | ------ | ------------ |
+| BERT+Linear                   | 0.892     | 0.912  | 0.902  | base-uncased |
+| BERT+BiLSTM+CRF               | 0.9143    | 0.9276 | 0.9209 | large-cased  |
+| BERT+BiLSTM                   | 0.9096    | 0.9235 | 0.9165 | large-cased  |
+| BERT+BiLSTM+biaffine          |           |        |        | large-cased  |
+| BERT+BiLSTM(2-layer)+biaffine |           |        |        |              |
+|                               |           |        |        |              |
 
