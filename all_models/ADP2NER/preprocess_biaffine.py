@@ -155,7 +155,7 @@ def convert_example_to_feature(args,tokenizer,sentence,labels,label2id):
                                                         attention_mask=attention_mask,
                                                         relation=labels,
                                                         label2id=label2id)
-    return input_ids,attention_mask,offsets,token_type_ids,span_mask,span_label,ner_relation
+    return input_ids,attention_mask,offsets,token_type_ids,span_mask,span_label,ner_relation,tokens
 
 
 def data_pre(args,file_path, tokenizer, label2id):
@@ -164,7 +164,7 @@ def data_pre(args,file_path, tokenizer, label2id):
 
     for i,sentence in tqdm(enumerate(sentences)):
         label=relations[i]
-        input_ids,attention_mask,offsets,token_type_ids,span_mask,span_label,ner_relation=convert_example_to_feature(args,tokenizer=tokenizer,sentence=sentence,labels=label,label2id=label2id)
+        input_ids,attention_mask,offsets,token_type_ids,span_mask,span_label,ner_relation, wordpiece_tokens=convert_example_to_feature(args,tokenizer=tokenizer,sentence=sentence,labels=label,label2id=label2id)
 
         tmp = {}
         tmp['input_ids'] = input_ids
@@ -176,6 +176,7 @@ def data_pre(args,file_path, tokenizer, label2id):
         tmp['span_tokens'] = label#list
         tmp['converted_span']=ner_relation
         tmp['offsets']=offsets
+        tmp['wordpiece_tokens']=wordpiece_tokens
         # wordpiece=[]
         # for start_id,end_id,tag in ner_relation:
         #     wordpiece.append(' '.join(tokenizer.convert_ids_to_tokens(batch_input_ids[k][start_id:end_id+1])))
@@ -219,7 +220,9 @@ def yield_data(args,file_path, tokenizer, label2id, is_training=True):
         input_tokens=example['input_tokens']
         span_tokens=example['span_tokens']
         offsets=example['offsets']
+        wordpiece_tokens=example['wordpiece_tokens']
         logger.info("input tokens(sentence) : {}".format(input_tokens))
+        logger.info("wordpiece tokens(wordpiece) : {}".format(wordpiece_tokens))
         logger.info("span tokens(label) : {}".format(span_tokens))
         logger.info("input_ids : {}".format(' '.join([str(i) for i in input_ids])))
         logger.info("attention_mask : {}".format(' '.join([str(i) for i in attention_mask])))
@@ -227,12 +230,12 @@ def yield_data(args,file_path, tokenizer, label2id, is_training=True):
         length=sum(attention_mask)
         print_span_mask=np.array(span_mask)[:length+2,:length+2]
         print_span_label=np.array(span_label)[:length+2,:length+2]
-        logger.info("Span mask : ")
-        for row in print_span_mask:
-            logger.info(" ".join([str(i) for i in row]))
-        logger.info("Span label(wordpiece) : ")
-        for row in print_span_label:
-            logger.info(" ".join([str(i) for i in row])) 
+        # logger.info("Span mask : ")
+        # for row in print_span_mask:
+        #     logger.info(" ".join([str(i) for i in row]))
+        # logger.info("Span label(wordpiece) : ")
+        # for row in print_span_label:
+        #     logger.info(" ".join([str(i) for i in row])) 
 
         logger.info("converted_span (wordpiece): {}".format(example['converted_span']))
         # logger.info("span_label : {}".format(' '.join([str(i) for i in span_label])))

@@ -135,7 +135,7 @@ def train(args,
                 #evaluate trainset
                 logger.info('-----evaluate train set : ----')
                 model.eval()
-                recall,precise,span_f1 = evaluate(model,evaluate_data=test_dataloader,span_acc=span_acc)
+                recall,precise,span_f1 = evaluate(model,evaluate_data=train_dataloader,span_acc=span_acc)
                 model.train()
                 logger.info('epoch %d, global_step %d, recall %.4f, precise %.4f, span_f1 %.4f'% (epoch,global_step,recall,precise,span_f1))
 
@@ -229,9 +229,9 @@ def main():
     # training parameters
     parser.add_argument('--learning_rate', default=3e-5, type=float)
     parser.add_argument('--weight_decay', default=1e-5, type=float)
-    parser.add_argument('--lstm_layer', default=2, type=int)
+    parser.add_argument('--lstm_layer', default=1, type=int)
     
-    parser.add_argument('--epochs', default=30, type=int)
+    parser.add_argument('--epochs', default=50, type=int)
     parser.add_argument('--project_dropout', default=0.2, type = int)
     parser.add_argument('--train_batch_size', default=64, type=int)
     parser.add_argument('--lstm_hidden_size', default=150, type=int)

@@ -20,16 +20,16 @@ class biaffine(nn.Module):
         if self.bias_y:
             y = torch.cat((y, torch.ones_like(y[..., :1])), dim=-1)
         
-        """
         batch_size,seq_len,hidden=x.shape
-        bilinar_mapping=torch.matmul(x,self.U)
+        x=x.view(-1,hidden)
+        bilinar_mapping=torch.matmul(x,self.U.view(hidden,-1))#(batch_size*seq_len,out_size*hidden)
         bilinar_mapping=bilinar_mapping.view(size=(batch_size,seq_len*self.out_size,hidden))
-        y=torch.transpose(y,dim0=1,dim1=2)
-        bilinar_mapping=torch.matmul(bilinar_mapping,y)
+        y=torch.transpose(y,dim0=1,dim1=2)#(batch_size,hidden_size,seq_len)
+        bilinar_mapping=torch.matmul(bilinar_mapping,y)#(batch_size,seq_len*out_size,seq_len)
         bilinar_mapping=bilinar_mapping.view(size=(batch_size,seq_len,self.out_size,seq_len))
         bilinar_mapping=torch.transpose(bilinar_mapping,dim0=2,dim1=3)
-        """
-        bilinar_mapping = torch.einsum('bxi,ioj,byj->bxyo', x, self.U, y)
+        
+        #bilinar_mapping = torch.einsum('bxi,ioj,byj->bxyo', x, self.U, y)
         #(bsz,max_length,max_length,num_labels)
         return bilinar_mapping
 

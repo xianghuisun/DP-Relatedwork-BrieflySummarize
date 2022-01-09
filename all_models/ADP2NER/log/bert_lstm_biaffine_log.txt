@@ -1,464 +1,654 @@
-2022-01-08 21:22:06,543 - bilstm-biaffine - INFO - <module> - 55 : Using device cuda
-2022-01-08 21:22:06,729 - bilstm-biaffine.preprocess_biaffine - INFO - load_data - 44 : File /home/xhsun/Desktop/NER_Parsing/pcode/data/conll03/train.txt has 14040 sentences!
-2022-01-08 21:22:06,731 - bilstm-biaffine.preprocess_biaffine - INFO - load_data - 46 : Average sentence length : 14.502635327635328
-2022-01-08 21:22:22,209 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 209 : number of examples : 14040
-2022-01-08 21:22:22,209 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 210 : Printing some exampls...
-2022-01-08 21:22:22,209 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 222 : input tokens(sentence) : ['CINCINNATI', 'AT', 'COLORADO']
-2022-01-08 21:22:22,209 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 223 : span tokens(label) : [(1, 1, 'B-organisation'), (2, 2, 'O'), (3, 3, 'B-location')]
-2022-01-08 21:22:22,209 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input_ids : 101 140 11607 19747 2249 11185 21669 13020 18732 2162 9565 14569 2346 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,209 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : attention_mask : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 230 : Span mask : 
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 233 : Span label(wordpiece) : 
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,210 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 4 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 237 : converted_span (wordpiece): [(1, 6, 'organisation'), (8, 12, 'location')]
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : input length: 128
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 241 : ----------------------------------------------------------------------------------------------------
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 222 : input tokens(sentence) : ['Relations', 'with', 'Russia', ',', 'which', 'is', 'our', 'main', 'partner', ',', 'have', 'great', 'importance', ',', '"', 'Kuchma', 'said', '.']
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 223 : span tokens(label) : [(1, 1, 'O'), (2, 2, 'O'), (3, 3, 'B-location'), (4, 4, 'O'), (5, 5, 'O'), (6, 6, 'O'), (7, 7, 'O'), (8, 8, 'O'), (9, 9, 'O'), (10, 10, 'O'), (11, 11, 'O'), (12, 12, 'O'), (13, 13, 'O'), (14, 14, 'O'), (15, 15, 'O'), (16, 16, 'B-person'), (17, 17, 'O'), (18, 18, 'O')]
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input_ids : 101 9269 1114 2733 117 1134 1110 1412 1514 3547 117 1138 1632 4495 117 107 23209 1732 1918 1163 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,211 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : attention_mask : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 230 : Span mask : 
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,212 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 233 : Span label(wordpiece) : 
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,213 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 237 : converted_span (wordpiece): [(3, 3, 'location'), (16, 18, 'person')]
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : input length: 128
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 241 : ----------------------------------------------------------------------------------------------------
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 222 : input tokens(sentence) : ['He', 'added', ':', '"', 'If', 'no', 'one', 'asked', ',', 'I', 'never', 'opened', 'my', 'mouth', '.']
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 223 : span tokens(label) : [(1, 1, 'O'), (2, 2, 'O'), (3, 3, 'O'), (4, 4, 'O'), (5, 5, 'O'), (6, 6, 'O'), (7, 7, 'O'), (8, 8, 'O'), (9, 9, 'O'), (10, 10, 'O'), (11, 11, 'O'), (12, 12, 'O'), (13, 13, 'O'), (14, 14, 'O'), (15, 15, 'O')]
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input_ids : 101 1124 1896 131 107 1409 1185 1141 1455 117 146 1309 1533 1139 1779 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : attention_mask : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 230 : Span mask : 
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,214 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 233 : Span label(wordpiece) : 
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,215 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,216 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,216 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,216 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,216 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:22,216 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 237 : converted_span (wordpiece): []
-2022-01-08 21:22:22,216 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : input length: 128
-2022-01-08 21:22:22,216 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 241 : ----------------------------------------------------------------------------------------------------
-2022-01-08 21:22:22,216 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 243 : label2id : {'O': 0, 'organisation_whole': 1, 'misc_whole': 2, 'person_whole': 3, 'location_whole': 4}
-2022-01-08 21:22:22,239 - bilstm-biaffine.preprocess_biaffine - INFO - load_data - 44 : File /home/xhsun/Desktop/NER_Parsing/pcode/data/conll03/test.txt has 3452 sentences!
-2022-01-08 21:22:22,240 - bilstm-biaffine.preprocess_biaffine - INFO - load_data - 46 : Average sentence length : 13.439745075318656
-2022-01-08 21:22:26,031 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 209 : number of examples : 3452
-2022-01-08 21:22:26,031 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 210 : Printing some exampls...
-2022-01-08 21:22:26,031 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 222 : input tokens(sentence) : ['Mansfield', '21', '5', '9', '7', '21', '22', '24']
-2022-01-08 21:22:26,031 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 223 : span tokens(label) : [(1, 1, 'B-organisation'), (2, 2, 'O'), (3, 3, 'O'), (4, 4, 'O'), (5, 5, 'O'), (6, 6, 'O'), (7, 7, 'O'), (8, 8, 'O')]
-2022-01-08 21:22:26,031 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input_ids : 101 16154 1626 126 130 128 1626 1659 1572 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,031 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : attention_mask : 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 230 : Span mask : 
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 233 : Span label(wordpiece) : 
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 1 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,032 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 237 : converted_span (wordpiece): [(1, 1, 'organisation')]
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : input length: 128
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 241 : ----------------------------------------------------------------------------------------------------
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 222 : input tokens(sentence) : ['--', 'New', 'York', 'Commodities', 'Desk', ',', '212-859-1640']
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 223 : span tokens(label) : [(1, 1, 'O'), (2, 2, 'B-organisation'), (3, 3, 'I-organisation'), (4, 4, 'I-organisation'), (5, 5, 'O'), (6, 6, 'O'), (7, 7, 'O')]
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input_ids : 101 118 118 1203 1365 3291 6262 5412 4233 14177 1377 117 19538 118 4859 1580 118 23753 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : attention_mask : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,033 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 230 : Span mask : 
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 233 : Span label(wordpiece) : 
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,034 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 237 : converted_span (wordpiece): [(3, 8, 'organisation')]
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : input length: 128
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 241 : ----------------------------------------------------------------------------------------------------
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 222 : input tokens(sentence) : ['The', '35-year-old', 'woman', 'was', 'charged', 'with', 'possession', 'of', 'explosives', 'with', 'intent', 'to', 'endanger', 'life', 'and', 'making', 'a', 'house', 'available', 'for', 'the', 'purpose', 'of', 'terrorism', ',', 'police', 'said', '.']
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 223 : span tokens(label) : [(1, 1, 'O'), (2, 2, 'O'), (3, 3, 'O'), (4, 4, 'O'), (5, 5, 'O'), (6, 6, 'O'), (7, 7, 'O'), (8, 8, 'O'), (9, 9, 'O'), (10, 10, 'O'), (11, 11, 'O'), (12, 12, 'O'), (13, 13, 'O'), (14, 14, 'O'), (15, 15, 'O'), (16, 16, 'O'), (17, 17, 'O'), (18, 18, 'O'), (19, 19, 'O'), (20, 20, 'O'), (21, 21, 'O'), (22, 22, 'O'), (23, 23, 'O'), (24, 24, 'O'), (25, 25, 'O'), (26, 26, 'O'), (27, 27, 'O'), (28, 28, 'O')]
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input_ids : 101 1109 2588 118 1214 118 1385 1590 1108 4601 1114 6224 1104 16454 1114 7676 1106 1322 27290 1297 1105 1543 170 1402 1907 1111 1103 3007 1104 12010 117 2021 1163 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,035 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : attention_mask : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 230 : Span mask : 
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,036 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 232 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 233 : Span label(wordpiece) : 
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,037 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,038 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 235 : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 237 : converted_span (wordpiece): []
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : input length: 128
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 241 : ----------------------------------------------------------------------------------------------------
-2022-01-08 21:22:26,039 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 243 : label2id : {'O': 0, 'organisation_whole': 1, 'misc_whole': 2, 'person_whole': 3, 'location_whole': 4}
-2022-01-08 21:22:26,039 - bilstm-biaffine - INFO - main - 256 : model_name_or_path:/home/xhsun/NLP/huggingfaceModels/English/bert-base-uncased
-2022-01-08 21:22:26,039 - bilstm-biaffine - INFO - main - 256 : file_path:/home/xhsun/Desktop/NER_Parsing/pcode/data/conll03
-2022-01-08 21:22:26,039 - bilstm-biaffine - INFO - main - 256 : ner_train_path:/home/xhsun/Desktop/NER_Parsing/pcode/data/conll03/train.txt
-2022-01-08 21:22:26,039 - bilstm-biaffine - INFO - main - 256 : ner_test_path:/home/xhsun/Desktop/NER_Parsing/pcode/data/conll03/test.txt
-2022-01-08 21:22:26,039 - bilstm-biaffine - INFO - main - 256 : save_dir:/home/xhsun/Desktop/NER_Parsing/train_models/biaffine
-2022-01-08 21:22:26,039 - bilstm-biaffine - INFO - main - 256 : ckpt:/home/xhsun/Desktop/NER_Parsing/train_models/biaffine/pytorch_model.bin
-2022-01-08 21:22:26,039 - bilstm-biaffine - INFO - main - 256 : max_length:128
-2022-01-08 21:22:26,039 - bilstm-biaffine - INFO - main - 256 : learning_rate:3e-05
-2022-01-08 21:22:26,039 - bilstm-biaffine - INFO - main - 256 : weight_decay:1e-05
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : epochs:10
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : train_batch_size:64
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : lstm_hidden_size:150
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : to_biaffine_size:128
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : test_batch_size:64
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : max_grad_norm:1
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : warmup_proportion:0.1
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : max_len:196
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : patience:10
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : seed:666
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - main - 256 : num_workers:1
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - train - 65 : label2id : {'O': 0, 'organisation_whole': 1, 'misc_whole': 2, 'person_whole': 3, 'location_whole': 4}
-2022-01-08 21:22:26,040 - bilstm-biaffine - INFO - train - 68 : Under an epoch, loss will be output every 44 step, and the model will be evaluated every 110 step
-2022-01-08 21:22:28,695 - bilstm-biaffine - INFO - train - 79 : length of dataloader : 220
-2022-01-08 21:22:28,695 - bilstm-biaffine - INFO - train - 82 : num_train_steps : 2200, warmup_proportion : 0.1, warmup_steps : 220
-2022-01-08 21:22:28,695 - bilstm-biaffine.span_loss - INFO - __init__ - 13 : Class weight : [1.0, 8.0, 8.0, 8.0, 8.0]
-2022-01-08 21:22:53,781 - bilstm-biaffine - INFO - train - 133 : epoch 0, global_step 110, loss 0.6386
-2022-01-08 21:22:53,781 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:22:57,829 - bilstm-biaffine - INFO - train - 140 : epoch 0, global_step 110, recall 0.0009, precise 0.0076, span_f1 0.0014
-2022-01-08 21:22:57,829 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:23:01,889 - bilstm-biaffine - INFO - train - 147 : epoch 0, global_step 110, recall 0.0009, precise 0.0076, span_f1 0.0014
-2022-01-08 21:23:02,387 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:23:27,458 - bilstm-biaffine - INFO - train - 133 : epoch 0, global_step 220, loss 0.1032
-2022-01-08 21:23:27,458 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:23:31,556 - bilstm-biaffine - INFO - train - 140 : epoch 0, global_step 220, recall 0.2187, precise 0.2618, span_f1 0.1978
-2022-01-08 21:23:31,556 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:23:35,643 - bilstm-biaffine - INFO - train - 147 : epoch 0, global_step 220, recall 0.2187, precise 0.2618, span_f1 0.1978
-2022-01-08 21:23:36,119 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:24:01,395 - bilstm-biaffine - INFO - train - 133 : epoch 1, global_step 330, loss 0.0553
-2022-01-08 21:24:01,395 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:24:05,476 - bilstm-biaffine - INFO - train - 140 : epoch 1, global_step 330, recall 0.5870, precise 0.3228, span_f1 0.4108
-2022-01-08 21:24:05,476 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:24:09,557 - bilstm-biaffine - INFO - train - 147 : epoch 1, global_step 330, recall 0.5870, precise 0.3228, span_f1 0.4108
-2022-01-08 21:24:10,043 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:24:35,337 - bilstm-biaffine - INFO - train - 133 : epoch 1, global_step 440, loss 0.0347
-2022-01-08 21:24:35,337 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:24:39,432 - bilstm-biaffine - INFO - train - 140 : epoch 1, global_step 440, recall 0.7291, precise 0.3849, span_f1 0.4979
-2022-01-08 21:24:39,432 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:24:43,521 - bilstm-biaffine - INFO - train - 147 : epoch 1, global_step 440, recall 0.7291, precise 0.3849, span_f1 0.4979
-2022-01-08 21:24:43,999 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:25:09,669 - bilstm-biaffine - INFO - train - 133 : epoch 2, global_step 550, loss 0.0261
-2022-01-08 21:25:09,669 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:25:13,778 - bilstm-biaffine - INFO - train - 140 : epoch 2, global_step 550, recall 0.8101, precise 0.3918, span_f1 0.5199
-2022-01-08 21:25:13,778 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:25:17,895 - bilstm-biaffine - INFO - train - 147 : epoch 2, global_step 550, recall 0.8101, precise 0.3918, span_f1 0.5199
-2022-01-08 21:25:18,387 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:25:43,994 - bilstm-biaffine - INFO - train - 133 : epoch 2, global_step 660, loss 0.0230
-2022-01-08 21:25:43,994 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:25:48,094 - bilstm-biaffine - INFO - train - 140 : epoch 2, global_step 660, recall 0.8324, precise 0.4177, span_f1 0.5474
-2022-01-08 21:25:48,094 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:25:52,193 - bilstm-biaffine - INFO - train - 147 : epoch 2, global_step 660, recall 0.8324, precise 0.4177, span_f1 0.5474
-2022-01-08 21:25:52,682 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:26:18,531 - bilstm-biaffine - INFO - train - 133 : epoch 3, global_step 770, loss 0.0196
-2022-01-08 21:26:18,531 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:26:22,716 - bilstm-biaffine - INFO - train - 140 : epoch 3, global_step 770, recall 0.8494, precise 0.4234, span_f1 0.5562
-2022-01-08 21:26:22,716 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:26:26,868 - bilstm-biaffine - INFO - train - 147 : epoch 3, global_step 770, recall 0.8494, precise 0.4234, span_f1 0.5562
-2022-01-08 21:26:27,351 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:26:53,579 - bilstm-biaffine - INFO - train - 133 : epoch 3, global_step 880, loss 0.0179
-2022-01-08 21:26:53,579 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:26:57,786 - bilstm-biaffine - INFO - train - 140 : epoch 3, global_step 880, recall 0.8705, precise 0.4290, span_f1 0.5655
-2022-01-08 21:26:57,786 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:27:01,897 - bilstm-biaffine - INFO - train - 147 : epoch 3, global_step 880, recall 0.8705, precise 0.4290, span_f1 0.5655
-2022-01-08 21:27:02,387 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:27:28,551 - bilstm-biaffine - INFO - train - 133 : epoch 4, global_step 990, loss 0.0163
-2022-01-08 21:27:28,551 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:27:32,677 - bilstm-biaffine - INFO - train - 140 : epoch 4, global_step 990, recall 0.8809, precise 0.4321, span_f1 0.5694
-2022-01-08 21:27:32,677 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:27:36,886 - bilstm-biaffine - INFO - train - 147 : epoch 4, global_step 990, recall 0.8809, precise 0.4321, span_f1 0.5694
-2022-01-08 21:27:37,383 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:28:03,365 - bilstm-biaffine - INFO - train - 133 : epoch 4, global_step 1100, loss 0.0152
-2022-01-08 21:28:03,365 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:28:07,542 - bilstm-biaffine - INFO - train - 140 : epoch 4, global_step 1100, recall 0.8813, precise 0.4505, span_f1 0.5866
-2022-01-08 21:28:07,542 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:28:11,665 - bilstm-biaffine - INFO - train - 147 : epoch 4, global_step 1100, recall 0.8813, precise 0.4505, span_f1 0.5866
-2022-01-08 21:28:12,155 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:28:38,518 - bilstm-biaffine - INFO - train - 133 : epoch 5, global_step 1210, loss 0.0139
-2022-01-08 21:28:38,518 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:28:42,613 - bilstm-biaffine - INFO - train - 140 : epoch 5, global_step 1210, recall 0.8903, precise 0.4592, span_f1 0.5956
-2022-01-08 21:28:42,613 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:28:46,718 - bilstm-biaffine - INFO - train - 147 : epoch 5, global_step 1210, recall 0.8903, precise 0.4592, span_f1 0.5956
-2022-01-08 21:28:47,218 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:29:12,965 - bilstm-biaffine - INFO - train - 133 : epoch 5, global_step 1320, loss 0.0137
-2022-01-08 21:29:12,965 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:29:17,091 - bilstm-biaffine - INFO - train - 140 : epoch 5, global_step 1320, recall 0.8858, precise 0.4629, span_f1 0.5995
-2022-01-08 21:29:17,091 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:29:21,192 - bilstm-biaffine - INFO - train - 147 : epoch 5, global_step 1320, recall 0.8858, precise 0.4629, span_f1 0.5995
-2022-01-08 21:29:21,674 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:29:47,753 - bilstm-biaffine - INFO - train - 133 : epoch 6, global_step 1430, loss 0.0130
-2022-01-08 21:29:47,753 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:29:51,851 - bilstm-biaffine - INFO - train - 140 : epoch 6, global_step 1430, recall 0.8897, precise 0.4833, span_f1 0.6164
-2022-01-08 21:29:51,851 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:29:55,944 - bilstm-biaffine - INFO - train - 147 : epoch 6, global_step 1430, recall 0.8897, precise 0.4833, span_f1 0.6164
-2022-01-08 21:29:56,439 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:30:22,366 - bilstm-biaffine - INFO - train - 133 : epoch 6, global_step 1540, loss 0.0123
-2022-01-08 21:30:22,366 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:30:26,463 - bilstm-biaffine - INFO - train - 140 : epoch 6, global_step 1540, recall 0.8872, precise 0.4855, span_f1 0.6185
-2022-01-08 21:30:26,463 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:30:30,563 - bilstm-biaffine - INFO - train - 147 : epoch 6, global_step 1540, recall 0.8872, precise 0.4855, span_f1 0.6185
-2022-01-08 21:30:31,052 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:30:57,216 - bilstm-biaffine - INFO - train - 133 : epoch 7, global_step 1650, loss 0.0118
-2022-01-08 21:30:57,216 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:31:01,308 - bilstm-biaffine - INFO - train - 140 : epoch 7, global_step 1650, recall 0.8929, precise 0.4891, span_f1 0.6224
-2022-01-08 21:31:01,308 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:31:05,403 - bilstm-biaffine - INFO - train - 147 : epoch 7, global_step 1650, recall 0.8929, precise 0.4891, span_f1 0.6224
-2022-01-08 21:31:05,887 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:31:31,953 - bilstm-biaffine - INFO - train - 133 : epoch 7, global_step 1760, loss 0.0117
-2022-01-08 21:31:31,953 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:31:36,052 - bilstm-biaffine - INFO - train - 140 : epoch 7, global_step 1760, recall 0.8951, precise 0.4877, span_f1 0.6217
-2022-01-08 21:31:36,052 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:31:40,154 - bilstm-biaffine - INFO - train - 147 : epoch 7, global_step 1760, recall 0.8951, precise 0.4877, span_f1 0.6217
-2022-01-08 21:32:06,514 - bilstm-biaffine - INFO - train - 133 : epoch 8, global_step 1870, loss 0.0113
-2022-01-08 21:32:06,514 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:32:10,610 - bilstm-biaffine - INFO - train - 140 : epoch 8, global_step 1870, recall 0.8947, precise 0.4971, span_f1 0.6296
-2022-01-08 21:32:10,610 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:32:14,713 - bilstm-biaffine - INFO - train - 147 : epoch 8, global_step 1870, recall 0.8947, precise 0.4971, span_f1 0.6296
-2022-01-08 21:32:15,203 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
-2022-01-08 21:32:41,409 - bilstm-biaffine - INFO - train - 133 : epoch 8, global_step 1980, loss 0.0110
-2022-01-08 21:32:41,409 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:32:45,502 - bilstm-biaffine - INFO - train - 140 : epoch 8, global_step 1980, recall 0.8985, precise 0.4875, span_f1 0.6222
-2022-01-08 21:32:45,502 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:32:49,615 - bilstm-biaffine - INFO - train - 147 : epoch 8, global_step 1980, recall 0.8985, precise 0.4875, span_f1 0.6222
-2022-01-08 21:33:16,049 - bilstm-biaffine - INFO - train - 133 : epoch 9, global_step 2090, loss 0.0107
-2022-01-08 21:33:16,049 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:33:20,149 - bilstm-biaffine - INFO - train - 140 : epoch 9, global_step 2090, recall 0.8969, precise 0.4932, span_f1 0.6269
-2022-01-08 21:33:20,149 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:33:24,246 - bilstm-biaffine - INFO - train - 147 : epoch 9, global_step 2090, recall 0.8969, precise 0.4932, span_f1 0.6269
-2022-01-08 21:33:50,554 - bilstm-biaffine - INFO - train - 133 : epoch 9, global_step 2200, loss 0.0109
-2022-01-08 21:33:50,554 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
-2022-01-08 21:33:54,656 - bilstm-biaffine - INFO - train - 140 : epoch 9, global_step 2200, recall 0.8977, precise 0.4934, span_f1 0.6274
-2022-01-08 21:33:54,656 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
-2022-01-08 21:33:58,759 - bilstm-biaffine - INFO - train - 147 : epoch 9, global_step 2200, recall 0.8977, precise 0.4934, span_f1 0.6274
+2022-01-09 07:35:01,536 - bilstm-biaffine - INFO - <module> - 55 : Using device cuda
+2022-01-09 07:35:01,686 - bilstm-biaffine.preprocess_biaffine - INFO - load_data - 44 : File /home/xhsun/Desktop/NER_Parsing/pcode/data/conll03/train.txt has 14040 sentences!
+2022-01-09 07:35:01,688 - bilstm-biaffine.preprocess_biaffine - INFO - load_data - 46 : Average sentence length : 14.502635327635328
+2022-01-09 07:35:17,616 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 210 : number of examples : 14040
+2022-01-09 07:35:17,616 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 211 : Printing some exampls...
+2022-01-09 07:35:17,616 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input tokens(sentence) : ['CINCINNATI', 'AT', 'COLORADO']
+2022-01-09 07:35:17,616 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : wordpiece tokens(wordpiece) : ['C', '##IN', '##CI', '##N', '##NA', '##TI', 'AT', 'CO', '##L', '##OR', '##AD', '##O']
+2022-01-09 07:35:17,616 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 226 : span tokens(label) : [(1, 1, 'B-organisation'), (2, 2, 'O'), (3, 3, 'B-location')]
+2022-01-09 07:35:17,616 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 227 : input_ids : 101 140 11607 19747 2249 11185 21669 13020 18732 2162 9565 14569 2346 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:17,616 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 228 : attention_mask : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : converted_span (wordpiece): [(1, 6, 'organisation'), (8, 12, 'location')]
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 243 : input length: 128
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 244 : ----------------------------------------------------------------------------------------------------
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input tokens(sentence) : ['Relations', 'with', 'Russia', ',', 'which', 'is', 'our', 'main', 'partner', ',', 'have', 'great', 'importance', ',', '"', 'Kuchma', 'said', '.']
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : wordpiece tokens(wordpiece) : ['Relations', 'with', 'Russia', ',', 'which', 'is', 'our', 'main', 'partner', ',', 'have', 'great', 'importance', ',', '"', 'Ku', '##ch', '##ma', 'said', '.']
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 226 : span tokens(label) : [(1, 1, 'O'), (2, 2, 'O'), (3, 3, 'B-location'), (4, 4, 'O'), (5, 5, 'O'), (6, 6, 'O'), (7, 7, 'O'), (8, 8, 'O'), (9, 9, 'O'), (10, 10, 'O'), (11, 11, 'O'), (12, 12, 'O'), (13, 13, 'O'), (14, 14, 'O'), (15, 15, 'O'), (16, 16, 'B-person'), (17, 17, 'O'), (18, 18, 'O')]
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 227 : input_ids : 101 9269 1114 2733 117 1134 1110 1412 1514 3547 117 1138 1632 4495 117 107 23209 1732 1918 1163 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 228 : attention_mask : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : converted_span (wordpiece): [(3, 3, 'location'), (16, 18, 'person')]
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 243 : input length: 128
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 244 : ----------------------------------------------------------------------------------------------------
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input tokens(sentence) : ['He', 'added', ':', '"', 'If', 'no', 'one', 'asked', ',', 'I', 'never', 'opened', 'my', 'mouth', '.']
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : wordpiece tokens(wordpiece) : ['He', 'added', ':', '"', 'If', 'no', 'one', 'asked', ',', 'I', 'never', 'opened', 'my', 'mouth', '.']
+2022-01-09 07:35:17,617 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 226 : span tokens(label) : [(1, 1, 'O'), (2, 2, 'O'), (3, 3, 'O'), (4, 4, 'O'), (5, 5, 'O'), (6, 6, 'O'), (7, 7, 'O'), (8, 8, 'O'), (9, 9, 'O'), (10, 10, 'O'), (11, 11, 'O'), (12, 12, 'O'), (13, 13, 'O'), (14, 14, 'O'), (15, 15, 'O')]
+2022-01-09 07:35:17,618 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 227 : input_ids : 101 1124 1896 131 107 1409 1185 1141 1455 117 146 1309 1533 1139 1779 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:17,618 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 228 : attention_mask : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:17,618 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : converted_span (wordpiece): []
+2022-01-09 07:35:17,618 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 243 : input length: 128
+2022-01-09 07:35:17,618 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 244 : ----------------------------------------------------------------------------------------------------
+2022-01-09 07:35:17,618 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 246 : label2id : {'O': 0, 'organisation_whole': 1, 'misc_whole': 2, 'person_whole': 3, 'location_whole': 4}
+2022-01-09 07:35:17,783 - bilstm-biaffine.preprocess_biaffine - INFO - load_data - 44 : File /home/xhsun/Desktop/NER_Parsing/pcode/data/conll03/test.txt has 3452 sentences!
+2022-01-09 07:35:17,784 - bilstm-biaffine.preprocess_biaffine - INFO - load_data - 46 : Average sentence length : 13.439745075318656
+2022-01-09 07:35:21,552 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 210 : number of examples : 3452
+2022-01-09 07:35:21,552 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 211 : Printing some exampls...
+2022-01-09 07:35:21,552 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input tokens(sentence) : ['Mansfield', '21', '5', '9', '7', '21', '22', '24']
+2022-01-09 07:35:21,552 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : wordpiece tokens(wordpiece) : ['Mansfield', '21', '5', '9', '7', '21', '22', '24']
+2022-01-09 07:35:21,552 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 226 : span tokens(label) : [(1, 1, 'B-organisation'), (2, 2, 'O'), (3, 3, 'O'), (4, 4, 'O'), (5, 5, 'O'), (6, 6, 'O'), (7, 7, 'O'), (8, 8, 'O')]
+2022-01-09 07:35:21,552 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 227 : input_ids : 101 16154 1626 126 130 128 1626 1659 1572 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:21,552 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 228 : attention_mask : 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:21,553 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : converted_span (wordpiece): [(1, 1, 'organisation')]
+2022-01-09 07:35:21,553 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 243 : input length: 128
+2022-01-09 07:35:21,553 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 244 : ----------------------------------------------------------------------------------------------------
+2022-01-09 07:35:21,553 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input tokens(sentence) : ['--', 'New', 'York', 'Commodities', 'Desk', ',', '212-859-1640']
+2022-01-09 07:35:21,553 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : wordpiece tokens(wordpiece) : ['-', '-', 'New', 'York', 'Co', '##mm', '##od', '##ities', 'Des', '##k', ',', '212', '-', '85', '##9', '-', '1640']
+2022-01-09 07:35:21,553 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 226 : span tokens(label) : [(1, 1, 'O'), (2, 2, 'B-organisation'), (3, 3, 'I-organisation'), (4, 4, 'I-organisation'), (5, 5, 'O'), (6, 6, 'O'), (7, 7, 'O')]
+2022-01-09 07:35:21,553 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 227 : input_ids : 101 118 118 1203 1365 3291 6262 5412 4233 14177 1377 117 19538 118 4859 1580 118 23753 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:21,553 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 228 : attention_mask : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:21,553 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : converted_span (wordpiece): [(3, 8, 'organisation')]
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 243 : input length: 128
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 244 : ----------------------------------------------------------------------------------------------------
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 224 : input tokens(sentence) : ['The', '35-year-old', 'woman', 'was', 'charged', 'with', 'possession', 'of', 'explosives', 'with', 'intent', 'to', 'endanger', 'life', 'and', 'making', 'a', 'house', 'available', 'for', 'the', 'purpose', 'of', 'terrorism', ',', 'police', 'said', '.']
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 225 : wordpiece tokens(wordpiece) : ['The', '35', '-', 'year', '-', 'old', 'woman', 'was', 'charged', 'with', 'possession', 'of', 'explosives', 'with', 'intent', 'to', 'end', '##anger', 'life', 'and', 'making', 'a', 'house', 'available', 'for', 'the', 'purpose', 'of', 'terrorism', ',', 'police', 'said', '.']
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 226 : span tokens(label) : [(1, 1, 'O'), (2, 2, 'O'), (3, 3, 'O'), (4, 4, 'O'), (5, 5, 'O'), (6, 6, 'O'), (7, 7, 'O'), (8, 8, 'O'), (9, 9, 'O'), (10, 10, 'O'), (11, 11, 'O'), (12, 12, 'O'), (13, 13, 'O'), (14, 14, 'O'), (15, 15, 'O'), (16, 16, 'O'), (17, 17, 'O'), (18, 18, 'O'), (19, 19, 'O'), (20, 20, 'O'), (21, 21, 'O'), (22, 22, 'O'), (23, 23, 'O'), (24, 24, 'O'), (25, 25, 'O'), (26, 26, 'O'), (27, 27, 'O'), (28, 28, 'O')]
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 227 : input_ids : 101 1109 2588 118 1214 118 1385 1590 1108 4601 1114 6224 1104 16454 1114 7676 1106 1322 27290 1297 1105 1543 170 1402 1907 1111 1103 3007 1104 12010 117 2021 1163 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 228 : attention_mask : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 240 : converted_span (wordpiece): []
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 243 : input length: 128
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 244 : ----------------------------------------------------------------------------------------------------
+2022-01-09 07:35:21,554 - bilstm-biaffine.preprocess_biaffine - INFO - yield_data - 246 : label2id : {'O': 0, 'organisation_whole': 1, 'misc_whole': 2, 'person_whole': 3, 'location_whole': 4}
+2022-01-09 07:35:21,554 - bilstm-biaffine - INFO - main - 259 : model_name_or_path:/home/xhsun/NLP/huggingfaceModels/English/bert-base-uncased
+2022-01-09 07:35:21,554 - bilstm-biaffine - INFO - main - 259 : file_path:/home/xhsun/Desktop/NER_Parsing/pcode/data/conll03
+2022-01-09 07:35:21,554 - bilstm-biaffine - INFO - main - 259 : ner_train_path:/home/xhsun/Desktop/NER_Parsing/pcode/data/conll03/train.txt
+2022-01-09 07:35:21,554 - bilstm-biaffine - INFO - main - 259 : ner_test_path:/home/xhsun/Desktop/NER_Parsing/pcode/data/conll03/test.txt
+2022-01-09 07:35:21,554 - bilstm-biaffine - INFO - main - 259 : save_dir:/home/xhsun/Desktop/NER_Parsing/train_models/biaffine
+2022-01-09 07:35:21,554 - bilstm-biaffine - INFO - main - 259 : ckpt:/home/xhsun/Desktop/NER_Parsing/train_models/biaffine/pytorch_model.bin
+2022-01-09 07:35:21,554 - bilstm-biaffine - INFO - main - 259 : max_length:128
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : learning_rate:3e-05
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : weight_decay:1e-05
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : lstm_layer:1
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : epochs:50
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : project_dropout:0.2
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : train_batch_size:64
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : lstm_hidden_size:150
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : to_biaffine_size:128
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : test_batch_size:64
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : max_grad_norm:1
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : warmup_proportion:0.1
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : max_len:196
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : patience:10
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : seed:666
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - main - 259 : num_workers:1
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - train - 65 : label2id : {'O': 0, 'organisation_whole': 1, 'misc_whole': 2, 'person_whole': 3, 'location_whole': 4}
+2022-01-09 07:35:21,555 - bilstm-biaffine - INFO - train - 68 : Under an epoch, loss will be output every 44 step, and the model will be evaluated every 110 step
+2022-01-09 07:35:24,381 - bilstm-biaffine - INFO - train - 79 : length of dataloader : 220
+2022-01-09 07:35:24,381 - bilstm-biaffine - INFO - train - 82 : num_train_steps : 11000, warmup_proportion : 0.1, warmup_steps : 1100
+2022-01-09 07:35:24,381 - bilstm-biaffine.span_loss - INFO - __init__ - 13 : Class weight : [1.0, 8.0, 8.0, 8.0, 8.0]
+2022-01-09 07:35:49,201 - bilstm-biaffine - INFO - train - 133 : epoch 0, global_step 110, loss 1.4351
+2022-01-09 07:35:49,201 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:36:05,532 - bilstm-biaffine - INFO - train - 140 : epoch 0, global_step 110, recall 0.0002, precise 0.0008, span_f1 0.0003
+2022-01-09 07:36:05,532 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:36:09,653 - bilstm-biaffine - INFO - train - 147 : epoch 0, global_step 110, recall 0.0003, precise 0.0007, span_f1 0.0004
+2022-01-09 07:36:10,159 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:36:34,684 - bilstm-biaffine - INFO - train - 133 : epoch 0, global_step 220, loss 0.1958
+2022-01-09 07:36:34,684 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:36:50,863 - bilstm-biaffine - INFO - train - 140 : epoch 0, global_step 220, recall 0.0001, precise 0.0014, span_f1 0.0002
+2022-01-09 07:36:50,863 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:36:54,938 - bilstm-biaffine - INFO - train - 147 : epoch 0, global_step 220, recall 0.0001, precise 0.0011, span_f1 0.0003
+2022-01-09 07:37:19,917 - bilstm-biaffine - INFO - train - 133 : epoch 1, global_step 330, loss 0.1557
+2022-01-09 07:37:19,917 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:37:36,152 - bilstm-biaffine - INFO - train - 140 : epoch 1, global_step 330, recall 0.0035, precise 0.1052, span_f1 0.0067
+2022-01-09 07:37:36,152 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:37:40,246 - bilstm-biaffine - INFO - train - 147 : epoch 1, global_step 330, recall 0.0034, precise 0.0475, span_f1 0.0061
+2022-01-09 07:37:40,744 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:38:05,614 - bilstm-biaffine - INFO - train - 133 : epoch 1, global_step 440, loss 0.1147
+2022-01-09 07:38:05,614 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:38:21,851 - bilstm-biaffine - INFO - train - 140 : epoch 1, global_step 440, recall 0.0610, precise 0.4366, span_f1 0.1041
+2022-01-09 07:38:21,851 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:38:25,942 - bilstm-biaffine - INFO - train - 147 : epoch 1, global_step 440, recall 0.0595, precise 0.3003, span_f1 0.0874
+2022-01-09 07:38:26,429 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:38:51,628 - bilstm-biaffine - INFO - train - 133 : epoch 2, global_step 550, loss 0.0853
+2022-01-09 07:38:51,629 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:39:07,887 - bilstm-biaffine - INFO - train - 140 : epoch 2, global_step 550, recall 0.2493, precise 0.3763, span_f1 0.2957
+2022-01-09 07:39:07,887 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:39:11,989 - bilstm-biaffine - INFO - train - 147 : epoch 2, global_step 550, recall 0.2593, precise 0.4156, span_f1 0.2765
+2022-01-09 07:39:12,494 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:39:37,593 - bilstm-biaffine - INFO - train - 133 : epoch 2, global_step 660, loss 0.0637
+2022-01-09 07:39:37,593 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:39:53,857 - bilstm-biaffine - INFO - train - 140 : epoch 2, global_step 660, recall 0.5118, precise 0.3393, span_f1 0.4057
+2022-01-09 07:39:53,857 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:39:57,960 - bilstm-biaffine - INFO - train - 147 : epoch 2, global_step 660, recall 0.5110, precise 0.3640, span_f1 0.4130
+2022-01-09 07:39:58,432 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:40:23,776 - bilstm-biaffine - INFO - train - 133 : epoch 3, global_step 770, loss 0.0467
+2022-01-09 07:40:23,776 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:40:40,079 - bilstm-biaffine - INFO - train - 140 : epoch 3, global_step 770, recall 0.6953, precise 0.3394, span_f1 0.4550
+2022-01-09 07:40:40,079 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:40:44,187 - bilstm-biaffine - INFO - train - 147 : epoch 3, global_step 770, recall 0.6791, precise 0.3580, span_f1 0.4632
+2022-01-09 07:40:44,683 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:41:09,983 - bilstm-biaffine - INFO - train - 133 : epoch 3, global_step 880, loss 0.0356
+2022-01-09 07:41:09,983 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:41:26,282 - bilstm-biaffine - INFO - train - 140 : epoch 3, global_step 880, recall 0.8076, precise 0.3635, span_f1 0.4999
+2022-01-09 07:41:26,283 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:41:30,386 - bilstm-biaffine - INFO - train - 147 : epoch 3, global_step 880, recall 0.7791, precise 0.3829, span_f1 0.5052
+2022-01-09 07:41:30,874 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:41:56,495 - bilstm-biaffine - INFO - train - 133 : epoch 4, global_step 990, loss 0.0291
+2022-01-09 07:41:56,495 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:42:12,806 - bilstm-biaffine - INFO - train - 140 : epoch 4, global_step 990, recall 0.8590, precise 0.3718, span_f1 0.5177
+2022-01-09 07:42:12,806 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:42:16,912 - bilstm-biaffine - INFO - train - 147 : epoch 4, global_step 990, recall 0.8261, precise 0.3874, span_f1 0.5174
+2022-01-09 07:42:17,400 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:42:42,907 - bilstm-biaffine - INFO - train - 133 : epoch 4, global_step 1100, loss 0.0248
+2022-01-09 07:42:42,908 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:42:59,236 - bilstm-biaffine - INFO - train - 140 : epoch 4, global_step 1100, recall 0.8840, precise 0.4007, span_f1 0.5502
+2022-01-09 07:42:59,236 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:43:03,349 - bilstm-biaffine - INFO - train - 147 : epoch 4, global_step 1100, recall 0.8475, precise 0.4128, span_f1 0.5446
+2022-01-09 07:43:03,825 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:43:29,590 - bilstm-biaffine - INFO - train - 133 : epoch 5, global_step 1210, loss 0.0215
+2022-01-09 07:43:29,591 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:43:45,919 - bilstm-biaffine - INFO - train - 140 : epoch 5, global_step 1210, recall 0.9091, precise 0.4140, span_f1 0.5677
+2022-01-09 07:43:45,920 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:43:50,030 - bilstm-biaffine - INFO - train - 147 : epoch 5, global_step 1210, recall 0.8657, precise 0.4220, span_f1 0.5571
+2022-01-09 07:43:50,528 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:44:16,150 - bilstm-biaffine - INFO - train - 133 : epoch 5, global_step 1320, loss 0.0194
+2022-01-09 07:44:16,150 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:44:32,470 - bilstm-biaffine - INFO - train - 140 : epoch 5, global_step 1320, recall 0.9186, precise 0.4506, span_f1 0.6031
+2022-01-09 07:44:32,470 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:44:36,582 - bilstm-biaffine - INFO - train - 147 : epoch 5, global_step 1320, recall 0.8686, precise 0.4461, span_f1 0.5800
+2022-01-09 07:44:37,073 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:45:02,974 - bilstm-biaffine - INFO - train - 133 : epoch 6, global_step 1430, loss 0.0169
+2022-01-09 07:45:02,974 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:45:19,294 - bilstm-biaffine - INFO - train - 140 : epoch 6, global_step 1430, recall 0.9293, precise 0.4651, span_f1 0.6187
+2022-01-09 07:45:19,294 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:45:23,407 - bilstm-biaffine - INFO - train - 147 : epoch 6, global_step 1430, recall 0.8767, precise 0.4575, span_f1 0.5924
+2022-01-09 07:45:23,881 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:45:49,646 - bilstm-biaffine - INFO - train - 133 : epoch 6, global_step 1540, loss 0.0168
+2022-01-09 07:45:49,647 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:46:05,972 - bilstm-biaffine - INFO - train - 140 : epoch 6, global_step 1540, recall 0.9401, precise 0.4815, span_f1 0.6355
+2022-01-09 07:46:05,972 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:46:10,080 - bilstm-biaffine - INFO - train - 147 : epoch 6, global_step 1540, recall 0.8833, precise 0.4701, span_f1 0.6042
+2022-01-09 07:46:10,562 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:46:36,574 - bilstm-biaffine - INFO - train - 133 : epoch 7, global_step 1650, loss 0.0153
+2022-01-09 07:46:36,574 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:46:52,901 - bilstm-biaffine - INFO - train - 140 : epoch 7, global_step 1650, recall 0.9515, precise 0.4821, span_f1 0.6383
+2022-01-09 07:46:52,901 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:46:57,014 - bilstm-biaffine - INFO - train - 147 : epoch 7, global_step 1650, recall 0.8955, precise 0.4710, span_f1 0.6068
+2022-01-09 07:46:57,509 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:47:23,397 - bilstm-biaffine - INFO - train - 133 : epoch 7, global_step 1760, loss 0.0143
+2022-01-09 07:47:23,397 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:47:39,732 - bilstm-biaffine - INFO - train - 140 : epoch 7, global_step 1760, recall 0.9570, precise 0.4945, span_f1 0.6504
+2022-01-09 07:47:39,732 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:47:43,855 - bilstm-biaffine - INFO - train - 147 : epoch 7, global_step 1760, recall 0.8969, precise 0.4795, span_f1 0.6145
+2022-01-09 07:47:44,346 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:48:10,520 - bilstm-biaffine - INFO - train - 133 : epoch 8, global_step 1870, loss 0.0131
+2022-01-09 07:48:10,520 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:48:26,835 - bilstm-biaffine - INFO - train - 140 : epoch 8, global_step 1870, recall 0.9656, precise 0.4974, span_f1 0.6548
+2022-01-09 07:48:26,836 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:48:30,946 - bilstm-biaffine - INFO - train - 147 : epoch 8, global_step 1870, recall 0.9005, precise 0.4773, span_f1 0.6131
+2022-01-09 07:48:56,979 - bilstm-biaffine - INFO - train - 133 : epoch 8, global_step 1980, loss 0.0126
+2022-01-09 07:48:56,979 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:49:13,341 - bilstm-biaffine - INFO - train - 140 : epoch 8, global_step 1980, recall 0.9687, precise 0.5004, span_f1 0.6580
+2022-01-09 07:49:13,341 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:49:17,453 - bilstm-biaffine - INFO - train - 147 : epoch 8, global_step 1980, recall 0.9049, precise 0.4779, span_f1 0.6148
+2022-01-09 07:49:17,954 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:49:44,287 - bilstm-biaffine - INFO - train - 133 : epoch 9, global_step 2090, loss 0.0115
+2022-01-09 07:49:44,287 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:50:00,611 - bilstm-biaffine - INFO - train - 140 : epoch 9, global_step 2090, recall 0.9710, precise 0.5259, span_f1 0.6805
+2022-01-09 07:50:00,611 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:50:04,716 - bilstm-biaffine - INFO - train - 147 : epoch 9, global_step 2090, recall 0.9024, precise 0.4984, span_f1 0.6318
+2022-01-09 07:50:05,206 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:50:31,342 - bilstm-biaffine - INFO - train - 133 : epoch 9, global_step 2200, loss 0.0114
+2022-01-09 07:50:31,342 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:50:47,658 - bilstm-biaffine - INFO - train - 140 : epoch 9, global_step 2200, recall 0.9734, precise 0.5298, span_f1 0.6847
+2022-01-09 07:50:47,658 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:50:51,772 - bilstm-biaffine - INFO - train - 147 : epoch 9, global_step 2200, recall 0.9040, precise 0.5030, span_f1 0.6361
+2022-01-09 07:50:52,236 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:51:18,857 - bilstm-biaffine - INFO - train - 133 : epoch 10, global_step 2310, loss 0.0106
+2022-01-09 07:51:18,857 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:51:35,219 - bilstm-biaffine - INFO - train - 140 : epoch 10, global_step 2310, recall 0.9756, precise 0.5451, span_f1 0.6977
+2022-01-09 07:51:35,220 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:51:39,299 - bilstm-biaffine - INFO - train - 147 : epoch 10, global_step 2310, recall 0.9044, precise 0.5124, span_f1 0.6440
+2022-01-09 07:51:39,791 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:52:05,740 - bilstm-biaffine - INFO - train - 133 : epoch 10, global_step 2420, loss 0.0102
+2022-01-09 07:52:05,740 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:52:21,985 - bilstm-biaffine - INFO - train - 140 : epoch 10, global_step 2420, recall 0.9801, precise 0.5483, span_f1 0.7012
+2022-01-09 07:52:21,985 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:52:26,073 - bilstm-biaffine - INFO - train - 147 : epoch 10, global_step 2420, recall 0.9099, precise 0.5163, span_f1 0.6474
+2022-01-09 07:52:26,562 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:52:52,781 - bilstm-biaffine - INFO - train - 133 : epoch 11, global_step 2530, loss 0.0098
+2022-01-09 07:52:52,782 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:53:09,024 - bilstm-biaffine - INFO - train - 140 : epoch 11, global_step 2530, recall 0.9833, precise 0.5624, span_f1 0.7131
+2022-01-09 07:53:09,025 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:53:13,106 - bilstm-biaffine - INFO - train - 147 : epoch 11, global_step 2530, recall 0.9115, precise 0.5296, span_f1 0.6579
+2022-01-09 07:53:13,592 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:53:39,646 - bilstm-biaffine - INFO - train - 133 : epoch 11, global_step 2640, loss 0.0093
+2022-01-09 07:53:39,647 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:53:55,908 - bilstm-biaffine - INFO - train - 140 : epoch 11, global_step 2640, recall 0.9830, precise 0.5767, span_f1 0.7248
+2022-01-09 07:53:55,908 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:53:59,993 - bilstm-biaffine - INFO - train - 147 : epoch 11, global_step 2640, recall 0.9069, precise 0.5468, span_f1 0.6712
+2022-01-09 07:54:00,469 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:54:26,805 - bilstm-biaffine - INFO - train - 133 : epoch 12, global_step 2750, loss 0.0091
+2022-01-09 07:54:26,805 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:54:43,062 - bilstm-biaffine - INFO - train - 140 : epoch 12, global_step 2750, recall 0.9838, precise 0.5830, span_f1 0.7302
+2022-01-09 07:54:43,063 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:54:47,148 - bilstm-biaffine - INFO - train - 147 : epoch 12, global_step 2750, recall 0.9075, precise 0.5458, span_f1 0.6711
+2022-01-09 07:55:13,416 - bilstm-biaffine - INFO - train - 133 : epoch 12, global_step 2860, loss 0.0086
+2022-01-09 07:55:13,416 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:55:29,924 - bilstm-biaffine - INFO - train - 140 : epoch 12, global_step 2860, recall 0.9870, precise 0.5893, span_f1 0.7359
+2022-01-09 07:55:29,924 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:55:34,110 - bilstm-biaffine - INFO - train - 147 : epoch 12, global_step 2860, recall 0.9107, precise 0.5614, span_f1 0.6831
+2022-01-09 07:55:34,609 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:56:01,370 - bilstm-biaffine - INFO - train - 133 : epoch 13, global_step 2970, loss 0.0084
+2022-01-09 07:56:01,370 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:56:17,782 - bilstm-biaffine - INFO - train - 140 : epoch 13, global_step 2970, recall 0.9898, precise 0.5905, span_f1 0.7375
+2022-01-09 07:56:17,782 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:56:21,952 - bilstm-biaffine - INFO - train - 147 : epoch 13, global_step 2970, recall 0.9131, precise 0.5591, span_f1 0.6813
+2022-01-09 07:56:48,587 - bilstm-biaffine - INFO - train - 133 : epoch 13, global_step 3080, loss 0.0081
+2022-01-09 07:56:48,587 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:57:04,986 - bilstm-biaffine - INFO - train - 140 : epoch 13, global_step 3080, recall 0.9884, precise 0.5989, span_f1 0.7442
+2022-01-09 07:57:04,987 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:57:09,176 - bilstm-biaffine - INFO - train - 147 : epoch 13, global_step 3080, recall 0.9118, precise 0.5677, span_f1 0.6885
+2022-01-09 07:57:09,653 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:57:36,570 - bilstm-biaffine - INFO - train - 133 : epoch 14, global_step 3190, loss 0.0077
+2022-01-09 07:57:36,570 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:57:52,951 - bilstm-biaffine - INFO - train - 140 : epoch 14, global_step 3190, recall 0.9915, precise 0.6050, span_f1 0.7488
+2022-01-09 07:57:52,951 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:57:57,115 - bilstm-biaffine - INFO - train - 147 : epoch 14, global_step 3190, recall 0.9128, precise 0.5678, span_f1 0.6884
+2022-01-09 07:58:23,933 - bilstm-biaffine - INFO - train - 133 : epoch 14, global_step 3300, loss 0.0076
+2022-01-09 07:58:23,933 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:58:40,330 - bilstm-biaffine - INFO - train - 140 : epoch 14, global_step 3300, recall 0.9926, precise 0.6065, span_f1 0.7507
+2022-01-09 07:58:40,331 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:58:44,511 - bilstm-biaffine - INFO - train - 147 : epoch 14, global_step 3300, recall 0.9128, precise 0.5704, span_f1 0.6901
+2022-01-09 07:58:45,013 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 07:59:12,077 - bilstm-biaffine - INFO - train - 133 : epoch 15, global_step 3410, loss 0.0075
+2022-01-09 07:59:12,077 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 07:59:28,468 - bilstm-biaffine - INFO - train - 140 : epoch 15, global_step 3410, recall 0.9908, precise 0.6172, span_f1 0.7585
+2022-01-09 07:59:28,468 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 07:59:32,636 - bilstm-biaffine - INFO - train - 147 : epoch 15, global_step 3410, recall 0.9121, precise 0.5709, span_f1 0.6921
+2022-01-09 07:59:33,130 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:00:00,017 - bilstm-biaffine - INFO - train - 133 : epoch 15, global_step 3520, loss 0.0070
+2022-01-09 08:00:00,018 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:00:16,399 - bilstm-biaffine - INFO - train - 140 : epoch 15, global_step 3520, recall 0.9942, precise 0.6127, span_f1 0.7551
+2022-01-09 08:00:16,399 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:00:20,589 - bilstm-biaffine - INFO - train - 147 : epoch 15, global_step 3520, recall 0.9208, precise 0.5717, span_f1 0.6928
+2022-01-09 08:00:21,081 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:00:48,308 - bilstm-biaffine - INFO - train - 133 : epoch 16, global_step 3630, loss 0.0069
+2022-01-09 08:00:48,308 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:01:04,709 - bilstm-biaffine - INFO - train - 140 : epoch 16, global_step 3630, recall 0.9934, precise 0.6249, span_f1 0.7649
+2022-01-09 08:01:04,709 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:01:08,875 - bilstm-biaffine - INFO - train - 147 : epoch 16, global_step 3630, recall 0.9130, precise 0.5784, span_f1 0.6964
+2022-01-09 08:01:09,375 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:01:36,444 - bilstm-biaffine - INFO - train - 133 : epoch 16, global_step 3740, loss 0.0069
+2022-01-09 08:01:36,444 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:01:52,817 - bilstm-biaffine - INFO - train - 140 : epoch 16, global_step 3740, recall 0.9944, precise 0.6206, span_f1 0.7619
+2022-01-09 08:01:52,817 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:01:56,992 - bilstm-biaffine - INFO - train - 147 : epoch 16, global_step 3740, recall 0.9143, precise 0.5739, span_f1 0.6935
+2022-01-09 08:02:24,381 - bilstm-biaffine - INFO - train - 133 : epoch 17, global_step 3850, loss 0.0065
+2022-01-09 08:02:24,381 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:02:40,781 - bilstm-biaffine - INFO - train - 140 : epoch 17, global_step 3850, recall 0.9934, precise 0.6281, span_f1 0.7673
+2022-01-09 08:02:40,781 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:02:44,956 - bilstm-biaffine - INFO - train - 147 : epoch 17, global_step 3850, recall 0.9153, precise 0.5812, span_f1 0.6997
+2022-01-09 08:02:45,454 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:03:12,673 - bilstm-biaffine - INFO - train - 133 : epoch 17, global_step 3960, loss 0.0067
+2022-01-09 08:03:12,673 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:03:29,083 - bilstm-biaffine - INFO - train - 140 : epoch 17, global_step 3960, recall 0.9944, precise 0.6287, span_f1 0.7682
+2022-01-09 08:03:29,083 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:03:33,261 - bilstm-biaffine - INFO - train - 147 : epoch 17, global_step 3960, recall 0.9155, precise 0.5819, span_f1 0.7004
+2022-01-09 08:03:33,755 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:04:01,185 - bilstm-biaffine - INFO - train - 133 : epoch 18, global_step 4070, loss 0.0064
+2022-01-09 08:04:01,185 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:04:17,590 - bilstm-biaffine - INFO - train - 140 : epoch 18, global_step 4070, recall 0.9941, precise 0.6353, span_f1 0.7732
+2022-01-09 08:04:17,590 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:04:21,762 - bilstm-biaffine - INFO - train - 147 : epoch 18, global_step 4070, recall 0.9120, precise 0.5907, span_f1 0.7061
+2022-01-09 08:04:22,257 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:04:49,553 - bilstm-biaffine - INFO - train - 133 : epoch 18, global_step 4180, loss 0.0062
+2022-01-09 08:04:49,553 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:05:05,946 - bilstm-biaffine - INFO - train - 140 : epoch 18, global_step 4180, recall 0.9939, precise 0.6393, span_f1 0.7760
+2022-01-09 08:05:05,946 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:05:10,126 - bilstm-biaffine - INFO - train - 147 : epoch 18, global_step 4180, recall 0.9095, precise 0.5971, span_f1 0.7107
+2022-01-09 08:05:10,618 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:05:38,297 - bilstm-biaffine - INFO - train - 133 : epoch 19, global_step 4290, loss 0.0060
+2022-01-09 08:05:38,298 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:05:54,713 - bilstm-biaffine - INFO - train - 140 : epoch 19, global_step 4290, recall 0.9947, precise 0.6396, span_f1 0.7763
+2022-01-09 08:05:54,713 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:05:58,878 - bilstm-biaffine - INFO - train - 147 : epoch 19, global_step 4290, recall 0.9131, precise 0.5965, span_f1 0.7111
+2022-01-09 08:05:59,377 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:06:26,822 - bilstm-biaffine - INFO - train - 133 : epoch 19, global_step 4400, loss 0.0061
+2022-01-09 08:06:26,822 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:06:43,233 - bilstm-biaffine - INFO - train - 140 : epoch 19, global_step 4400, recall 0.9951, precise 0.6408, span_f1 0.7772
+2022-01-09 08:06:43,233 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:06:47,409 - bilstm-biaffine - INFO - train - 147 : epoch 19, global_step 4400, recall 0.9086, precise 0.5903, span_f1 0.7049
+2022-01-09 08:07:15,173 - bilstm-biaffine - INFO - train - 133 : epoch 20, global_step 4510, loss 0.0057
+2022-01-09 08:07:15,173 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:07:31,590 - bilstm-biaffine - INFO - train - 140 : epoch 20, global_step 4510, recall 0.9958, precise 0.6437, span_f1 0.7797
+2022-01-09 08:07:31,591 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:07:35,778 - bilstm-biaffine - INFO - train - 147 : epoch 20, global_step 4510, recall 0.9116, precise 0.5962, span_f1 0.7101
+2022-01-09 08:08:03,347 - bilstm-biaffine - INFO - train - 133 : epoch 20, global_step 4620, loss 0.0059
+2022-01-09 08:08:03,347 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:08:19,742 - bilstm-biaffine - INFO - train - 140 : epoch 20, global_step 4620, recall 0.9962, precise 0.6483, span_f1 0.7833
+2022-01-09 08:08:19,742 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:08:23,927 - bilstm-biaffine - INFO - train - 147 : epoch 20, global_step 4620, recall 0.9136, precise 0.6059, span_f1 0.7175
+2022-01-09 08:08:24,430 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:08:52,267 - bilstm-biaffine - INFO - train - 133 : epoch 21, global_step 4730, loss 0.0057
+2022-01-09 08:08:52,267 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:09:08,665 - bilstm-biaffine - INFO - train - 140 : epoch 21, global_step 4730, recall 0.9957, precise 0.6535, span_f1 0.7873
+2022-01-09 08:09:08,665 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:09:12,850 - bilstm-biaffine - INFO - train - 147 : epoch 21, global_step 4730, recall 0.9125, precise 0.6060, span_f1 0.7186
+2022-01-09 08:09:13,350 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:09:41,059 - bilstm-biaffine - INFO - train - 133 : epoch 21, global_step 4840, loss 0.0053
+2022-01-09 08:09:41,059 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:09:57,453 - bilstm-biaffine - INFO - train - 140 : epoch 21, global_step 4840, recall 0.9974, precise 0.6547, span_f1 0.7883
+2022-01-09 08:09:57,453 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:10:01,639 - bilstm-biaffine - INFO - train - 147 : epoch 21, global_step 4840, recall 0.9129, precise 0.6115, span_f1 0.7208
+2022-01-09 08:10:02,136 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:10:30,300 - bilstm-biaffine - INFO - train - 133 : epoch 22, global_step 4950, loss 0.0052
+2022-01-09 08:10:30,301 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:10:46,572 - bilstm-biaffine - INFO - train - 140 : epoch 22, global_step 4950, recall 0.9970, precise 0.6646, span_f1 0.7956
+2022-01-09 08:10:46,572 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:10:50,658 - bilstm-biaffine - INFO - train - 147 : epoch 22, global_step 4950, recall 0.9138, precise 0.6089, span_f1 0.7213
+2022-01-09 08:10:51,147 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:11:18,772 - bilstm-biaffine - INFO - train - 133 : epoch 22, global_step 5060, loss 0.0054
+2022-01-09 08:11:18,772 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:11:35,369 - bilstm-biaffine - INFO - train - 140 : epoch 22, global_step 5060, recall 0.9979, precise 0.6659, span_f1 0.7965
+2022-01-09 08:11:35,369 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:11:39,497 - bilstm-biaffine - INFO - train - 147 : epoch 22, global_step 5060, recall 0.9153, precise 0.6118, span_f1 0.7228
+2022-01-09 08:11:39,989 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:12:08,943 - bilstm-biaffine - INFO - train - 133 : epoch 23, global_step 5170, loss 0.0050
+2022-01-09 08:12:08,943 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:12:25,362 - bilstm-biaffine - INFO - train - 140 : epoch 23, global_step 5170, recall 0.9976, precise 0.6853, span_f1 0.8103
+2022-01-09 08:12:25,362 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:12:29,452 - bilstm-biaffine - INFO - train - 147 : epoch 23, global_step 5170, recall 0.9152, precise 0.6263, span_f1 0.7334
+2022-01-09 08:12:29,969 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:12:58,180 - bilstm-biaffine - INFO - train - 133 : epoch 23, global_step 5280, loss 0.0050
+2022-01-09 08:12:58,180 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:13:14,493 - bilstm-biaffine - INFO - train - 140 : epoch 23, global_step 5280, recall 0.9977, precise 0.6936, span_f1 0.8163
+2022-01-09 08:13:14,493 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:13:18,617 - bilstm-biaffine - INFO - train - 147 : epoch 23, global_step 5280, recall 0.9143, precise 0.6247, span_f1 0.7328
+2022-01-09 08:13:47,223 - bilstm-biaffine - INFO - train - 133 : epoch 24, global_step 5390, loss 0.0047
+2022-01-09 08:13:47,223 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:14:03,526 - bilstm-biaffine - INFO - train - 140 : epoch 24, global_step 5390, recall 0.9982, precise 0.7015, span_f1 0.8219
+2022-01-09 08:14:03,526 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:14:07,629 - bilstm-biaffine - INFO - train - 147 : epoch 24, global_step 5390, recall 0.9105, precise 0.6333, span_f1 0.7371
+2022-01-09 08:14:08,132 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:14:36,513 - bilstm-biaffine - INFO - train - 133 : epoch 24, global_step 5500, loss 0.0046
+2022-01-09 08:14:36,514 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:14:52,789 - bilstm-biaffine - INFO - train - 140 : epoch 24, global_step 5500, recall 0.9978, precise 0.7154, span_f1 0.8313
+2022-01-09 08:14:52,789 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:14:56,875 - bilstm-biaffine - INFO - train - 147 : epoch 24, global_step 5500, recall 0.9105, precise 0.6402, span_f1 0.7428
+2022-01-09 08:14:57,361 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:15:26,008 - bilstm-biaffine - INFO - train - 133 : epoch 25, global_step 5610, loss 0.0045
+2022-01-09 08:15:26,008 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:15:42,299 - bilstm-biaffine - INFO - train - 140 : epoch 25, global_step 5610, recall 0.9978, precise 0.7114, span_f1 0.8283
+2022-01-09 08:15:42,299 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:15:46,401 - bilstm-biaffine - INFO - train - 147 : epoch 25, global_step 5610, recall 0.9136, precise 0.6361, span_f1 0.7409
+2022-01-09 08:16:14,861 - bilstm-biaffine - INFO - train - 133 : epoch 25, global_step 5720, loss 0.0042
+2022-01-09 08:16:14,861 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:16:31,170 - bilstm-biaffine - INFO - train - 140 : epoch 25, global_step 5720, recall 0.9988, precise 0.7233, span_f1 0.8368
+2022-01-09 08:16:31,171 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:16:35,264 - bilstm-biaffine - INFO - train - 147 : epoch 25, global_step 5720, recall 0.9113, precise 0.6415, span_f1 0.7449
+2022-01-09 08:16:35,767 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:17:04,646 - bilstm-biaffine - INFO - train - 133 : epoch 26, global_step 5830, loss 0.0044
+2022-01-09 08:17:04,646 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:17:20,937 - bilstm-biaffine - INFO - train - 140 : epoch 26, global_step 5830, recall 0.9991, precise 0.7329, span_f1 0.8434
+2022-01-09 08:17:20,938 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:17:25,025 - bilstm-biaffine - INFO - train - 147 : epoch 26, global_step 5830, recall 0.9113, precise 0.6457, span_f1 0.7466
+2022-01-09 08:17:25,522 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:17:54,146 - bilstm-biaffine - INFO - train - 133 : epoch 26, global_step 5940, loss 0.0039
+2022-01-09 08:17:54,146 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:18:10,442 - bilstm-biaffine - INFO - train - 140 : epoch 26, global_step 5940, recall 0.9982, precise 0.7495, span_f1 0.8542
+2022-01-09 08:18:10,443 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:18:14,536 - bilstm-biaffine - INFO - train - 147 : epoch 26, global_step 5940, recall 0.9012, precise 0.6468, span_f1 0.7458
+2022-01-09 08:18:43,426 - bilstm-biaffine - INFO - train - 133 : epoch 27, global_step 6050, loss 0.0038
+2022-01-09 08:18:43,426 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:18:59,726 - bilstm-biaffine - INFO - train - 140 : epoch 27, global_step 6050, recall 0.9988, precise 0.7678, span_f1 0.8661
+2022-01-09 08:18:59,726 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:19:03,813 - bilstm-biaffine - INFO - train - 147 : epoch 27, global_step 6050, recall 0.9069, precise 0.6752, span_f1 0.7669
+2022-01-09 08:19:04,312 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:19:33,064 - bilstm-biaffine - INFO - train - 133 : epoch 27, global_step 6160, loss 0.0035
+2022-01-09 08:19:33,064 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:19:49,350 - bilstm-biaffine - INFO - train - 140 : epoch 27, global_step 6160, recall 0.9993, precise 0.7771, span_f1 0.8724
+2022-01-09 08:19:49,350 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:19:53,432 - bilstm-biaffine - INFO - train - 147 : epoch 27, global_step 6160, recall 0.9127, precise 0.6845, span_f1 0.7749
+2022-01-09 08:19:53,924 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:20:23,129 - bilstm-biaffine - INFO - train - 133 : epoch 28, global_step 6270, loss 0.0034
+2022-01-09 08:20:23,129 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:20:39,413 - bilstm-biaffine - INFO - train - 140 : epoch 28, global_step 6270, recall 0.9984, precise 0.8029, span_f1 0.8886
+2022-01-09 08:20:39,413 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:20:43,508 - bilstm-biaffine - INFO - train - 147 : epoch 28, global_step 6270, recall 0.9074, precise 0.7027, span_f1 0.7870
+2022-01-09 08:20:44,010 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:21:12,872 - bilstm-biaffine - INFO - train - 133 : epoch 28, global_step 6380, loss 0.0032
+2022-01-09 08:21:12,872 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:21:29,163 - bilstm-biaffine - INFO - train - 140 : epoch 28, global_step 6380, recall 0.9993, precise 0.8162, span_f1 0.8968
+2022-01-09 08:21:29,163 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:21:33,248 - bilstm-biaffine - INFO - train - 147 : epoch 28, global_step 6380, recall 0.9122, precise 0.7089, span_f1 0.7910
+2022-01-09 08:21:33,738 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:22:02,867 - bilstm-biaffine - INFO - train - 133 : epoch 29, global_step 6490, loss 0.0029
+2022-01-09 08:22:02,867 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:22:19,155 - bilstm-biaffine - INFO - train - 140 : epoch 29, global_step 6490, recall 0.9995, precise 0.8099, span_f1 0.8931
+2022-01-09 08:22:19,155 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:22:23,240 - bilstm-biaffine - INFO - train - 147 : epoch 29, global_step 6490, recall 0.9108, precise 0.6985, span_f1 0.7835
+2022-01-09 08:22:52,225 - bilstm-biaffine - INFO - train - 133 : epoch 29, global_step 6600, loss 0.0031
+2022-01-09 08:22:52,225 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:23:08,506 - bilstm-biaffine - INFO - train - 140 : epoch 29, global_step 6600, recall 0.9990, precise 0.8290, span_f1 0.9047
+2022-01-09 08:23:08,506 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:23:12,592 - bilstm-biaffine - INFO - train - 147 : epoch 29, global_step 6600, recall 0.9099, precise 0.7110, span_f1 0.7923
+2022-01-09 08:23:13,090 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:23:42,424 - bilstm-biaffine - INFO - train - 133 : epoch 30, global_step 6710, loss 0.0029
+2022-01-09 08:23:42,424 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:23:58,745 - bilstm-biaffine - INFO - train - 140 : epoch 30, global_step 6710, recall 0.9995, precise 0.8246, span_f1 0.9020
+2022-01-09 08:23:58,745 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:24:02,841 - bilstm-biaffine - INFO - train - 147 : epoch 30, global_step 6710, recall 0.9094, precise 0.7093, span_f1 0.7904
+2022-01-09 08:24:32,038 - bilstm-biaffine - INFO - train - 133 : epoch 30, global_step 6820, loss 0.0028
+2022-01-09 08:24:32,039 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:24:48,332 - bilstm-biaffine - INFO - train - 140 : epoch 30, global_step 6820, recall 0.9997, precise 0.8355, span_f1 0.9086
+2022-01-09 08:24:48,333 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:24:52,422 - bilstm-biaffine - INFO - train - 147 : epoch 30, global_step 6820, recall 0.9104, precise 0.7167, span_f1 0.7956
+2022-01-09 08:24:52,920 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:25:22,425 - bilstm-biaffine - INFO - train - 133 : epoch 31, global_step 6930, loss 0.0025
+2022-01-09 08:25:22,425 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:25:38,712 - bilstm-biaffine - INFO - train - 140 : epoch 31, global_step 6930, recall 0.9995, precise 0.8420, span_f1 0.9126
+2022-01-09 08:25:38,712 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:25:42,793 - bilstm-biaffine - INFO - train - 147 : epoch 31, global_step 6930, recall 0.9138, precise 0.7269, span_f1 0.8037
+2022-01-09 08:25:43,287 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:26:12,796 - bilstm-biaffine - INFO - train - 133 : epoch 31, global_step 7040, loss 0.0026
+2022-01-09 08:26:12,796 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:26:29,064 - bilstm-biaffine - INFO - train - 140 : epoch 31, global_step 7040, recall 0.9995, precise 0.8470, span_f1 0.9155
+2022-01-09 08:26:29,064 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:26:33,147 - bilstm-biaffine - INFO - train - 147 : epoch 31, global_step 7040, recall 0.9102, precise 0.7259, span_f1 0.8017
+2022-01-09 08:27:02,810 - bilstm-biaffine - INFO - train - 133 : epoch 32, global_step 7150, loss 0.0024
+2022-01-09 08:27:02,810 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:27:19,254 - bilstm-biaffine - INFO - train - 140 : epoch 32, global_step 7150, recall 0.9996, precise 0.8529, span_f1 0.9189
+2022-01-09 08:27:19,254 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:27:23,383 - bilstm-biaffine - INFO - train - 147 : epoch 32, global_step 7150, recall 0.9141, precise 0.7358, span_f1 0.8092
+2022-01-09 08:27:23,884 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:27:52,962 - bilstm-biaffine - INFO - train - 133 : epoch 32, global_step 7260, loss 0.0023
+2022-01-09 08:27:52,962 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:28:09,261 - bilstm-biaffine - INFO - train - 140 : epoch 32, global_step 7260, recall 0.9997, precise 0.8549, span_f1 0.9202
+2022-01-09 08:28:09,261 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:28:13,342 - bilstm-biaffine - INFO - train - 147 : epoch 32, global_step 7260, recall 0.9150, precise 0.7398, span_f1 0.8113
+2022-01-09 08:28:13,838 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:28:43,157 - bilstm-biaffine - INFO - train - 133 : epoch 33, global_step 7370, loss 0.0023
+2022-01-09 08:28:43,157 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:28:59,408 - bilstm-biaffine - INFO - train - 140 : epoch 33, global_step 7370, recall 0.9996, precise 0.8620, span_f1 0.9243
+2022-01-09 08:28:59,409 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:29:03,497 - bilstm-biaffine - INFO - train - 147 : epoch 33, global_step 7370, recall 0.9147, precise 0.7348, span_f1 0.8093
+2022-01-09 08:29:32,720 - bilstm-biaffine - INFO - train - 133 : epoch 33, global_step 7480, loss 0.0021
+2022-01-09 08:29:32,720 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:29:48,990 - bilstm-biaffine - INFO - train - 140 : epoch 33, global_step 7480, recall 0.9997, precise 0.8746, span_f1 0.9318
+2022-01-09 08:29:48,990 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:29:53,066 - bilstm-biaffine - INFO - train - 147 : epoch 33, global_step 7480, recall 0.9096, precise 0.7625, span_f1 0.8240
+2022-01-09 08:29:53,575 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:30:23,047 - bilstm-biaffine - INFO - train - 133 : epoch 34, global_step 7590, loss 0.0021
+2022-01-09 08:30:23,047 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:30:39,315 - bilstm-biaffine - INFO - train - 140 : epoch 34, global_step 7590, recall 0.9996, precise 0.8760, span_f1 0.9324
+2022-01-09 08:30:39,315 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:30:43,407 - bilstm-biaffine - INFO - train - 147 : epoch 34, global_step 7590, recall 0.9097, precise 0.7561, span_f1 0.8198
+2022-01-09 08:31:12,811 - bilstm-biaffine - INFO - train - 133 : epoch 34, global_step 7700, loss 0.0020
+2022-01-09 08:31:12,811 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:31:29,079 - bilstm-biaffine - INFO - train - 140 : epoch 34, global_step 7700, recall 0.9996, precise 0.8753, span_f1 0.9323
+2022-01-09 08:31:29,080 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:31:33,163 - bilstm-biaffine - INFO - train - 147 : epoch 34, global_step 7700, recall 0.9108, precise 0.7467, span_f1 0.8149
+2022-01-09 08:32:02,917 - bilstm-biaffine - INFO - train - 133 : epoch 35, global_step 7810, loss 0.0019
+2022-01-09 08:32:02,917 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:32:19,165 - bilstm-biaffine - INFO - train - 140 : epoch 35, global_step 7810, recall 0.9998, precise 0.8827, span_f1 0.9363
+2022-01-09 08:32:19,165 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:32:23,240 - bilstm-biaffine - INFO - train - 147 : epoch 35, global_step 7810, recall 0.9127, precise 0.7522, span_f1 0.8192
+2022-01-09 08:32:52,653 - bilstm-biaffine - INFO - train - 133 : epoch 35, global_step 7920, loss 0.0018
+2022-01-09 08:32:52,653 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:33:08,953 - bilstm-biaffine - INFO - train - 140 : epoch 35, global_step 7920, recall 0.9997, precise 0.8910, span_f1 0.9411
+2022-01-09 08:33:08,953 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:33:13,041 - bilstm-biaffine - INFO - train - 147 : epoch 35, global_step 7920, recall 0.9130, precise 0.7679, span_f1 0.8286
+2022-01-09 08:33:13,544 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:33:43,335 - bilstm-biaffine - INFO - train - 133 : epoch 36, global_step 8030, loss 0.0018
+2022-01-09 08:33:43,335 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:33:59,615 - bilstm-biaffine - INFO - train - 140 : epoch 36, global_step 8030, recall 0.9998, precise 0.8951, span_f1 0.9435
+2022-01-09 08:33:59,616 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:34:03,699 - bilstm-biaffine - INFO - train - 147 : epoch 36, global_step 8030, recall 0.9165, precise 0.7667, span_f1 0.8295
+2022-01-09 08:34:04,191 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:34:33,803 - bilstm-biaffine - INFO - train - 133 : epoch 36, global_step 8140, loss 0.0017
+2022-01-09 08:34:33,803 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:34:50,235 - bilstm-biaffine - INFO - train - 140 : epoch 36, global_step 8140, recall 0.9996, precise 0.9027, span_f1 0.9477
+2022-01-09 08:34:50,235 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:34:54,328 - bilstm-biaffine - INFO - train - 147 : epoch 36, global_step 8140, recall 0.9125, precise 0.7792, span_f1 0.8359
+2022-01-09 08:34:54,828 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:35:25,293 - bilstm-biaffine - INFO - train - 133 : epoch 37, global_step 8250, loss 0.0017
+2022-01-09 08:35:25,293 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:35:41,588 - bilstm-biaffine - INFO - train - 140 : epoch 37, global_step 8250, recall 0.9997, precise 0.9005, span_f1 0.9465
+2022-01-09 08:35:41,588 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:35:45,684 - bilstm-biaffine - INFO - train - 147 : epoch 37, global_step 8250, recall 0.9144, precise 0.7650, span_f1 0.8279
+2022-01-09 08:36:15,959 - bilstm-biaffine - INFO - train - 133 : epoch 37, global_step 8360, loss 0.0017
+2022-01-09 08:36:15,959 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:36:32,257 - bilstm-biaffine - INFO - train - 140 : epoch 37, global_step 8360, recall 0.9998, precise 0.8973, span_f1 0.9447
+2022-01-09 08:36:32,257 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:36:36,346 - bilstm-biaffine - INFO - train - 147 : epoch 37, global_step 8360, recall 0.9114, precise 0.7652, span_f1 0.8265
+2022-01-09 08:37:06,846 - bilstm-biaffine - INFO - train - 133 : epoch 38, global_step 8470, loss 0.0015
+2022-01-09 08:37:06,846 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:37:23,149 - bilstm-biaffine - INFO - train - 140 : epoch 38, global_step 8470, recall 0.9998, precise 0.9095, span_f1 0.9516
+2022-01-09 08:37:23,149 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:37:27,234 - bilstm-biaffine - INFO - train - 147 : epoch 38, global_step 8470, recall 0.9113, precise 0.7803, span_f1 0.8358
+2022-01-09 08:37:57,590 - bilstm-biaffine - INFO - train - 133 : epoch 38, global_step 8580, loss 0.0015
+2022-01-09 08:37:57,590 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:38:13,880 - bilstm-biaffine - INFO - train - 140 : epoch 38, global_step 8580, recall 0.9997, precise 0.9072, span_f1 0.9503
+2022-01-09 08:38:13,880 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:38:17,967 - bilstm-biaffine - INFO - train - 147 : epoch 38, global_step 8580, recall 0.9146, precise 0.7814, span_f1 0.8382
+2022-01-09 08:38:18,464 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:38:49,054 - bilstm-biaffine - INFO - train - 133 : epoch 39, global_step 8690, loss 0.0016
+2022-01-09 08:38:49,054 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:39:05,356 - bilstm-biaffine - INFO - train - 140 : epoch 39, global_step 8690, recall 0.9999, precise 0.9117, span_f1 0.9528
+2022-01-09 08:39:05,356 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:39:09,442 - bilstm-biaffine - INFO - train - 147 : epoch 39, global_step 8690, recall 0.9146, precise 0.7834, span_f1 0.8389
+2022-01-09 08:39:09,939 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:39:40,299 - bilstm-biaffine - INFO - train - 133 : epoch 39, global_step 8800, loss 0.0013
+2022-01-09 08:39:40,299 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:39:56,600 - bilstm-biaffine - INFO - train - 140 : epoch 39, global_step 8800, recall 0.9999, precise 0.9102, span_f1 0.9520
+2022-01-09 08:39:56,600 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:40:00,693 - bilstm-biaffine - INFO - train - 147 : epoch 39, global_step 8800, recall 0.9151, precise 0.7734, span_f1 0.8335
+2022-01-09 08:40:31,494 - bilstm-biaffine - INFO - train - 133 : epoch 40, global_step 8910, loss 0.0014
+2022-01-09 08:40:31,494 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:40:47,780 - bilstm-biaffine - INFO - train - 140 : epoch 40, global_step 8910, recall 0.9999, precise 0.9168, span_f1 0.9555
+2022-01-09 08:40:47,780 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:40:51,891 - bilstm-biaffine - INFO - train - 147 : epoch 40, global_step 8910, recall 0.9139, precise 0.7846, span_f1 0.8393
+2022-01-09 08:40:52,395 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:41:23,003 - bilstm-biaffine - INFO - train - 133 : epoch 40, global_step 9020, loss 0.0014
+2022-01-09 08:41:23,003 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:41:39,299 - bilstm-biaffine - INFO - train - 140 : epoch 40, global_step 9020, recall 0.9998, precise 0.9221, span_f1 0.9584
+2022-01-09 08:41:39,299 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:41:43,391 - bilstm-biaffine - INFO - train - 147 : epoch 40, global_step 9020, recall 0.9120, precise 0.7900, span_f1 0.8420
+2022-01-09 08:41:43,884 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:42:14,756 - bilstm-biaffine - INFO - train - 133 : epoch 41, global_step 9130, loss 0.0013
+2022-01-09 08:42:14,756 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:42:31,053 - bilstm-biaffine - INFO - train - 140 : epoch 41, global_step 9130, recall 0.9999, precise 0.9269, span_f1 0.9613
+2022-01-09 08:42:31,053 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:42:35,134 - bilstm-biaffine - INFO - train - 147 : epoch 41, global_step 9130, recall 0.9125, precise 0.7971, span_f1 0.8465
+2022-01-09 08:42:35,633 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:43:06,322 - bilstm-biaffine - INFO - train - 133 : epoch 41, global_step 9240, loss 0.0013
+2022-01-09 08:43:06,322 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:43:22,603 - bilstm-biaffine - INFO - train - 140 : epoch 41, global_step 9240, recall 0.9999, precise 0.9270, span_f1 0.9613
+2022-01-09 08:43:22,603 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:43:26,691 - bilstm-biaffine - INFO - train - 147 : epoch 41, global_step 9240, recall 0.9118, precise 0.7918, span_f1 0.8429
+2022-01-09 08:43:57,663 - bilstm-biaffine - INFO - train - 133 : epoch 42, global_step 9350, loss 0.0013
+2022-01-09 08:43:57,663 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:44:13,952 - bilstm-biaffine - INFO - train - 140 : epoch 42, global_step 9350, recall 0.9999, precise 0.9259, span_f1 0.9606
+2022-01-09 08:44:13,952 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:44:18,045 - bilstm-biaffine - INFO - train - 147 : epoch 42, global_step 9350, recall 0.9142, precise 0.7974, span_f1 0.8473
+2022-01-09 08:44:18,542 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:44:49,268 - bilstm-biaffine - INFO - train - 133 : epoch 42, global_step 9460, loss 0.0013
+2022-01-09 08:44:49,269 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:45:05,551 - bilstm-biaffine - INFO - train - 140 : epoch 42, global_step 9460, recall 0.9999, precise 0.9335, span_f1 0.9649
+2022-01-09 08:45:05,551 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:45:09,635 - bilstm-biaffine - INFO - train - 147 : epoch 42, global_step 9460, recall 0.9133, precise 0.8015, span_f1 0.8498
+2022-01-09 08:45:10,133 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:45:41,180 - bilstm-biaffine - INFO - train - 133 : epoch 43, global_step 9570, loss 0.0012
+2022-01-09 08:45:41,180 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:45:57,457 - bilstm-biaffine - INFO - train - 140 : epoch 43, global_step 9570, recall 0.9999, precise 0.9310, span_f1 0.9635
+2022-01-09 08:45:57,457 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:46:01,539 - bilstm-biaffine - INFO - train - 147 : epoch 43, global_step 9570, recall 0.9132, precise 0.7948, span_f1 0.8458
+2022-01-09 08:46:32,417 - bilstm-biaffine - INFO - train - 133 : epoch 43, global_step 9680, loss 0.0011
+2022-01-09 08:46:32,417 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:46:48,720 - bilstm-biaffine - INFO - train - 140 : epoch 43, global_step 9680, recall 1.0000, precise 0.9350, span_f1 0.9656
+2022-01-09 08:46:48,720 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:46:52,808 - bilstm-biaffine - INFO - train - 147 : epoch 43, global_step 9680, recall 0.9114, precise 0.7986, span_f1 0.8471
+2022-01-09 08:47:23,982 - bilstm-biaffine - INFO - train - 133 : epoch 44, global_step 9790, loss 0.0012
+2022-01-09 08:47:23,982 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:47:40,296 - bilstm-biaffine - INFO - train - 140 : epoch 44, global_step 9790, recall 0.9999, precise 0.9355, span_f1 0.9659
+2022-01-09 08:47:40,296 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:47:44,386 - bilstm-biaffine - INFO - train - 147 : epoch 44, global_step 9790, recall 0.9131, precise 0.7977, span_f1 0.8475
+2022-01-09 08:48:15,399 - bilstm-biaffine - INFO - train - 133 : epoch 44, global_step 9900, loss 0.0011
+2022-01-09 08:48:15,399 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:48:31,705 - bilstm-biaffine - INFO - train - 140 : epoch 44, global_step 9900, recall 1.0000, precise 0.9353, span_f1 0.9658
+2022-01-09 08:48:31,705 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:48:35,795 - bilstm-biaffine - INFO - train - 147 : epoch 44, global_step 9900, recall 0.9133, precise 0.8020, span_f1 0.8496
+2022-01-09 08:49:07,032 - bilstm-biaffine - INFO - train - 133 : epoch 45, global_step 10010, loss 0.0011
+2022-01-09 08:49:07,032 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:49:23,316 - bilstm-biaffine - INFO - train - 140 : epoch 45, global_step 10010, recall 1.0000, precise 0.9385, span_f1 0.9675
+2022-01-09 08:49:23,316 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:49:27,400 - bilstm-biaffine - INFO - train - 147 : epoch 45, global_step 10010, recall 0.9141, precise 0.8051, span_f1 0.8522
+2022-01-09 08:49:27,882 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:49:58,967 - bilstm-biaffine - INFO - train - 133 : epoch 45, global_step 10120, loss 0.0011
+2022-01-09 08:49:58,967 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:50:15,475 - bilstm-biaffine - INFO - train - 140 : epoch 45, global_step 10120, recall 1.0000, precise 0.9394, span_f1 0.9680
+2022-01-09 08:50:15,475 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:50:19,559 - bilstm-biaffine - INFO - train - 147 : epoch 45, global_step 10120, recall 0.9145, precise 0.8070, span_f1 0.8534
+2022-01-09 08:50:20,054 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:50:51,176 - bilstm-biaffine - INFO - train - 133 : epoch 46, global_step 10230, loss 0.0011
+2022-01-09 08:50:51,176 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:51:07,447 - bilstm-biaffine - INFO - train - 140 : epoch 46, global_step 10230, recall 1.0000, precise 0.9407, span_f1 0.9687
+2022-01-09 08:51:07,447 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:51:11,527 - bilstm-biaffine - INFO - train - 147 : epoch 46, global_step 10230, recall 0.9141, precise 0.8049, span_f1 0.8521
+2022-01-09 08:51:42,493 - bilstm-biaffine - INFO - train - 133 : epoch 46, global_step 10340, loss 0.0010
+2022-01-09 08:51:42,493 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:51:58,802 - bilstm-biaffine - INFO - train - 140 : epoch 46, global_step 10340, recall 1.0000, precise 0.9409, span_f1 0.9688
+2022-01-09 08:51:58,802 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:52:02,892 - bilstm-biaffine - INFO - train - 147 : epoch 46, global_step 10340, recall 0.9145, precise 0.8079, span_f1 0.8540
+2022-01-09 08:52:03,399 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:52:34,637 - bilstm-biaffine - INFO - train - 133 : epoch 47, global_step 10450, loss 0.0010
+2022-01-09 08:52:34,637 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:52:50,907 - bilstm-biaffine - INFO - train - 140 : epoch 47, global_step 10450, recall 1.0000, precise 0.9437, span_f1 0.9703
+2022-01-09 08:52:50,907 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:52:54,989 - bilstm-biaffine - INFO - train - 147 : epoch 47, global_step 10450, recall 0.9150, precise 0.8099, span_f1 0.8555
+2022-01-09 08:52:55,489 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:53:26,628 - bilstm-biaffine - INFO - train - 133 : epoch 47, global_step 10560, loss 0.0010
+2022-01-09 08:53:26,628 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:53:42,905 - bilstm-biaffine - INFO - train - 140 : epoch 47, global_step 10560, recall 1.0000, precise 0.9460, span_f1 0.9716
+2022-01-09 08:53:42,905 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:53:46,988 - bilstm-biaffine - INFO - train - 147 : epoch 47, global_step 10560, recall 0.9139, precise 0.8118, span_f1 0.8562
+2022-01-09 08:53:47,484 - bilstm-biaffine - INFO - train - 157 : -----save the best model----
+2022-01-09 08:54:19,001 - bilstm-biaffine - INFO - train - 133 : epoch 48, global_step 10670, loss 0.0010
+2022-01-09 08:54:19,001 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:54:35,262 - bilstm-biaffine - INFO - train - 140 : epoch 48, global_step 10670, recall 1.0000, precise 0.9435, span_f1 0.9702
+2022-01-09 08:54:35,262 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:54:39,344 - bilstm-biaffine - INFO - train - 147 : epoch 48, global_step 10670, recall 0.9131, precise 0.8071, span_f1 0.8530
+2022-01-09 08:55:10,598 - bilstm-biaffine - INFO - train - 133 : epoch 48, global_step 10780, loss 0.0010
+2022-01-09 08:55:10,598 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:55:26,875 - bilstm-biaffine - INFO - train - 140 : epoch 48, global_step 10780, recall 1.0000, precise 0.9427, span_f1 0.9696
+2022-01-09 08:55:26,875 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:55:30,956 - bilstm-biaffine - INFO - train - 147 : epoch 48, global_step 10780, recall 0.9134, precise 0.8086, span_f1 0.8540
+2022-01-09 08:56:02,504 - bilstm-biaffine - INFO - train - 133 : epoch 49, global_step 10890, loss 0.0009
+2022-01-09 08:56:02,504 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:56:18,781 - bilstm-biaffine - INFO - train - 140 : epoch 49, global_step 10890, recall 1.0000, precise 0.9426, span_f1 0.9697
+2022-01-09 08:56:18,781 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:56:22,862 - bilstm-biaffine - INFO - train - 147 : epoch 49, global_step 10890, recall 0.9139, precise 0.8081, span_f1 0.8540
+2022-01-09 08:56:54,469 - bilstm-biaffine - INFO - train - 133 : epoch 49, global_step 11000, loss 0.0010
+2022-01-09 08:56:54,469 - bilstm-biaffine - INFO - train - 136 : -----evaluate train set : ----
+2022-01-09 08:57:10,769 - bilstm-biaffine - INFO - train - 140 : epoch 49, global_step 11000, recall 1.0000, precise 0.9432, span_f1 0.9701
+2022-01-09 08:57:10,769 - bilstm-biaffine - INFO - train - 143 : -----evaluate test set : ----
+2022-01-09 08:57:14,853 - bilstm-biaffine - INFO - train - 147 : epoch 49, global_step 11000, recall 0.9146, precise 0.8085, span_f1 0.8544
