@@ -36,7 +36,8 @@ def parse_arguments(parser):
     parser.add_argument('--digit2zero', action="store_true", default=True)
     parser.add_argument('--dataset', type=str, default="conll03")
     parser.add_argument('--affix', type=str, default="sd")
-    parser.add_argument('--embedding_file', type=str, default="/home/xhsun/Desktop/NER_Parsing/glove.6B.100d.txt")
+    parser.add_argument('--path_folder', type=str, default='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/W-NUT17/Spacy')
+    parser.add_argument('--embedding_file', type=str, default="/home/xhsun/Desktop/NER_Parsing/pcode/glove.6B.100d.txt")
     parser.add_argument('--embedding_dim', type=int, default=100)
     parser.add_argument('--optimizer', type=str, default="sgd")
     parser.add_argument('--learning_rate', type=float, default=0.2) ##only for sgd now

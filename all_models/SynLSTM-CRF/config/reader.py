@@ -70,7 +70,7 @@ class Reader:
         print("Reading file: " + file)
         insts = []
         # vocab = set() ## build the vocabulary
-        with open(file, 'r', encoding='utf-8') as f:
+        with open(file, 'r', encoding='utf-8') as f: 
             words = []
             labels = []
             tags = []

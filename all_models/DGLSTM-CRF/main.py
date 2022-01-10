@@ -15,6 +15,19 @@ from typing import List
 from common.instance import Instance
 from termcolor import colored
 import os
+import logging
+logger=logging.getLogger('main')
+logger.setLevel(logging.INFO)
+fh=logging.FileHandler('log.txt','w')
+fh.setLevel(logging.INFO)
+ch=logging.StreamHandler()
+ch.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(funcName)s - %(lineno)d : %(message)s')
+fh.setFormatter(formatter)
+ch.setFormatter(formatter)
+logger.addHandler(fh)
+logger.addHandler(ch)
+
 
 save_dir='/home/xhsun/Desktop/NER_Parsing/train_models/DGLSTM/'
 
@@ -24,7 +37,7 @@ def setSeed(opt, seed):
     np.random.seed(seed)
     torch.manual_seed(seed)
     if opt.device.startswith("cuda"):
-        print("using GPU...", torch.cuda.current_device())
+        logger.info("using GPU...", torch.cuda.current_device())
         torch.cuda.manual_seed(seed)
         torch.cuda.manual_seed_all(seed)
 
@@ -37,8 +50,9 @@ def parse_arguments(parser):
     parser.add_argument('--digit2zero', action="store_true", default=True)
     parser.add_argument('--dataset', type=str, default="ontonotes")
     parser.add_argument('--affix', type=str, default="sd")
-    parser.add_argument('--path_folder', type=str, default='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/CoNLL03/Stanza')
-    parser.add_argument('--embedding_file', type=str, default="/home/xhsun/Desktop/NER_Parsing/glove.6B.100d.txt")
+    #parser.add_argument('--path_folder', type=str, default='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NCBI/Spacy')
+    parser.add_argument('--path_folder', type=str, default='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NoiseCoNLL03')
+    parser.add_argument('--embedding_file', type=str, default="/home/xhsun/Desktop/NER_Parsing/pcode/glove.6B.100d.txt")
     # parser.add_argument('--embedding_file', type=str, default=None)
     parser.add_argument('--embedding_dim', type=int, default=100)
     parser.add_argument('--optimizer', type=str, default="sgd")
@@ -81,20 +95,20 @@ def parse_arguments(parser):
 
     args = parser.parse_args()
     for k in args.__dict__:
-        print(k + ": " + str(args.__dict__[k]))
+        logger.info(k + ": " + str(args.__dict__[k]))
     return args
 
 
 def get_optimizer(config: Config, model: nn.Module):
     params = model.parameters()
     if config.optimizer.lower() == "sgd":
-        print(colored("Using SGD: lr is: {}, L2 regularization is: {}".format(config.learning_rate, config.l2), 'yellow'))
+        logger.info(colored("Using SGD: lr is: {}, L2 regularization is: {}".format(config.learning_rate, config.l2), 'yellow'))
         return optim.SGD(params, lr=config.learning_rate, weight_decay=float(config.l2))
     elif config.optimizer.lower() == "adam":
-        print(colored("Using Adam", 'yellow'))
+        logger.info(colored("Using Adam", 'yellow'))
         return optim.Adam(params)
     else:
-        print("Illegal optimizer: {}".format(config.optimizer))
+        logger.info("Illegal optimizer: {}".format(config.optimizer))
         exit(1)
 
 def batching_list_instances(config: Config, insts:List[Instance]):
@@ -114,26 +128,26 @@ def learn_from_insts(config:Config, epoch: int, train_insts, dev_insts, test_ins
     model = NNCRF(config)
     optimizer = get_optimizer(config, model)
     train_num = len(train_insts)
-    print("number of instances: %d" % (train_num))
-    print(colored("[Shuffled] Shuffle the training instance ids", "red"))
+    logger.info("number of instances: %d" % (train_num))
+    logger.info(colored("[Shuffled] Shuffle the training instance ids", "red"))
     random.shuffle(train_insts)
 
     # ##################################################
     # lengths_of_this_batch=[]
     # for i in range(10):
     #     lengths_of_this_batch.append(len(train_insts[i].input.words))
-    #     print(train_insts[i].input.words,len(train_insts[i].input.words))
-    #     print('-'*100)
-    # print(sorted(lengths_of_this_batch))
+    #     logger.info(train_insts[i].input.words,len(train_insts[i].input.words))
+    #     logger.info('-'*100)
+    # logger.info(sorted(lengths_of_this_batch))
     # ##################################################
 
 
     batched_data = batching_list_instances(config, train_insts)
 
     # ##################################################
-    # print(batched_data[0][0],len(batched_data))
+    # logger.info(batched_data[0][0],len(batched_data))
     # for t in batched_data[0][0]:
-    #     print(t.size())
+    #     logger.info(t.size())
     # ##################################################
 
     dev_batches = batching_list_instances(config, dev_insts)
@@ -148,7 +162,7 @@ def learn_from_insts(config:Config, epoch: int, train_insts, dev_insts, test_ins
             config.gcn_mlp_layers) + ")"
     model_name = save_dir+"model_files/lstm_{}_{}_crf_{}_{}_{}_dep_{}_elmo_{}_{}_gate_{}_epoch_{}_lr_{}_comb_{}.m".format(config.num_lstm_layer, config.hidden_dim, config.dataset, config.affix, config.train_num, dep_model_name, config.context_emb.name, config.optimizer.lower(), config.edge_gate, epoch, config.learning_rate, config.interaction_func)
     res_name = save_dir+"results/lstm_{}_{}_crf_{}_{}_{}_dep_{}_elmo_{}_{}_gate_{}_epoch_{}_lr_{}_comb_{}.results".format(config.num_lstm_layer, config.hidden_dim, config.dataset, config.affix, config.train_num, dep_model_name, config.context_emb.name, config.optimizer.lower(), config.edge_gate, epoch, config.learning_rate, config.interaction_func)
-    print("[Info] The model will be saved to: %s, please ensure models folder exist" % (model_name))
+    logger.info("[Info] The model will be saved to: %s, please ensure models folder exist" % (model_name))
     if not os.path.exists(save_dir+"model_files"):
         os.makedirs(save_dir+"model_files",exist_ok=True)
     if not os.path.exists(save_dir+"results"):
@@ -173,14 +187,14 @@ def learn_from_insts(config:Config, epoch: int, train_insts, dev_insts, test_ins
             model.zero_grad()
 
         end_time = time.time()
-        print("Epoch %d: %.5f, Time is %.2fs" % (i, epoch_loss, end_time - start_time), flush=True)
+        logger.info("Epoch %d: %.5f, Time is %.2fs" % (i, epoch_loss, end_time - start_time))
 
         if i + 1 >= config.eval_epoch:
             model.eval()
             dev_metrics = evaluate(config, model, dev_batches, "dev", dev_insts)
             test_metrics = evaluate(config, model, test_batches, "test", test_insts)
             if dev_metrics[2] > best_dev[0]:
-                print("saving the best model...")
+                logger.info("saving the best model...")
                 best_dev[0] = dev_metrics[2]
                 best_dev[1] = i
                 best_test[0] = test_metrics[2]
@@ -189,9 +203,9 @@ def learn_from_insts(config:Config, epoch: int, train_insts, dev_insts, test_ins
                 write_results(res_name, test_insts)
             model.zero_grad()
 
-    print("The best dev: %.2f" % (best_dev[0]))
-    print("The corresponding test: %.2f" % (best_test[0]))
-    print("Final testing.")
+    logger.info("The best dev: %.2f" % (best_dev[0]))
+    logger.info("The corresponding test: %.2f" % (best_test[0]))
+    logger.info("Final testing.")
     model.load_state_dict(torch.load(model_name))
     model.eval()
     evaluate(config, model, test_batches, "test", test_insts)
@@ -214,7 +228,7 @@ def evaluate(config:Config, model: NNCRF, batch_insts_ids, name:str, insts: List
     precision = p * 1.0 / total_predict * 100 if total_predict != 0 else 0
     recall = p * 1.0 / total_entity * 100 if total_entity != 0 else 0
     fscore = 2.0 * precision * recall / (precision + recall) if precision != 0 or recall != 0 else 0
-    print("[%s set] Precision: %.2f, Recall: %.2f, F1: %.2f" % (name, precision, recall,fscore), flush=True)
+    logger.info("[%s set] Precision: %.2f, Recall: %.2f, F1: %.2f" % (name, precision, recall,fscore))
     return [precision, recall, fscore]
 
 
@@ -280,7 +294,7 @@ def main():
     tests = reader.read_conll(conf.test_file, conf.test_num, False)
 
     if conf.context_emb != ContextEmb.none:
-        print('Loading the {} vectors for all datasets.'.format(conf.context_emb.name))
+        logger.info('Loading the {} vectors for all datasets.'.format(conf.context_emb.name))
         conf.context_emb_size = reader.load_elmo_vec(conf.train_file.replace(".sd", "").replace(".ud", "").replace(".sud", "").replace(".predsd", "").replace(".predud", "").replace(".stud", "").replace(".ssd", "") + "."+conf.context_emb.name+".vec", trains)
         reader.load_elmo_vec(conf.dev_file.replace(".sd", "").replace(".ud", "").replace(".sud", "").replace(".predsd", "").replace(".predud", "").replace(".stud", "").replace(".ssd", "")  + "."+conf.context_emb.name+".vec", devs)
         reader.load_elmo_vec(conf.test_file.replace(".sd", "").replace(".ud", "").replace(".sud", "").replace(".predsd", "").replace(".predud", "").replace(".stud", "").replace(".ssd", "")  + "."+conf.context_emb.name+".vec", tests)
@@ -289,8 +303,8 @@ def main():
     conf.build_label_idx(trains)
 
     conf.build_deplabel_idx(trains + devs + tests)
-    print("# deplabels: ", len(conf.deplabels))
-    print("dep label 2idx: ", conf.deplabel2idx)
+    logger.info("# deplabels: ", len(conf.deplabels))
+    logger.info("dep label 2idx: ", conf.deplabel2idx)
 
 
     conf.build_word_idx(trains, devs, tests)
@@ -298,11 +312,11 @@ def main():
     conf.map_insts_ids(trains + devs + tests)
 
 
-    print("num chars: " + str(conf.num_char))
-    # print(str(config.char2idx))
+    logger.info("num chars: " + str(conf.num_char))
+    # logger.info(str(config.char2idx))
 
-    print("num words: " + str(len(conf.word2idx)))
-    # print(config.word2idx)
+    logger.info("num words: " + str(len(conf.word2idx)))
+    # logger.info(config.word2idx)
     if opt.mode == "train":
         if conf.train_num != -1:
             random.shuffle(trains)
@@ -313,7 +327,7 @@ def main():
         test_model(conf, tests)
         # pass
 
-    print(opt.mode)
+    logger.info(opt.mode)
 
 if __name__ == "__main__":
     main()

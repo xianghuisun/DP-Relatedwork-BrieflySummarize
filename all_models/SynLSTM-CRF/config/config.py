@@ -33,7 +33,7 @@ class InteractionFunction(Enum):
     addition = 1
     mlp = 2
 
-path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/CoNLL03/Stanza'
+path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NCBI/Spacy'
 
 class Config:
     def __init__(self, args):
@@ -68,12 +68,12 @@ class Config:
 
         self.affix = args.affix
         train_affix = self.affix.replace("pred", "") if "pred" in self.affix else self.affix
-        # self.train_file = "data/" + self.dataset + "/train."+train_affix+".conllx"
-        # self.dev_file = "data/" + self.dataset + "/dev."+train_affix+".conllx"
-        # self.test_file = "data/" + self.dataset + "/test."+self.affix+".conllx"
-        self.train_file = os.path.join(path_folder,'train.word.bmes.conllx')
-        self.dev_file = os.path.join(path_folder,'dev.word.bmes.conllx')
-        self.test_file = os.path.join(path_folder,'test.word.bmes.conllx')
+        # self.train_file = os.path.join(args.path_folder,"train."+train_affix+".conllx")
+        # self.dev_file = os.path.join(args.path_folder,"dev."+train_affix+".conllx")
+        # self.test_file = os.path.join(args.path_folder,"test."+self.affix+".conllx")
+        self.train_file = os.path.join(path_folder,'train.conllx')
+        self.dev_file = os.path.join(path_folder,'test.conllx')
+        self.test_file = os.path.join(path_folder,'test.conllx')
 
         self.label2idx = {}
         self.idx2labels = []

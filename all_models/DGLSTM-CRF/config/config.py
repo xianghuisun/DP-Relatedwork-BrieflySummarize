@@ -30,7 +30,7 @@ class InteractionFunction(Enum):
     addition = 1
     mlp = 2
 
-path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/CoNLL03/Stanza'
+path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NoiseCoNLL03'
 
 class Config:
     def __init__(self, args):
@@ -68,9 +68,9 @@ class Config:
         # self.train_file = os.path.join(args.path_folder,"train."+train_affix+".conllx")
         # self.dev_file = os.path.join(args.path_folder,"dev."+train_affix+".conllx")
         # self.test_file = os.path.join(args.path_folder,"test."+self.affix+".conllx")
-        self.train_file = os.path.join(path_folder,'train.word.bmes.conllx')
-        self.dev_file = os.path.join(path_folder,'dev.word.bmes.conllx')
-        self.test_file = os.path.join(path_folder,'test.word.bmes.conllx')
+        self.train_file = os.path.join(path_folder,'train.conllx')
+        self.dev_file = os.path.join(path_folder,'test.conllx')
+        self.test_file = os.path.join(path_folder,'test.conllx')
         
         self.label2idx = {}
         self.idx2labels = []
