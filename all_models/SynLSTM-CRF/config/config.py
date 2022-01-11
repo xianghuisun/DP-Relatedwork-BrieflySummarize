@@ -33,7 +33,8 @@ class InteractionFunction(Enum):
     addition = 1
     mlp = 2
 
-path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NCBI/Spacy'
+#path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NCBI/Spacy'
+path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NoiseCoNLL03'
 
 class Config:
     def __init__(self, args):
