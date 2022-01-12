@@ -1,0 +1,159 @@
+2022-01-12 20:23:45,896 - main - INFO - <module> - 51 : Using device cuda
+2022-01-12 20:23:46,247 - main - INFO - main - 198 : Tag scheme : B-Disease I-Disease
+2022-01-12 20:23:46,247 - main - INFO - main - 199 : Tag has been saved in /home/xhsun/Desktop/NER_Parsing/train_models/baseline_models/label.json
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : bert_model_name_or_path:/home/xhsun/NLP/huggingfaceModels/English/bert-base-uncased
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : file_path:/home/xhsun/Desktop/gitRepositories/ADP2NER/data/NCBI
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : save_dir:/home/xhsun/Desktop/NER_Parsing/train_models/baseline_models
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : ckpt:None
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : learning_rate:3e-05
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : weight_decay:1e-05
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : epochs:5
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : train_batch_size:64
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : dev_batch_size:64
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : max_grad_norm:1
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : warmup_proportion:0.1
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : max_len:196
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : patience:10
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : seed:666
+2022-01-12 20:23:46,263 - main - INFO - main - 229 : num_workers:1
+2022-01-12 20:23:46,263 - main - INFO - train - 61 : n_tags : 3
+2022-01-12 20:23:46,263 - main - INFO - train - 65 : Under an epoch, loss will be output every 17 step, and the model will be evaluated every 42 step
+2022-01-12 20:23:48,875 - main - INFO - train - 73 : Using device : cuda
+2022-01-12 20:23:48,877 - main - INFO - train - 78 : num_train_steps : 420, warmup_proportion : 0.1, warmup_steps : 42
+2022-01-12 20:23:48,877 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:23:52,465 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.0166    0.2823    0.0313       960
+
+   micro avg     0.0166    0.2823    0.0313       960
+   macro avg     0.0166    0.2823    0.0313       960
+weighted avg     0.0166    0.2823    0.0313       960
+
+2022-01-12 20:23:52,465 - main.utils - INFO - compute_f1 - 130 : F1 : 0.03133853714946517, accuracy : 0.3204426657954917, precision : 0.016590143862871137, recall : 0.28229166666666666
+2022-01-12 20:23:52,465 - main - INFO - train - 89 : Previous f1 score is -1 and current f1 score is 0.03133853714946517
+2022-01-12 20:23:52,871 - main - INFO - train - 111 : Epoch : 0, global_step : 1/420, loss_value : 0.06554921935586368 
+2022-01-12 20:23:52,924 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:23:56,208 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.0166    0.2823    0.0313       960
+
+   micro avg     0.0166    0.2823    0.0313       960
+   macro avg     0.0166    0.2823    0.0313       960
+weighted avg     0.0166    0.2823    0.0313       960
+
+2022-01-12 20:23:56,208 - main.utils - INFO - compute_f1 - 130 : F1 : 0.03133853714946517, accuracy : 0.3204426657954917, precision : 0.016590143862871137, recall : 0.28229166666666666
+2022-01-12 20:23:56,208 - main - INFO - train - 129 : Left patience is 9
+2022-01-12 20:24:02,482 - main - INFO - train - 111 : Epoch : 0, global_step : 18/420, loss_value : 0.8210336741279153 
+2022-01-12 20:24:08,844 - main - INFO - train - 111 : Epoch : 0, global_step : 35/420, loss_value : 0.3965945112354615 
+2022-01-12 20:24:11,865 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:24:15,156 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.1788    0.0333    0.0562       960
+
+   micro avg     0.1788    0.0333    0.0562       960
+   macro avg     0.1788    0.0333    0.0562       960
+weighted avg     0.1788    0.0333    0.0562       960
+
+2022-01-12 20:24:15,156 - main.utils - INFO - compute_f1 - 130 : F1 : 0.056189640035118525, accuracy : 0.9224109768049656, precision : 0.1787709497206704, recall : 0.03333333333333333
+2022-01-12 20:24:15,630 - main - INFO - train - 124 : Previous f1 score is 0.03133853714946517 and current f1 score is 0.056189640035118525, best model has been saved in /home/xhsun/Desktop/NER_Parsing/train_models/baseline_models/pytorch_model.bin
+2022-01-12 20:24:18,934 - main - INFO - train - 111 : Epoch : 0, global_step : 52/420, loss_value : 0.26312794229563546 
+2022-01-12 20:24:25,383 - main - INFO - train - 111 : Epoch : 0, global_step : 69/420, loss_value : 0.20374688769088073 
+2022-01-12 20:24:31,473 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:24:34,776 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.5762    0.6344    0.6039       960
+
+   micro avg     0.5762    0.6344    0.6039       960
+   macro avg     0.5762    0.6344    0.6039       960
+weighted avg     0.5762    0.6344    0.6039       960
+
+2022-01-12 20:24:34,776 - main.utils - INFO - compute_f1 - 130 : F1 : 0.6038671294000991, accuracy : 0.9665142110421431, precision : 0.5761589403973509, recall : 0.634375
+2022-01-12 20:24:35,272 - main - INFO - train - 124 : Previous f1 score is 0.056189640035118525 and current f1 score is 0.6038671294000991, best model has been saved in /home/xhsun/Desktop/NER_Parsing/train_models/baseline_models/pytorch_model.bin
+2022-01-12 20:24:35,779 - main - INFO - train - 111 : Epoch : 1, global_step : 86/420, loss_value : 0.010642165646833531 
+2022-01-12 20:24:35,835 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:24:39,131 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.5712    0.6396    0.6034       960
+
+   micro avg     0.5712    0.6396    0.6034       960
+   macro avg     0.5712    0.6396    0.6034       960
+weighted avg     0.5712    0.6396    0.6034       960
+
+2022-01-12 20:24:39,131 - main.utils - INFO - compute_f1 - 130 : F1 : 0.6034398034398035, accuracy : 0.9666367200261352, precision : 0.5711627906976744, recall : 0.6395833333333333
+2022-01-12 20:24:39,131 - main - INFO - train - 129 : Left patience is 8
+2022-01-12 20:24:45,458 - main - INFO - train - 111 : Epoch : 1, global_step : 103/420, loss_value : 0.11552729545270696 
+2022-01-12 20:24:51,841 - main - INFO - train - 111 : Epoch : 1, global_step : 120/420, loss_value : 0.09415599879096537 
+2022-01-12 20:24:54,976 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:24:58,293 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.6610    0.8063    0.7264       960
+
+   micro avg     0.6610    0.8063    0.7264       960
+   macro avg     0.6610    0.8063    0.7264       960
+weighted avg     0.6610    0.8063    0.7264       960
+
+2022-01-12 20:24:58,293 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7264195213514781, accuracy : 0.975702384841555, precision : 0.6609735269000854, recall : 0.80625
+2022-01-12 20:24:58,774 - main - INFO - train - 124 : Previous f1 score is 0.6038671294000991 and current f1 score is 0.7264195213514781, best model has been saved in /home/xhsun/Desktop/NER_Parsing/train_models/baseline_models/pytorch_model.bin
+2022-01-12 20:25:02,129 - main - INFO - train - 111 : Epoch : 1, global_step : 137/420, loss_value : 0.07351947389543056 
+2022-01-12 20:25:08,600 - main - INFO - train - 111 : Epoch : 1, global_step : 154/420, loss_value : 0.07305347733199596 
+2022-01-12 20:25:14,572 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:25:17,825 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.7636    0.7875    0.7754       960
+
+   micro avg     0.7636    0.7875    0.7754       960
+   macro avg     0.7636    0.7875    0.7754       960
+weighted avg     0.7636    0.7875    0.7754       960
+
+2022-01-12 20:25:17,825 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7753846153846152, accuracy : 0.9781525645213982, precision : 0.7636363636363637, recall : 0.7875
+2022-01-12 20:25:18,287 - main - INFO - train - 124 : Previous f1 score is 0.7264195213514781 and current f1 score is 0.7753846153846152, best model has been saved in /home/xhsun/Desktop/NER_Parsing/train_models/baseline_models/pytorch_model.bin
+2022-01-12 20:25:18,785 - main - INFO - train - 111 : Epoch : 2, global_step : 171/420, loss_value : 0.0067004719201256245 
+2022-01-12 20:25:18,841 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:25:22,188 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.7606    0.7875    0.7738       960
+
+   micro avg     0.7606    0.7875    0.7738       960
+   macro avg     0.7606    0.7875    0.7738       960
+weighted avg     0.7606    0.7875    0.7738       960
+
+2022-01-12 20:25:22,188 - main.utils - INFO - compute_f1 - 130 : F1 : 0.773797338792221, accuracy : 0.9780300555374061, precision : 0.7605633802816901, recall : 0.7875
+2022-01-12 20:25:22,197 - main - INFO - train - 129 : Left patience is 7
+2022-01-12 20:25:28,719 - main - INFO - train - 111 : Epoch : 2, global_step : 188/420, loss_value : 0.0497176270274555 
+2022-01-12 20:25:35,149 - main - INFO - train - 111 : Epoch : 2, global_step : 205/420, loss_value : 0.04998902845032075 
+2022-01-12 20:25:38,467 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:25:41,827 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.7535    0.8469    0.7974       960
+
+   micro avg     0.7535    0.8469    0.7974       960
+   macro avg     0.7535    0.8469    0.7974       960
+weighted avg     0.7535    0.8469    0.7974       960
+
+2022-01-12 20:25:41,828 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7974497302599314, accuracy : 0.980235217249265, precision : 0.7534754402224282, recall : 0.846875
+2022-01-12 20:25:42,333 - main - INFO - train - 124 : Previous f1 score is 0.7753846153846152 and current f1 score is 0.7974497302599314, best model has been saved in /home/xhsun/Desktop/NER_Parsing/train_models/baseline_models/pytorch_model.bin
+2022-01-12 20:25:45,723 - main - INFO - train - 111 : Epoch : 2, global_step : 222/420, loss_value : 0.04069936286438914 
+2022-01-12 20:25:52,204 - main - INFO - train - 111 : Epoch : 2, global_step : 239/420, loss_value : 0.04185390395714956 
+2022-01-12 20:25:58,364 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:26:01,644 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.8049    0.7865    0.7956       960
+
+   micro avg     0.8049    0.7865    0.7956       960
+   macro avg     0.8049    0.7865    0.7956       960
+weighted avg     0.8049    0.7865    0.7956       960
+
+2022-01-12 20:26:01,644 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7955742887249736, accuracy : 0.9808477621692258, precision : 0.8049040511727079, recall : 0.7864583333333334
+2022-01-12 20:26:01,644 - main - INFO - train - 129 : Left patience is 6
+2022-01-12 20:26:02,129 - main - INFO - train - 111 : Epoch : 3, global_step : 256/420, loss_value : 0.004929399227394778 
+2022-01-12 20:26:02,180 - main - INFO - predict - 143 : Evaluating the model...
+2022-01-12 20:26:05,425 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+     Disease     0.8011    0.7844    0.7926       960
+
+   micro avg     0.8011    0.7844    0.7926       960
+   macro avg     0.8011    0.7844    0.7926       960
+weighted avg     0.8011    0.7844    0.7926       960
+
+2022-01-12 20:26:05,425 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7926315789473685, accuracy : 0.980766089513231, precision : 0.801063829787234, recall : 0.784375
+2022-01-12 20:26:05,426 - main - INFO - train - 129 : Left patience is 5

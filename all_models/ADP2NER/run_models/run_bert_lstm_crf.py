@@ -11,23 +11,24 @@ from sklearn.metrics import accuracy_score
 from torch.nn.modules import loss
 from transformers import AutoModel, AutoTokenizer, AutoConfig
 from transformers import AdamW, get_linear_schedule_with_warmup
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
 import transformers
 import random
 from preprocess import create_dataloader, get_conll_data
 from utils import compute_loss, get_ent_tags, batch_to_device, compute_f1
-from models import NERNetwork
+from models.bert_lstm_crf import NERNetwork
 from typing import List
 from visdom import Visdom
 import logging
 
-save_dir='./pytorch_model.bin'
+save_dir='/home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin'
 if not os.path.exists(save_dir):
     os.makedirs(save_dir,exist_ok=True)
 
 logger=logging.getLogger('main')
 logger.setLevel(logging.INFO)
-fh=logging.FileHandler('log.txt')
+fh=logging.FileHandler('log_wnut.txt',mode='w')
 fh.setLevel(logging.INFO)
 ch=logging.StreamHandler()
 ch.setLevel(logging.INFO)
@@ -164,21 +165,22 @@ def predict(model,test_dataloader,tag_encoder,device):
 def main():
     parser = argparse.ArgumentParser()
     # input and output parameters
-    parser.add_argument('--model_name_or_path', default = '/data/aisearch/nlp/data/dengyong013/English_Model/bert-large-cased', help='path to the BERT')
-    parser.add_argument('--file_path', default='/home/cdou/xhsun/data/conll03', help='path to the ner data')
+    parser.add_argument('--model_name_or_path', default = '/home/xhsun/NLP/huggingfaceModels/English/bert-base-uncased', help='path to the BERT')
+    #parser.add_argument('--file_path', default='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/NCBI', help='path to the ner data')
+    parser.add_argument('--file_path', default='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/W-NUT17', help='path to the ner data')
     parser.add_argument('--save_dir', default=save_dir, help='path to save checkpoints and logs')
     parser.add_argument('--ckpt', default = None,help='Fine tuned model')
     # training parameters
     parser.add_argument('--learning_rate', default=3e-5, type=float)
     parser.add_argument('--weight_decay', default=1e-5, type=float)
-    parser.add_argument('--epochs', default=10, type=int)
-    parser.add_argument('--train_batch_size', default=32, type=int)
+    parser.add_argument('--epochs', default=30, type=int)
+    parser.add_argument('--train_batch_size', default=64, type=int)
     parser.add_argument('--lstm_hidden_size', default=150, type=int)
     parser.add_argument('--test_batch_size', default=64, type=int)
     parser.add_argument('--max_grad_norm', default=1, type=int)
     parser.add_argument('--warmup_proportion', default=0.1, type = float)
     parser.add_argument('--max_len', default=196, type = int)
-    parser.add_argument('--patience', default=10, type = int)
+    parser.add_argument('--patience', default=100, type = int)
 
     #Other parameters
     parser.add_argument('--seed', type=int, default=666, help='random seed')
@@ -188,6 +190,8 @@ def main():
     train_conll_data=get_conll_data(split='train',dir=args.file_path)
     #test_conll_data=get_conll_data(split='valid',dir=args.file_path)
     test_conll_data=get_conll_data(split='test',dir=args.file_path)
+    logger.info("train sentences num : {}".format(len(train_conll_data['sentences'])))
+    logger.info("test sentences num : {}".format(len(test_conll_data['sentences'])))
     logger.info("Logging some examples...")
     for _ in range(5):
         i=random.randint(0,len(test_conll_data['tags'])-1)

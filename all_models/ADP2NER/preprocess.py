@@ -246,8 +246,7 @@ def get_conll_data(split: str = 'train',
     assert split in splits, f'Choose between the following splits: {splits}'
 
     # set to default directory if nothing else has been provided by user.
-    if dir is None:
-        dir = os.path.join(str(Path.home()), '.conll')
+
     assert os.path.isdir(dir), f'Directory {dir} does not exist. Try downloading CoNLL-2003 data with download_conll_data()'
     
     file_path = os.path.join(dir, f'{split}.txt')
@@ -272,7 +271,7 @@ def get_conll_data(split: str = 'train',
             entity=[]
             sentence=[]
             continue
-        line = line.strip().split('\t')
+        line = line.strip().split()
         assert len(line)==2
         sentence.append(line[0])
         entity.append(line[1])

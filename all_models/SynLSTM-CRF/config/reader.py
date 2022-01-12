@@ -10,6 +10,8 @@ import re
 import pickle
 import numpy as np
 
+import logging
+logger=logging.getLogger("main.reader")
 class Reader:
 
 
@@ -18,7 +20,7 @@ class Reader:
         self.vocab = set()
 
     def read_conll(self, file: str, number: int = -1, is_train: bool = True) -> List[Instance]:
-        print("Reading file: " + file)
+        logger.info("Reading file: " + file)
         insts = []
         num_entity = 0
         # vocab = set() ## build the vocabulary
@@ -63,11 +65,11 @@ class Reader:
                 labels.append(label)
                 if label.startswith("B-"):
                     num_entity +=1
-        print("number of sentences: {}, number of entities: {}".format(len(insts), num_entity))
+        logger.info("number of sentences: {}, number of entities: {}".format(len(insts), num_entity))
         return insts
 
     def read_txt(self, file: str, number: int = -1, is_train: bool = True) -> List[Instance]:
-        print("Reading file: " + file)
+        logger.info("Reading file: " + file)
         insts = []
         # vocab = set() ## build the vocabulary
         with open(file, 'r', encoding='utf-8') as f: 
@@ -97,7 +99,7 @@ class Reader:
                 tags.append(pos)
                 self.vocab.add(word)
                 labels.append(label)
-        print("number of sentences: {}".format(len(insts)))
+        logger.info("number of sentences: {}".format(len(insts)))
         return insts
 
     def load_elmo_vec(self, file, insts):
@@ -110,13 +112,13 @@ class Reader:
                 vec = np.squeeze(vec, axis=0)
                 inst.elmo_vec = vec
                 size = vec.shape[1]
-                # print(str(vec.shape[0]) + ","+ str(len(inst.input.words)) + ", " + str(inst.input.words))
+                # logger.info(str(vec.shape[0]) + ","+ str(len(inst.input.words)) + ", " + str(inst.input.words))
                 assert(vec.shape[0] == len(inst.input.words))
         else:
             for vec, inst in zip(all_vecs, insts):
                 inst.elmo_vec = vec
                 size = vec.shape[1]
-                # print(str(vec.shape[0]) + ","+ str(len(inst.input.words)) + ", " + str(inst.input.words))
+                # logger.info(str(vec.shape[0]) + ","+ str(len(inst.input.words)) + ", " + str(inst.input.words))
                 assert(vec.shape[0] == len(inst.input.words))
         return size
 

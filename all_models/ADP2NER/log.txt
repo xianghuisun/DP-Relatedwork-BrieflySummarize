@@ -1,0 +1,136 @@
+2022-01-12 12:53:40,221 - main - INFO - <module> - 52 : Using device cuda
+2022-01-12 12:53:40,310 - main - INFO - main - 193 : train sentences num : 14040
+2022-01-12 12:53:40,310 - main - INFO - main - 194 : test sentences num : 3452
+2022-01-12 12:53:40,310 - main - INFO - main - 195 : Logging some examples...
+2022-01-12 12:53:40,310 - main - INFO - main - 201 : (  O
+2022-01-12 12:53:40,310 - main - INFO - main - 201 : 52.76  O
+2022-01-12 12:53:40,310 - main - INFO - main - 201 : /  O
+2022-01-12 12:53:40,310 - main - INFO - main - 201 : 53.18  O
+2022-01-12 12:53:40,310 - main - INFO - main - 201 : )  O
+2022-01-12 12:53:40,310 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-12 12:53:40,310 - main - INFO - main - 201 : WESTERN  O
+2022-01-12 12:53:40,310 - main - INFO - main - 201 : CONFERENCE  O
+2022-01-12 12:53:40,310 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-12 12:53:40,310 - main - INFO - main - 201 : Wasim  B-person
+2022-01-12 12:53:40,310 - main - INFO - main - 201 : Akram  I-person
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : b  O
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : Harris  B-person
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : 4  O
+2022-01-12 12:53:40,311 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : Mansfield  B-organisation
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : 21  O
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : 5  O
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : 9  O
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : 7  O
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : 21  O
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : 22  O
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : 24  O
+2022-01-12 12:53:40,311 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : --  O
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : New  B-organisation
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : York  I-organisation
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : Commodities  I-organisation
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : Desk  O
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : ,  O
+2022-01-12 12:53:40,311 - main - INFO - main - 201 : 212-859-1640  O
+2022-01-12 12:53:40,312 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-12 12:53:40,320 - main - INFO - main - 212 : Tag scheme : I-location B-misc B-organisation I-person B-location I-organisation I-misc B-person
+2022-01-12 12:53:40,320 - main - INFO - main - 213 : Tag has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/label.json
+2022-01-12 12:53:40,335 - main - INFO - main - 243 : model_name_or_path:/home/xhsun/NLP/huggingfaceModels/English/bert-base-uncased
+2022-01-12 12:53:40,335 - main - INFO - main - 243 : file_path:/home/xhsun/Desktop/gitRepositories/ADP2NER/data/conll03/back
+2022-01-12 12:53:40,335 - main - INFO - main - 243 : save_dir:/home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin
+2022-01-12 12:53:40,335 - main - INFO - main - 243 : ckpt:None
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : learning_rate:3e-05
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : weight_decay:1e-05
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : epochs:10
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : train_batch_size:32
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : lstm_hidden_size:150
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : test_batch_size:64
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : max_grad_norm:1
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : warmup_proportion:0.1
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : max_len:196
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : patience:10
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : seed:666
+2022-01-12 12:53:40,336 - main - INFO - main - 243 : num_workers:1
+2022-01-12 12:53:40,336 - main - INFO - train - 62 : n_tags : 9
+2022-01-12 12:53:40,336 - main - INFO - train - 66 : Under an epoch, loss will be output every 87 step, and the model will be evaluated every 219 step
+2022-01-12 12:53:43,090 - main - INFO - train - 74 : Using device : cuda
+2022-01-12 12:53:43,091 - main - INFO - train - 79 : num_train_steps : 4380, warmup_proportion : 0.1, warmup_steps : 438
+2022-01-12 12:53:43,091 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 12:53:51,878 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+    location     0.0373    0.2336    0.0643      1661
+        misc     0.0060    0.0780    0.0111       692
+organisation     0.0350    0.0798    0.0487      1655
+      person     0.0080    0.0285    0.0125      1616
+
+   micro avg     0.0214    0.1102    0.0359      5624
+   macro avg     0.0216    0.1050    0.0341      5624
+weighted avg     0.0244    0.1102    0.0383      5624
+
+2022-01-12 12:53:51,878 - main.utils - INFO - compute_f1 - 130 : F1 : 0.03585473051121906, accuracy : 0.14225977497090142, precision : 0.021408839779005526, recall : 0.11024182076813656
+2022-01-12 12:53:51,878 - main - INFO - train - 90 : Previous f1 score is -1 and current f1 score is 0.03585473051121906
+2022-01-12 12:53:52,195 - main - INFO - train - 112 : Epoch : 0, global_step : 1/4380, loss_value : 24.19616558908046 
+2022-01-12 12:53:52,207 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 12:54:00,938 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+    location     0.0373    0.2336    0.0643      1661
+        misc     0.0060    0.0780    0.0111       692
+organisation     0.0350    0.0798    0.0487      1655
+      person     0.0080    0.0285    0.0125      1616
+
+   micro avg     0.0214    0.1102    0.0359      5624
+   macro avg     0.0216    0.1050    0.0341      5624
+weighted avg     0.0244    0.1102    0.0383      5624
+
+2022-01-12 12:54:00,939 - main.utils - INFO - compute_f1 - 130 : F1 : 0.03585473051121906, accuracy : 0.14225977497090142, precision : 0.021408839779005526, recall : 0.11024182076813656
+2022-01-12 12:54:00,939 - main - INFO - train - 130 : Left patience is 9
+2022-01-12 12:54:24,864 - main - INFO - train - 112 : Epoch : 0, global_step : 88/4380, loss_value : 1265.0138753255208 
+2022-01-12 12:54:48,945 - main - INFO - train - 112 : Epoch : 0, global_step : 175/4380, loss_value : 567.9599016562275 
+2022-01-12 12:55:01,293 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 12:55:09,921 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+    location     0.0000    0.0000    0.0000      1661
+        misc     0.0000    0.0000    0.0000       692
+organisation     0.1231    0.4181    0.1902      1655
+      person     0.0476    0.0006    0.0012      1616
+
+   micro avg     0.1229    0.1232    0.1230      5624
+   macro avg     0.0427    0.1047    0.0479      5624
+weighted avg     0.0499    0.1232    0.0563      5624
+
+2022-01-12 12:55:09,921 - main.utils - INFO - compute_f1 - 130 : F1 : 0.12303595206391478, accuracy : 0.845087726861232, precision : 0.12285055841162915, recall : 0.12322190611664297
+2022-01-12 12:55:10,296 - main - INFO - train - 125 : Previous f1 score is 0.03585473051121906 and current f1 score is 0.12303595206391478, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 12:55:21,901 - main - INFO - train - 112 : Epoch : 0, global_step : 262/4380, loss_value : 345.05715118057424 
+2022-01-12 12:55:46,154 - main - INFO - train - 112 : Epoch : 0, global_step : 349/4380, loss_value : 293.517811654628 
+2022-01-12 12:56:10,298 - main - INFO - train - 112 : Epoch : 0, global_step : 436/4380, loss_value : 197.9864562023645 
+2022-01-12 12:56:11,121 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 12:56:19,730 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+    location     0.5678    0.7971    0.6632      1661
+        misc     0.7667    0.1662    0.2732       692
+organisation     0.5494    0.6659    0.6020      1655
+      person     0.9712    0.8967    0.9324      1616
+
+   micro avg     0.6672    0.7095    0.6877      5624
+   macro avg     0.7137    0.6315    0.6177      5624
+weighted avg     0.7027    0.7095    0.6746      5624
+
+2022-01-12 12:56:19,730 - main.utils - INFO - compute_f1 - 130 : F1 : 0.6876938986556359, accuracy : 0.9524938569642626, precision : 0.6672240802675585, recall : 0.7094594594594594
+2022-01-12 12:56:20,204 - main - INFO - train - 125 : Previous f1 score is 0.12303595206391478 and current f1 score is 0.6876938986556359, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 12:56:20,583 - main - INFO - train - 112 : Epoch : 1, global_step : 440/4380, loss_value : 2.1615393627649064 
+2022-01-12 12:56:20,596 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 12:56:29,293 - main.utils - INFO - compute_f1 - 129 :               precision    recall  f1-score   support
+
+    location     0.5637    0.7965    0.6602      1661
+        misc     0.7124    0.1575    0.2580       692
+organisation     0.5589    0.6798    0.6134      1655
+      person     0.9647    0.9121    0.9377      1616
+
+   micro avg     0.6673    0.7167    0.6911      5624
+   macro avg     0.6999    0.6365    0.6173      5624
+weighted avg     0.6958    0.7167    0.6767      5624
+
+2022-01-12 12:56:29,293 - main.utils - INFO - compute_f1 - 130 : F1 : 0.6911273039005572, accuracy : 0.9535284735095055, precision : 0.6672736301936766, recall : 0.7167496443812233
+2022-01-12 12:56:29,783 - main - INFO - train - 125 : Previous f1 score is 0.6876938986556359 and current f1 score is 0.6911273039005572, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 12:56:54,238 - main - INFO - train - 112 : Epoch : 1, global_step : 527/4380, loss_value : 158.64006031518696 

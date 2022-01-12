@@ -27,7 +27,7 @@ if not os.path.exists(save_dir):
 
 logger=logging.getLogger('main')
 logger.setLevel(logging.INFO)
-fh=logging.FileHandler('log.txt')
+fh=logging.FileHandler('log_ncbi.txt',mode='w')
 fh.setLevel(logging.INFO)
 ch=logging.StreamHandler()
 ch.setLevel(logging.INFO)
@@ -186,7 +186,7 @@ def main():
     args = parser.parse_args()
 
     train_conll_data=get_conll_data(split='train',dir=args.file_path)
-    dev_conll_data=get_conll_data(split='valid',dir=args.file_path)
+    dev_conll_data=get_conll_data(split='test',dir=args.file_path)
     test_conll_data=get_conll_data(split='test',dir=args.file_path)
     tag_scheme=get_ent_tags(all_tags=train_conll_data.get('tags'))
     tag_outside='O'

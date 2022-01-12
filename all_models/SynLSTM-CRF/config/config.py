@@ -34,7 +34,7 @@ class InteractionFunction(Enum):
     mlp = 2
 
 #path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NCBI/Spacy'
-path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NoiseCoNLL03'
+path_folder='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/ontonotes5'
 
 class Config:
     def __init__(self, args):

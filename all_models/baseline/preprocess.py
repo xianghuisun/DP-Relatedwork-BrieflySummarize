@@ -181,7 +181,7 @@ def get_conll_data(split: str = 'train',
     # read data from file.
     data = []
     with open(file_path, 'r') as file:
-        reader = csv.reader(file, delimiter = ' ')
+        reader = csv.reader(file, delimiter = '\t')
         for row in reader:
             data.append([row])
 

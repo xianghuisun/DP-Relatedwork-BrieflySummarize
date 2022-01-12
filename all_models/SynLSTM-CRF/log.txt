@@ -1,0 +1,94 @@
+2022-01-12 09:08:24,673 - main - INFO - parse_arguments - 95 : mode : train
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : device : cuda
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : seed : 42
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : digit2zero : True
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : dataset : conll03
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : affix : sd
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : path_folder : /home/xhsun/Desktop/gitRepositories/Some-NER-models/data/W-NUT17/Spacy
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : embedding_file : /home/xhsun/Desktop/NER_Parsing/pcode/glove.6B.100d.txt
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : embedding_dim : 100
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : optimizer : sgd
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : learning_rate : 0.2
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : momentum : 0.0
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : l2 : 1e-08
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : lr_decay : 0.1
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : batch_size : 100
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : num_epochs : 200
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : train_num : -1
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : dev_num : -1
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : test_num : -1
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : eval_freq : 4000
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : eval_epoch : 0
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : hidden_dim : 200
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : num_lstm_layer : 0
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : dep_emb_size : 50
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : dep_hidden_dim : 200
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : num_gcn_layers : 2
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : gcn_mlp_layers : 0
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : gcn_dropout : 0.5
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : gcn_adj_directed : 0
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : gcn_adj_selfloop : 0
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : gcn_gate : 0
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : dropout : 0.5
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : use_char_rnn : 1
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : dep_model : dggcn
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : inter_func : mlp
+2022-01-12 09:08:24,674 - main - INFO - parse_arguments - 95 : context_emb : none
+2022-01-12 09:08:31,981 - main - INFO - main - 278 : dep label 2idx: 
+2022-01-12 09:08:32,152 - main - INFO - main - 282 : pos label 2idx: 
+2022-01-12 09:08:35,059 - main - INFO - main - 290 : num chars: 107
+2022-01-12 09:08:35,060 - main - INFO - main - 293 : num words: 41408
+2022-01-12 09:08:35,338 - main - INFO - get_optimizer - 102 : Using SGD: lr is: 0.2, L2 regularization is: 1e-08
+2022-01-12 09:08:35,339 - main - INFO - learn_from_insts - 127 : number of instances: 59924
+2022-01-12 09:08:35,339 - main - INFO - learn_from_insts - 128 : [Shuffled] Shuffle the training instance ids
+2022-01-12 09:09:04,291 - main - INFO - learn_from_insts - 146 : [Info] The model will be saved to: /home/xhsun/Desktop/NER_Parsing/train_models/SynLSTM/model_files/gcn_2_hidden_200_dataset_conll03_sd_context_none.m, please ensure models folder exist
+2022-01-12 09:11:41,989 - main - INFO - parse_arguments - 96 : mode : train
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : device : cuda
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : seed : 42
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : digit2zero : True
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : dataset : conll03
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : affix : sd
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : path_folder : /home/xhsun/Desktop/gitRepositories/Some-NER-models/data/W-NUT17/Spacy
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : embedding_file : /home/xhsun/Desktop/NER_Parsing/pcode/glove.6B.100d.txt
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : embedding_dim : 100
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : optimizer : sgd
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : learning_rate : 0.2
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : momentum : 0.0
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : l2 : 1e-08
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : lr_decay : 0.1
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : batch_size : 100
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : num_epochs : 200
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : train_num : -1
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : dev_num : -1
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : test_num : -1
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : eval_freq : 4000
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : eval_epoch : 0
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : hidden_dim : 200
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : num_lstm_layer : 0
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : dep_emb_size : 50
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : dep_hidden_dim : 200
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : num_gcn_layers : 2
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : gcn_mlp_layers : 0
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : gcn_dropout : 0.5
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : gcn_adj_directed : 0
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : gcn_adj_selfloop : 0
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : gcn_gate : 0
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : dropout : 0.5
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : use_char_rnn : 1
+2022-01-12 09:11:41,990 - main - INFO - parse_arguments - 96 : dep_model : dggcn
+2022-01-12 09:11:41,991 - main - INFO - parse_arguments - 96 : inter_func : mlp
+2022-01-12 09:11:41,991 - main - INFO - parse_arguments - 96 : context_emb : none
+2022-01-12 09:11:45,917 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/ontonotes5/train.conllx
+2022-01-12 09:11:47,914 - main.reader - INFO - read_conll - 68 : number of sentences: 59924, number of entities: 81828
+2022-01-12 09:11:47,914 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/ontonotes5/test.conllx
+2022-01-12 09:11:48,143 - main.reader - INFO - read_conll - 68 : number of sentences: 8262, number of entities: 11257
+2022-01-12 09:11:48,143 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/ontonotes5/test.conllx
+2022-01-12 09:11:48,535 - main.reader - INFO - read_conll - 68 : number of sentences: 8262, number of entities: 11257
+2022-01-12 09:11:49,215 - main - INFO - main - 279 : dep label 2idx: 
+2022-01-12 09:11:49,382 - main - INFO - main - 283 : pos label 2idx: 
+2022-01-12 09:11:52,271 - main - INFO - main - 291 : num chars: 107
+2022-01-12 09:11:52,272 - main - INFO - main - 294 : num words: 41408
+2022-01-12 09:11:52,512 - main - INFO - get_optimizer - 103 : Using SGD: lr is: 0.2, L2 regularization is: 1e-08
+2022-01-12 09:11:52,512 - main - INFO - learn_from_insts - 128 : number of instances: 59924
+2022-01-12 09:11:52,513 - main - INFO - learn_from_insts - 129 : [Shuffled] Shuffle the training instance ids
+2022-01-12 09:12:21,677 - main - INFO - learn_from_insts - 147 : [Info] The model will be saved to: /home/xhsun/Desktop/NER_Parsing/train_models/SynLSTM/model_files/gcn_2_hidden_200_dataset_conll03_sd_context_none.m, please ensure models folder exist

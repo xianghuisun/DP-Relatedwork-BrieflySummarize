@@ -1,0 +1,1269 @@
+2022-01-12 20:42:48,269 - main - INFO - <module> - 52 : Using device cuda
+2022-01-12 20:42:48,296 - main - INFO - main - 193 : train sentences num : 3394
+2022-01-12 20:42:48,296 - main - INFO - main - 194 : test sentences num : 1286
+2022-01-12 20:42:48,297 - main - INFO - main - 195 : Logging some examples...
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : The  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : OP  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : here  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : deleted  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : it  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : (  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : dunno  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : why  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : )  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : -  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : <URL>  O
+2022-01-12 20:42:48,297 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : Comme  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : ça  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : :  O
+2022-01-12 20:42:48,297 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : Avoided  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : Crossing  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : in  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : QM  O
+2022-01-12 20:42:48,297 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : <  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : more  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : prayers  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : or  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : religious  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : speeches  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : happened  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : ,  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : and  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : one  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : of  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : them  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : was  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : by  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : a  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : Rabbi  O
+2022-01-12 20:42:48,297 - main - INFO - main - 201 : .  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : this  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : goes  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : to  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : the  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : point  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : I  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : made  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : below  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : -  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : there  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : are  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : many  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : different  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : flavors  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : of  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : "  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : secular  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : "  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : ,  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : just  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : as  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : there  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : are  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : many  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : different  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : flavors  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : of  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : "  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : atheist  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : "  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : .  O
+2022-01-12 20:42:48,298 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : Does  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : that  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : imply  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : presidents  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : sometimes  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : push  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : agendas  O
+2022-01-12 20:42:48,298 - main - INFO - main - 201 : that  O
+2022-01-12 20:42:48,299 - main - INFO - main - 201 : are  O
+2022-01-12 20:42:48,299 - main - INFO - main - 201 : n  O
+2022-01-12 20:42:48,299 - main - INFO - main - 201 : '  O
+2022-01-12 20:42:48,299 - main - INFO - main - 201 : t  O
+2022-01-12 20:42:48,299 - main - INFO - main - 201 : meaningful  O
+2022-01-12 20:42:48,299 - main - INFO - main - 201 : to  O
+2022-01-12 20:42:48,299 - main - INFO - main - 201 : them  O
+2022-01-12 20:42:48,299 - main - INFO - main - 201 : ?  O
+2022-01-12 20:42:48,299 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-12 20:42:48,302 - main - INFO - main - 212 : Tag scheme : B-corporation B-product I-person I-product I-group I-corporation B-group B-person I-creative-work B-location I-location B-creative-work
+2022-01-12 20:42:48,302 - main - INFO - main - 213 : Tag has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/label.json
+2022-01-12 20:42:48,318 - main - INFO - main - 243 : model_name_or_path:/home/xhsun/NLP/huggingfaceModels/English/bert-base-uncased
+2022-01-12 20:42:48,318 - main - INFO - main - 243 : file_path:/home/xhsun/Desktop/gitRepositories/ADP2NER/data/W-NUT17
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : save_dir:/home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : ckpt:None
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : learning_rate:3e-05
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : weight_decay:1e-05
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : epochs:30
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : train_batch_size:64
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : lstm_hidden_size:150
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : test_batch_size:64
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : max_grad_norm:1
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : warmup_proportion:0.1
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : max_len:196
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : patience:100
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : seed:666
+2022-01-12 20:42:48,319 - main - INFO - main - 243 : num_workers:1
+2022-01-12 20:42:48,319 - main - INFO - train - 62 : n_tags : 13
+2022-01-12 20:42:48,319 - main - INFO - train - 66 : Under an epoch, loss will be output every 10 step, and the model will be evaluated every 27 step
+2022-01-12 20:42:51,069 - main - INFO - train - 74 : Using device : cuda
+2022-01-12 20:42:51,071 - main - INFO - train - 79 : num_train_steps : 1590, warmup_proportion : 0.1, warmup_steps : 159
+2022-01-12 20:42:51,071 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:42:54,529 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0021    0.0455    0.0041        66
+creative-work     0.0014    0.0423    0.0026       142
+        group     0.0075    0.0848    0.0139       165
+     location     0.0045    0.0267    0.0078       150
+       person     0.0173    0.3014    0.0327       428
+      product     0.0034    0.0551    0.0065       127
+
+    micro avg     0.0090    0.1512    0.0171      1078
+    macro avg     0.0061    0.0926    0.0113      1078
+ weighted avg     0.0094    0.1512    0.0175      1078
+
+2022-01-12 20:42:54,529 - main.utils - INFO - compute_f1 - 130 : F1 : 0.01706091689344777, accuracy : 0.02797741273100616, precision : 0.009040488075429839, recall : 0.15120593692022263
+2022-01-12 20:42:54,529 - main - INFO - train - 90 : Previous f1 score is -1 and current f1 score is 0.01706091689344777
+2022-01-12 20:42:55,009 - main - INFO - train - 112 : Epoch : 0, global_step : 1/1590, loss_value : 497.44267578125 
+2022-01-12 20:42:55,040 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:42:58,499 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0021    0.0455    0.0041        66
+creative-work     0.0014    0.0423    0.0026       142
+        group     0.0075    0.0848    0.0139       165
+     location     0.0045    0.0267    0.0078       150
+       person     0.0173    0.3014    0.0327       428
+      product     0.0034    0.0551    0.0065       127
+
+    micro avg     0.0090    0.1512    0.0171      1078
+    macro avg     0.0061    0.0926    0.0113      1078
+ weighted avg     0.0094    0.1512    0.0175      1078
+
+2022-01-12 20:42:58,499 - main.utils - INFO - compute_f1 - 130 : F1 : 0.01706091689344777, accuracy : 0.02797741273100616, precision : 0.009040488075429839, recall : 0.15120593692022263
+2022-01-12 20:42:58,499 - main - INFO - train - 130 : Left patience is 99
+2022-01-12 20:43:02,809 - main - INFO - train - 112 : Epoch : 0, global_step : 11/1590, loss_value : 5250.82705078125 
+2022-01-12 20:43:07,104 - main - INFO - train - 112 : Epoch : 0, global_step : 21/1590, loss_value : 4955.948193359375 
+2022-01-12 20:43:10,120 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:43:13,495 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0092    0.0364    0.0147       165
+     location     0.0000    0.0000    0.0000       150
+       person     0.0000    0.0000    0.0000       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.0057    0.0056    0.0056      1078
+    macro avg     0.0015    0.0061    0.0025      1078
+ weighted avg     0.0014    0.0056    0.0023      1078
+
+2022-01-12 20:43:13,495 - main.utils - INFO - compute_f1 - 130 : F1 : 0.005620608899297423, accuracy : 0.8796629021218344, precision : 0.005676442762535478, recall : 0.0055658627087198514
+2022-01-12 20:43:13,495 - main - INFO - train - 130 : Left patience is 98
+2022-01-12 20:43:14,775 - main - INFO - train - 112 : Epoch : 0, global_step : 31/1590, loss_value : 4287.323461914062 
+2022-01-12 20:43:19,072 - main - INFO - train - 112 : Epoch : 0, global_step : 41/1590, loss_value : 3091.90556640625 
+2022-01-12 20:43:23,451 - main - INFO - train - 112 : Epoch : 0, global_step : 51/1590, loss_value : 1698.1939331054687 
+2022-01-12 20:43:25,013 - main - INFO - train - 112 : Epoch : 1, global_step : 55/1590, loss_value : 108.719287109375 
+2022-01-12 20:43:25,034 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:43:28,420 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.0000    0.0000    0.0000       150
+       person     0.0000    0.0000    0.0000       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.0000    0.0000    0.0000      1078
+    macro avg     0.0000    0.0000    0.0000      1078
+ weighted avg     0.0000    0.0000    0.0000      1078
+
+2022-01-12 20:43:28,420 - main.utils - INFO - compute_f1 - 130 : F1 : 0.0, accuracy : 0.9256502395619439, precision : 0.0, recall : 0.0
+2022-01-12 20:43:28,420 - main - INFO - train - 130 : Left patience is 97
+2022-01-12 20:43:32,713 - main - INFO - train - 112 : Epoch : 1, global_step : 65/1590, loss_value : 882.05517578125 
+2022-01-12 20:43:37,027 - main - INFO - train - 112 : Epoch : 1, global_step : 75/1590, loss_value : 705.3939819335938 
+2022-01-12 20:43:40,079 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:43:43,463 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.0000    0.0000    0.0000       150
+       person     0.0000    0.0000    0.0000       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.0000    0.0000    0.0000      1078
+    macro avg     0.0000    0.0000    0.0000      1078
+ weighted avg     0.0000    0.0000    0.0000      1078
+
+2022-01-12 20:43:43,463 - main.utils - INFO - compute_f1 - 130 : F1 : 0.0, accuracy : 0.9256502395619439, precision : 0.0, recall : 0.0
+2022-01-12 20:43:43,463 - main - INFO - train - 130 : Left patience is 96
+2022-01-12 20:43:44,758 - main - INFO - train - 112 : Epoch : 1, global_step : 85/1590, loss_value : 679.3973876953125 
+2022-01-12 20:43:49,071 - main - INFO - train - 112 : Epoch : 1, global_step : 95/1590, loss_value : 717.8716857910156 
+2022-01-12 20:43:53,410 - main - INFO - train - 112 : Epoch : 1, global_step : 105/1590, loss_value : 712.3030212402343 
+2022-01-12 20:43:54,976 - main - INFO - train - 112 : Epoch : 2, global_step : 109/1590, loss_value : 70.77649536132813 
+2022-01-12 20:43:54,997 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:43:58,357 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.0000    0.0000    0.0000       150
+       person     0.0000    0.0000    0.0000       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.0000    0.0000    0.0000      1078
+    macro avg     0.0000    0.0000    0.0000      1078
+ weighted avg     0.0000    0.0000    0.0000      1078
+
+2022-01-12 20:43:58,358 - main.utils - INFO - compute_f1 - 130 : F1 : 0.0, accuracy : 0.9256502395619439, precision : 0.0, recall : 0.0
+2022-01-12 20:43:58,358 - main - INFO - train - 130 : Left patience is 95
+2022-01-12 20:44:02,683 - main - INFO - train - 112 : Epoch : 2, global_step : 119/1590, loss_value : 623.2338439941407 
+2022-01-12 20:44:07,016 - main - INFO - train - 112 : Epoch : 2, global_step : 129/1590, loss_value : 607.1345458984375 
+2022-01-12 20:44:10,064 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:44:13,456 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.0000    0.0000    0.0000       150
+       person     0.0000    0.0000    0.0000       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.0000    0.0000    0.0000      1078
+    macro avg     0.0000    0.0000    0.0000      1078
+ weighted avg     0.0000    0.0000    0.0000      1078
+
+2022-01-12 20:44:13,456 - main.utils - INFO - compute_f1 - 130 : F1 : 0.0, accuracy : 0.9256502395619439, precision : 0.0, recall : 0.0
+2022-01-12 20:44:13,456 - main - INFO - train - 130 : Left patience is 94
+2022-01-12 20:44:14,741 - main - INFO - train - 112 : Epoch : 2, global_step : 139/1590, loss_value : 640.3935150146484 
+2022-01-12 20:44:19,068 - main - INFO - train - 112 : Epoch : 2, global_step : 149/1590, loss_value : 694.2651794433593 
+2022-01-12 20:44:23,392 - main - INFO - train - 112 : Epoch : 2, global_step : 159/1590, loss_value : 676.3570434570313 
+2022-01-12 20:44:24,968 - main - INFO - train - 112 : Epoch : 3, global_step : 163/1590, loss_value : 66.6948486328125 
+2022-01-12 20:44:24,990 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:44:28,367 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.0000    0.0000    0.0000       150
+       person     0.0000    0.0000    0.0000       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.0000    0.0000    0.0000      1078
+    macro avg     0.0000    0.0000    0.0000      1078
+ weighted avg     0.0000    0.0000    0.0000      1078
+
+2022-01-12 20:44:28,367 - main.utils - INFO - compute_f1 - 130 : F1 : 0.0, accuracy : 0.9256502395619439, precision : 0.0, recall : 0.0
+2022-01-12 20:44:28,367 - main - INFO - train - 130 : Left patience is 93
+2022-01-12 20:44:32,700 - main - INFO - train - 112 : Epoch : 3, global_step : 173/1590, loss_value : 561.0263702392579 
+2022-01-12 20:44:37,047 - main - INFO - train - 112 : Epoch : 3, global_step : 183/1590, loss_value : 507.7732421875 
+2022-01-12 20:44:40,093 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:44:43,463 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.0000    0.0000    0.0000       150
+       person     0.0000    0.0000    0.0000       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.0000    0.0000    0.0000      1078
+    macro avg     0.0000    0.0000    0.0000      1078
+ weighted avg     0.0000    0.0000    0.0000      1078
+
+2022-01-12 20:44:43,463 - main.utils - INFO - compute_f1 - 130 : F1 : 0.0, accuracy : 0.9256502395619439, precision : 0.0, recall : 0.0
+2022-01-12 20:44:43,463 - main - INFO - train - 130 : Left patience is 92
+2022-01-12 20:44:44,754 - main - INFO - train - 112 : Epoch : 3, global_step : 193/1590, loss_value : 514.2818817138672 
+2022-01-12 20:44:49,091 - main - INFO - train - 112 : Epoch : 3, global_step : 203/1590, loss_value : 539.5574951171875 
+2022-01-12 20:44:53,425 - main - INFO - train - 112 : Epoch : 3, global_step : 213/1590, loss_value : 515.66611328125 
+2022-01-12 20:44:54,997 - main - INFO - train - 112 : Epoch : 4, global_step : 217/1590, loss_value : 51.917852783203124 
+2022-01-12 20:44:55,017 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:44:58,391 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.0000    0.0000    0.0000       150
+       person     0.0000    0.0000    0.0000       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.0000    0.0000    0.0000      1078
+    macro avg     0.0000    0.0000    0.0000      1078
+ weighted avg     0.0000    0.0000    0.0000      1078
+
+2022-01-12 20:44:58,392 - main.utils - INFO - compute_f1 - 130 : F1 : 0.0, accuracy : 0.9256502395619439, precision : 0.0, recall : 0.0
+2022-01-12 20:44:58,392 - main - INFO - train - 130 : Left patience is 91
+2022-01-12 20:45:02,721 - main - INFO - train - 112 : Epoch : 4, global_step : 227/1590, loss_value : 430.779296875 
+2022-01-12 20:45:07,051 - main - INFO - train - 112 : Epoch : 4, global_step : 237/1590, loss_value : 396.6782501220703 
+2022-01-12 20:45:10,095 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:45:13,463 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.0000    0.0000    0.0000       150
+       person     0.0000    0.0000    0.0000       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.0000    0.0000    0.0000      1078
+    macro avg     0.0000    0.0000    0.0000      1078
+ weighted avg     0.0000    0.0000    0.0000      1078
+
+2022-01-12 20:45:13,464 - main.utils - INFO - compute_f1 - 130 : F1 : 0.0, accuracy : 0.9256502395619439, precision : 0.0, recall : 0.0
+2022-01-12 20:45:13,464 - main - INFO - train - 130 : Left patience is 90
+2022-01-12 20:45:14,758 - main - INFO - train - 112 : Epoch : 4, global_step : 247/1590, loss_value : 409.7749420166016 
+2022-01-12 20:45:19,098 - main - INFO - train - 112 : Epoch : 4, global_step : 257/1590, loss_value : 439.65013122558594 
+2022-01-12 20:45:23,439 - main - INFO - train - 112 : Epoch : 4, global_step : 267/1590, loss_value : 422.6823699951172 
+2022-01-12 20:45:25,015 - main - INFO - train - 112 : Epoch : 5, global_step : 271/1590, loss_value : 42.925390625 
+2022-01-12 20:45:25,038 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:45:28,430 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.1667    0.0067    0.0128       150
+       person     0.1429    0.0140    0.0255       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.1458    0.0065    0.0124      1078
+    macro avg     0.0516    0.0034    0.0064      1078
+ weighted avg     0.0799    0.0065    0.0119      1078
+
+2022-01-12 20:45:28,430 - main.utils - INFO - compute_f1 - 130 : F1 : 0.012433392539964477, accuracy : 0.9264630390143738, precision : 0.14583333333333334, recall : 0.006493506493506494
+2022-01-12 20:45:28,430 - main - INFO - train - 130 : Left patience is 89
+2022-01-12 20:45:32,777 - main - INFO - train - 112 : Epoch : 5, global_step : 281/1590, loss_value : 371.90668029785155 
+2022-01-12 20:45:37,131 - main - INFO - train - 112 : Epoch : 5, global_step : 291/1590, loss_value : 336.47999572753906 
+2022-01-12 20:45:40,181 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:45:43,575 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.1290    0.0267    0.0442       150
+       person     0.1765    0.0631    0.0929       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.1685    0.0288    0.0491      1078
+    macro avg     0.0509    0.0150    0.0229      1078
+ weighted avg     0.0880    0.0288    0.0431      1078
+
+2022-01-12 20:45:43,575 - main.utils - INFO - compute_f1 - 130 : F1 : 0.049128367670364506, accuracy : 0.9280030800821355, precision : 0.16847826086956522, recall : 0.0287569573283859
+2022-01-12 20:45:44,075 - main - INFO - train - 125 : Previous f1 score is 0.01706091689344777 and current f1 score is 0.049128367670364506, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:45:45,360 - main - INFO - train - 112 : Epoch : 5, global_step : 301/1590, loss_value : 347.705387878418 
+2022-01-12 20:45:49,705 - main - INFO - train - 112 : Epoch : 5, global_step : 311/1590, loss_value : 365.17708892822264 
+2022-01-12 20:45:54,050 - main - INFO - train - 112 : Epoch : 5, global_step : 321/1590, loss_value : 373.74388732910154 
+2022-01-12 20:45:55,626 - main - INFO - train - 112 : Epoch : 6, global_step : 325/1590, loss_value : 34.66502075195312 
+2022-01-12 20:45:55,652 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:45:59,032 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.1300    0.0867    0.1040       150
+       person     0.2057    0.1355    0.1634       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.1854    0.0659    0.0972      1078
+    macro avg     0.0559    0.0370    0.0446      1078
+ weighted avg     0.0997    0.0659    0.0793      1078
+
+2022-01-12 20:45:59,032 - main.utils - INFO - compute_f1 - 130 : F1 : 0.09719370294318959, accuracy : 0.9294575633127995, precision : 0.185378590078329, recall : 0.06586270871985157
+2022-01-12 20:45:59,517 - main - INFO - train - 125 : Previous f1 score is 0.049128367670364506 and current f1 score is 0.09719370294318959, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:46:03,839 - main - INFO - train - 112 : Epoch : 6, global_step : 335/1590, loss_value : 316.5078689575195 
+2022-01-12 20:46:08,168 - main - INFO - train - 112 : Epoch : 6, global_step : 345/1590, loss_value : 285.9227066040039 
+2022-01-12 20:46:11,221 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:46:14,604 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.1587    0.0667    0.0939       150
+       person     0.2953    0.1752    0.2199       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.2681    0.0788    0.1219      1078
+    macro avg     0.0757    0.0403    0.0523      1078
+ weighted avg     0.1393    0.0788    0.1004      1078
+
+2022-01-12 20:46:14,604 - main.utils - INFO - compute_f1 - 130 : F1 : 0.12186379928315412, accuracy : 0.9309548254620124, precision : 0.26813880126182965, recall : 0.07884972170686456
+2022-01-12 20:46:15,083 - main - INFO - train - 125 : Previous f1 score is 0.09719370294318959 and current f1 score is 0.12186379928315412, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:46:16,380 - main - INFO - train - 112 : Epoch : 6, global_step : 355/1590, loss_value : 308.2054840087891 
+2022-01-12 20:46:20,788 - main - INFO - train - 112 : Epoch : 6, global_step : 365/1590, loss_value : 332.1280853271484 
+2022-01-12 20:46:25,143 - main - INFO - train - 112 : Epoch : 6, global_step : 375/1590, loss_value : 317.7310165405273 
+2022-01-12 20:46:26,715 - main - INFO - train - 112 : Epoch : 7, global_step : 379/1590, loss_value : 45.5691650390625 
+2022-01-12 20:46:26,739 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:46:30,107 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.1977    0.1133    0.1441       150
+       person     0.2953    0.1332    0.1836       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.2652    0.0686    0.1091      1078
+    macro avg     0.0822    0.0411    0.0546      1078
+ weighted avg     0.1448    0.0686    0.0929      1078
+
+2022-01-12 20:46:30,107 - main.utils - INFO - compute_f1 - 130 : F1 : 0.1090641120117907, accuracy : 0.9310403832991102, precision : 0.26523297491039427, recall : 0.0686456400742115
+2022-01-12 20:46:30,107 - main - INFO - train - 130 : Left patience is 88
+2022-01-12 20:46:34,437 - main - INFO - train - 112 : Epoch : 7, global_step : 389/1590, loss_value : 276.3778442382812 
+2022-01-12 20:46:38,783 - main - INFO - train - 112 : Epoch : 7, global_step : 399/1590, loss_value : 234.96944580078124 
+2022-01-12 20:46:41,841 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:46:45,206 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0000    0.0000    0.0000       165
+     location     0.2049    0.1667    0.1838       150
+       person     0.3723    0.2383    0.2906       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.3191    0.1178    0.1721      1078
+    macro avg     0.0962    0.0675    0.0791      1078
+ weighted avg     0.1763    0.1178    0.1410      1078
+
+2022-01-12 20:46:45,206 - main.utils - INFO - compute_f1 - 130 : F1 : 0.1720867208672087, accuracy : 0.9333504449007529, precision : 0.31909547738693467, recall : 0.11781076066790352
+2022-01-12 20:46:45,704 - main - INFO - train - 125 : Previous f1 score is 0.12186379928315412 and current f1 score is 0.1720867208672087, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:46:47,003 - main - INFO - train - 112 : Epoch : 7, global_step : 409/1590, loss_value : 256.0343872070313 
+2022-01-12 20:46:51,346 - main - INFO - train - 112 : Epoch : 7, global_step : 419/1590, loss_value : 280.81134033203125 
+2022-01-12 20:46:55,695 - main - INFO - train - 112 : Epoch : 7, global_step : 429/1590, loss_value : 294.5302230834961 
+2022-01-12 20:46:57,316 - main - INFO - train - 112 : Epoch : 8, global_step : 433/1590, loss_value : 27.86998291015625 
+2022-01-12 20:46:57,352 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:47:00,743 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0909    0.0061    0.0114       165
+     location     0.1918    0.1867    0.1892       150
+       person     0.3963    0.2991    0.3409       428
+      product     0.0417    0.0079    0.0132       127
+
+    micro avg     0.3123    0.1466    0.1995      1078
+    macro avg     0.1201    0.0833    0.0924      1078
+ weighted avg     0.2028    0.1466    0.1650      1078
+
+2022-01-12 20:47:00,743 - main.utils - INFO - compute_f1 - 130 : F1 : 0.1994949494949495, accuracy : 0.9347621492128679, precision : 0.31225296442687744, recall : 0.14656771799628943
+2022-01-12 20:47:01,230 - main - INFO - train - 125 : Previous f1 score is 0.1720867208672087 and current f1 score is 0.1994949494949495, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:47:05,634 - main - INFO - train - 112 : Epoch : 8, global_step : 443/1590, loss_value : 229.0753257751465 
+2022-01-12 20:47:10,028 - main - INFO - train - 112 : Epoch : 8, global_step : 453/1590, loss_value : 201.59385375976564 
+2022-01-12 20:47:13,096 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:47:16,477 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.2000    0.0152    0.0282        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.0909    0.0061    0.0114       165
+     location     0.2327    0.2467    0.2395       150
+       person     0.5461    0.3458    0.4235       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.4119    0.1735    0.2441      1078
+    macro avg     0.1783    0.1023    0.1171      1078
+ weighted avg     0.2754    0.1735    0.2049      1078
+
+2022-01-12 20:47:16,478 - main.utils - INFO - compute_f1 - 130 : F1 : 0.2441253263707572, accuracy : 0.9359171800136893, precision : 0.4118942731277533, recall : 0.17346938775510204
+2022-01-12 20:47:16,956 - main - INFO - train - 125 : Previous f1 score is 0.1994949494949495 and current f1 score is 0.2441253263707572, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:47:18,247 - main - INFO - train - 112 : Epoch : 8, global_step : 463/1590, loss_value : 224.38158111572267 
+2022-01-12 20:47:22,603 - main - INFO - train - 112 : Epoch : 8, global_step : 473/1590, loss_value : 238.91954956054687 
+2022-01-12 20:47:26,950 - main - INFO - train - 112 : Epoch : 8, global_step : 483/1590, loss_value : 225.90857391357423 
+2022-01-12 20:47:28,529 - main - INFO - train - 112 : Epoch : 9, global_step : 487/1590, loss_value : 29.692578125 
+2022-01-12 20:47:28,551 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:47:31,926 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0000    0.0000    0.0000        66
+creative-work     0.0000    0.0000    0.0000       142
+        group     0.1034    0.0364    0.0538       165
+     location     0.2838    0.2800    0.2819       150
+       person     0.5422    0.3902    0.4538       428
+      product     0.1333    0.0157    0.0282       127
+
+    micro avg     0.4064    0.2013    0.2692      1078
+    macro avg     0.1771    0.1204    0.1363      1078
+ weighted avg     0.2863    0.2013    0.2310      1078
+
+2022-01-12 20:47:31,926 - main.utils - INFO - compute_f1 - 130 : F1 : 0.2692307692307692, accuracy : 0.936815537303217, precision : 0.40636704119850187, recall : 0.2012987012987013
+2022-01-12 20:47:32,416 - main - INFO - train - 125 : Previous f1 score is 0.2441253263707572 and current f1 score is 0.2692307692307692, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:47:36,762 - main - INFO - train - 112 : Epoch : 9, global_step : 497/1590, loss_value : 190.13796310424806 
+2022-01-12 20:47:41,135 - main - INFO - train - 112 : Epoch : 9, global_step : 507/1590, loss_value : 175.96676177978514 
+2022-01-12 20:47:44,205 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:47:47,581 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0968    0.0455    0.0619        66
+creative-work     0.1250    0.0070    0.0133       142
+        group     0.1081    0.0242    0.0396       165
+     location     0.2500    0.3467    0.2905       150
+       person     0.6858    0.4182    0.5196       428
+      product     0.2500    0.0079    0.0153       127
+
+    micro avg     0.4372    0.2226    0.2950      1078
+    macro avg     0.2526    0.1416    0.1567      1078
+ weighted avg     0.3755    0.2226    0.2601      1078
+
+2022-01-12 20:47:47,582 - main.utils - INFO - compute_f1 - 130 : F1 : 0.29502151198524895, accuracy : 0.9379705681040383, precision : 0.4371584699453552, recall : 0.22263450834879406
+2022-01-12 20:47:48,063 - main - INFO - train - 125 : Previous f1 score is 0.2692307692307692 and current f1 score is 0.29502151198524895, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:47:49,354 - main - INFO - train - 112 : Epoch : 9, global_step : 517/1590, loss_value : 194.06779022216796 
+2022-01-12 20:47:53,706 - main - INFO - train - 112 : Epoch : 9, global_step : 527/1590, loss_value : 201.13296356201172 
+2022-01-12 20:47:58,080 - main - INFO - train - 112 : Epoch : 9, global_step : 537/1590, loss_value : 191.30468292236327 
+2022-01-12 20:47:59,655 - main - INFO - train - 112 : Epoch : 10, global_step : 541/1590, loss_value : 23.507467651367186 
+2022-01-12 20:47:59,679 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:48:03,076 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0714    0.0152    0.0250        66
+creative-work     0.1111    0.0070    0.0132       142
+        group     0.1277    0.0364    0.0566       165
+     location     0.3178    0.2267    0.2646       150
+       person     0.6176    0.4416    0.5150       428
+      product     0.0000    0.0000    0.0000       127
+
+    micro avg     0.4763    0.2143    0.2956      1078
+    macro avg     0.2076    0.1211    0.1457      1078
+ weighted avg     0.3280    0.2143    0.2532      1078
+
+2022-01-12 20:48:03,076 - main.utils - INFO - compute_f1 - 130 : F1 : 0.2955854126679462, accuracy : 0.9383127994524298, precision : 0.4762886597938144, recall : 0.21428571428571427
+2022-01-12 20:48:03,558 - main - INFO - train - 125 : Previous f1 score is 0.29502151198524895 and current f1 score is 0.2955854126679462, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:48:07,902 - main - INFO - train - 112 : Epoch : 10, global_step : 551/1590, loss_value : 163.50079269409179 
+2022-01-12 20:48:12,254 - main - INFO - train - 112 : Epoch : 10, global_step : 561/1590, loss_value : 151.53021545410155 
+2022-01-12 20:48:15,317 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:48:18,695 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0667    0.0758    0.0709        66
+creative-work     0.0909    0.0141    0.0244       142
+        group     0.1333    0.0242    0.0410       165
+     location     0.3067    0.3067    0.3067       150
+       person     0.6937    0.4393    0.5379       428
+      product     0.2000    0.0079    0.0152       127
+
+    micro avg     0.4448    0.2282    0.3017      1078
+    macro avg     0.2486    0.1446    0.1660      1078
+ weighted avg     0.3781    0.2282    0.2719      1078
+
+2022-01-12 20:48:18,695 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3016554261189454, accuracy : 0.9389972621492129, precision : 0.4448462929475588, recall : 0.22820037105751392
+2022-01-12 20:48:19,191 - main - INFO - train - 125 : Previous f1 score is 0.2955854126679462 and current f1 score is 0.3016554261189454, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:48:20,481 - main - INFO - train - 112 : Epoch : 10, global_step : 571/1590, loss_value : 172.41223907470703 
+2022-01-12 20:48:24,854 - main - INFO - train - 112 : Epoch : 10, global_step : 581/1590, loss_value : 175.1205291748047 
+2022-01-12 20:48:29,211 - main - INFO - train - 112 : Epoch : 10, global_step : 591/1590, loss_value : 159.45242462158203 
+2022-01-12 20:48:30,853 - main - INFO - train - 112 : Epoch : 11, global_step : 595/1590, loss_value : 19.01044616699219 
+2022-01-12 20:48:30,891 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:48:34,281 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1081    0.0606    0.0777        66
+creative-work     0.1429    0.0282    0.0471       142
+        group     0.1375    0.0667    0.0898       165
+     location     0.3259    0.2933    0.3088       150
+       person     0.6554    0.4533    0.5359       428
+      product     0.2000    0.0079    0.0152       127
+
+    micro avg     0.4441    0.2393    0.3110      1078
+    macro avg     0.2616    0.1517    0.1791      1078
+ weighted avg     0.3756    0.2393    0.2822      1078
+
+2022-01-12 20:48:34,281 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3110307414104883, accuracy : 0.9393822724161534, precision : 0.4440619621342513, recall : 0.23933209647495363
+2022-01-12 20:48:34,777 - main - INFO - train - 125 : Previous f1 score is 0.3016554261189454 and current f1 score is 0.3110307414104883, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:48:39,178 - main - INFO - train - 112 : Epoch : 11, global_step : 605/1590, loss_value : 142.0539093017578 
+2022-01-12 20:48:43,563 - main - INFO - train - 112 : Epoch : 11, global_step : 615/1590, loss_value : 131.93652420043946 
+2022-01-12 20:48:46,621 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:48:49,999 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0694    0.0758    0.0725        66
+creative-work     0.3333    0.0563    0.0964       142
+        group     0.1250    0.0242    0.0406       165
+     location     0.3478    0.3733    0.3601       150
+       person     0.7121    0.4393    0.5434       428
+      product     0.0833    0.0079    0.0144       127
+
+    micro avg     0.4637    0.2430    0.3189      1078
+    macro avg     0.2785    0.1628    0.1879      1078
+ weighted avg     0.4082    0.2430    0.2909      1078
+
+2022-01-12 20:48:49,999 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3189287888009738, accuracy : 0.9394250513347022, precision : 0.46371681415929206, recall : 0.24304267161410018
+2022-01-12 20:48:50,496 - main - INFO - train - 125 : Previous f1 score is 0.3110307414104883 and current f1 score is 0.3189287888009738, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:48:51,783 - main - INFO - train - 112 : Epoch : 11, global_step : 625/1590, loss_value : 150.21171188354492 
+2022-01-12 20:48:56,145 - main - INFO - train - 112 : Epoch : 11, global_step : 635/1590, loss_value : 154.33508529663087 
+2022-01-12 20:49:00,530 - main - INFO - train - 112 : Epoch : 11, global_step : 645/1590, loss_value : 138.83619384765626 
+2022-01-12 20:49:02,129 - main - INFO - train - 112 : Epoch : 12, global_step : 649/1590, loss_value : 15.828546142578125 
+2022-01-12 20:49:02,153 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:49:05,537 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0943    0.0758    0.0840        66
+creative-work     0.3143    0.0775    0.1243       142
+        group     0.1806    0.0788    0.1097       165
+     location     0.3519    0.3800    0.3654       150
+       person     0.6972    0.4626    0.5562       428
+      product     0.0870    0.0157    0.0267       127
+
+    micro avg     0.4547    0.2653    0.3351      1078
+    macro avg     0.2875    0.1817    0.2110      1078
+ weighted avg     0.4108    0.2653    0.3131      1078
+
+2022-01-12 20:49:05,537 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3350908025776216, accuracy : 0.9412217659137577, precision : 0.4546899841017488, recall : 0.2653061224489796
+2022-01-12 20:49:06,014 - main - INFO - train - 125 : Previous f1 score is 0.3189287888009738 and current f1 score is 0.3350908025776216, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:49:10,363 - main - INFO - train - 112 : Epoch : 12, global_step : 659/1590, loss_value : 123.27123565673828 
+2022-01-12 20:49:14,732 - main - INFO - train - 112 : Epoch : 12, global_step : 669/1590, loss_value : 114.85288925170899 
+2022-01-12 20:49:17,808 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:49:21,191 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0753    0.1061    0.0881        66
+creative-work     0.3571    0.0704    0.1176       142
+        group     0.2326    0.0606    0.0962       165
+     location     0.3919    0.3867    0.3893       150
+       person     0.7266    0.4533    0.5583       428
+      product     0.0645    0.0157    0.0253       127
+
+    micro avg     0.4607    0.2607    0.3329      1078
+    macro avg     0.3080    0.1821    0.2125      1078
+ weighted avg     0.4379    0.2607    0.3144      1078
+
+2022-01-12 20:49:21,192 - main.utils - INFO - compute_f1 - 130 : F1 : 0.33293838862559244, accuracy : 0.9406656399726215, precision : 0.460655737704918, recall : 0.2606679035250464
+2022-01-12 20:49:21,192 - main - INFO - train - 130 : Left patience is 87
+2022-01-12 20:49:22,491 - main - INFO - train - 112 : Epoch : 12, global_step : 679/1590, loss_value : 133.5019073486328 
+2022-01-12 20:49:26,860 - main - INFO - train - 112 : Epoch : 12, global_step : 689/1590, loss_value : 137.9575958251953 
+2022-01-12 20:49:31,237 - main - INFO - train - 112 : Epoch : 12, global_step : 699/1590, loss_value : 121.9464241027832 
+2022-01-12 20:49:32,844 - main - INFO - train - 112 : Epoch : 13, global_step : 703/1590, loss_value : 14.355076599121094 
+2022-01-12 20:49:32,868 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:49:36,261 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1000    0.1061    0.1029        66
+creative-work     0.3488    0.1056    0.1622       142
+        group     0.2267    0.1030    0.1417       165
+     location     0.4483    0.3467    0.3910       150
+       person     0.7184    0.4650    0.5645       428
+      product     0.1613    0.0394    0.0633       127
+
+    micro avg     0.4820    0.2737    0.3491      1078
+    macro avg     0.3339    0.1943    0.2376      1078
+ weighted avg     0.4534    0.2737    0.3353      1078
+
+2022-01-12 20:49:36,261 - main.utils - INFO - compute_f1 - 130 : F1 : 0.34911242603550297, accuracy : 0.9416495550992471, precision : 0.4820261437908497, recall : 0.27365491651205937
+2022-01-12 20:49:36,754 - main - INFO - train - 125 : Previous f1 score is 0.3350908025776216 and current f1 score is 0.34911242603550297, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:49:41,113 - main - INFO - train - 112 : Epoch : 13, global_step : 713/1590, loss_value : 107.22305068969726 
+2022-01-12 20:49:45,472 - main - INFO - train - 112 : Epoch : 13, global_step : 723/1590, loss_value : 102.1162010192871 
+2022-01-12 20:49:48,553 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:49:51,947 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.0865    0.1364    0.1059        66
+creative-work     0.3171    0.0915    0.1421       142
+        group     0.2083    0.0606    0.0939       165
+     location     0.3867    0.3867    0.3867       150
+       person     0.7510    0.4579    0.5689       428
+      product     0.1400    0.0551    0.0791       127
+
+    micro avg     0.4480    0.2718    0.3383      1078
+    macro avg     0.3149    0.1980    0.2294      1078
+ weighted avg     0.4474    0.2718    0.3286      1078
+
+2022-01-12 20:49:51,947 - main.utils - INFO - compute_f1 - 130 : F1 : 0.33833718244803695, accuracy : 0.9412217659137577, precision : 0.44801223241590216, recall : 0.2717996289424861
+2022-01-12 20:49:51,947 - main - INFO - train - 130 : Left patience is 86
+2022-01-12 20:49:53,248 - main - INFO - train - 112 : Epoch : 13, global_step : 733/1590, loss_value : 117.03484573364258 
+2022-01-12 20:49:57,624 - main - INFO - train - 112 : Epoch : 13, global_step : 743/1590, loss_value : 120.08022003173828 
+2022-01-12 20:50:01,999 - main - INFO - train - 112 : Epoch : 13, global_step : 753/1590, loss_value : 105.55105743408203 
+2022-01-12 20:50:03,580 - main - INFO - train - 112 : Epoch : 14, global_step : 757/1590, loss_value : 13.443505859375 
+2022-01-12 20:50:03,604 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:50:06,985 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1404    0.2424    0.1778        66
+creative-work     0.2586    0.1056    0.1500       142
+        group     0.1885    0.1394    0.1603       165
+     location     0.5047    0.3600    0.4202       150
+       person     0.7326    0.4673    0.5706       428
+      product     0.1579    0.0945    0.1182       127
+
+    micro avg     0.4267    0.2968    0.3501      1078
+    macro avg     0.3304    0.2349    0.2662      1078
+ weighted avg     0.4512    0.2968    0.3541      1078
+
+2022-01-12 20:50:06,985 - main.utils - INFO - compute_f1 - 130 : F1 : 0.350109409190372, accuracy : 0.9425479123887748, precision : 0.4266666666666667, recall : 0.29684601113172543
+2022-01-12 20:50:07,420 - main - INFO - train - 125 : Previous f1 score is 0.34911242603550297 and current f1 score is 0.350109409190372, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:50:11,769 - main - INFO - train - 112 : Epoch : 14, global_step : 767/1590, loss_value : 96.49759712219239 
+2022-01-12 20:50:16,135 - main - INFO - train - 112 : Epoch : 14, global_step : 777/1590, loss_value : 90.42003479003907 
+2022-01-12 20:50:19,216 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:50:22,614 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1095    0.2273    0.1478        66
+creative-work     0.2889    0.0915    0.1390       142
+        group     0.1786    0.0909    0.1205       165
+     location     0.4640    0.3867    0.4218       150
+       person     0.7645    0.4322    0.5522       428
+      product     0.1500    0.0709    0.0963       127
+
+    micro avg     0.4257    0.2737    0.3331      1078
+    macro avg     0.3259    0.2166    0.2463      1078
+ weighted avg     0.4578    0.2737    0.3351      1078
+
+2022-01-12 20:50:22,614 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3331451157538114, accuracy : 0.9411362080766599, precision : 0.42568542568542567, recall : 0.27365491651205937
+2022-01-12 20:50:22,614 - main - INFO - train - 130 : Left patience is 85
+2022-01-12 20:50:23,914 - main - INFO - train - 112 : Epoch : 14, global_step : 787/1590, loss_value : 103.24491806030274 
+2022-01-12 20:50:28,285 - main - INFO - train - 112 : Epoch : 14, global_step : 797/1590, loss_value : 109.45249862670899 
+2022-01-12 20:50:32,641 - main - INFO - train - 112 : Epoch : 14, global_step : 807/1590, loss_value : 94.11918640136719 
+2022-01-12 20:50:34,226 - main - INFO - train - 112 : Epoch : 15, global_step : 811/1590, loss_value : 12.286917114257813 
+2022-01-12 20:50:34,251 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:50:37,621 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1477    0.1970    0.1688        66
+creative-work     0.2879    0.1338    0.1827       142
+        group     0.2404    0.1515    0.1859       165
+     location     0.5182    0.3800    0.4385       150
+       person     0.7240    0.4720    0.5714       428
+      product     0.1408    0.0787    0.1010       127
+
+    micro avg     0.4540    0.3024    0.3630      1078
+    macro avg     0.3432    0.2355    0.2747      1078
+ weighted avg     0.4599    0.3024    0.3626      1078
+
+2022-01-12 20:50:37,622 - main.utils - INFO - compute_f1 - 130 : F1 : 0.36302895322939865, accuracy : 0.9430184804928131, precision : 0.45403899721448465, recall : 0.30241187384044527
+2022-01-12 20:50:38,033 - main - INFO - train - 125 : Previous f1 score is 0.350109409190372 and current f1 score is 0.36302895322939865, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:50:42,386 - main - INFO - train - 112 : Epoch : 15, global_step : 821/1590, loss_value : 87.99475936889648 
+2022-01-12 20:50:46,753 - main - INFO - train - 112 : Epoch : 15, global_step : 831/1590, loss_value : 82.27530975341797 
+2022-01-12 20:50:49,837 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:50:53,244 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1287    0.1970    0.1557        66
+creative-work     0.2586    0.1056    0.1500       142
+        group     0.2000    0.1030    0.1360       165
+     location     0.4656    0.4067    0.4342       150
+       person     0.7204    0.4696    0.5686       428
+      product     0.1587    0.0787    0.1053       127
+
+    micro avg     0.4421    0.2941    0.3532      1078
+    macro avg     0.3220    0.2268    0.2583      1078
+ weighted avg     0.4421    0.2941    0.3487      1078
+
+2022-01-12 20:50:53,244 - main.utils - INFO - compute_f1 - 130 : F1 : 0.35320334261838443, accuracy : 0.9420773442847364, precision : 0.4421199442119944, recall : 0.2940630797773655
+2022-01-12 20:50:53,244 - main - INFO - train - 130 : Left patience is 84
+2022-01-12 20:50:54,548 - main - INFO - train - 112 : Epoch : 15, global_step : 841/1590, loss_value : 92.98662872314453 
+2022-01-12 20:50:58,913 - main - INFO - train - 112 : Epoch : 15, global_step : 851/1590, loss_value : 95.20240020751953 
+2022-01-12 20:51:03,274 - main - INFO - train - 112 : Epoch : 15, global_step : 861/1590, loss_value : 83.26980667114258 
+2022-01-12 20:51:04,855 - main - INFO - train - 112 : Epoch : 16, global_step : 865/1590, loss_value : 13.222039794921875 
+2022-01-12 20:51:04,880 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:51:08,283 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1458    0.2121    0.1728        66
+creative-work     0.2308    0.1056    0.1449       142
+        group     0.2034    0.1455    0.1696       165
+     location     0.4915    0.3867    0.4328       150
+       person     0.6869    0.4766    0.5628       428
+      product     0.0938    0.0472    0.0628       127
+
+    micro avg     0.4235    0.2978    0.3497      1078
+    macro avg     0.3087    0.2290    0.2576      1078
+ weighted avg     0.4226    0.2978    0.3467      1078
+
+2022-01-12 20:51:08,283 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3496732026143791, accuracy : 0.9417778918548939, precision : 0.4234828496042216, recall : 0.29777365491651203
+2022-01-12 20:51:08,283 - main - INFO - train - 130 : Left patience is 83
+2022-01-12 20:51:12,644 - main - INFO - train - 112 : Epoch : 16, global_step : 875/1590, loss_value : 77.59662132263183 
+2022-01-12 20:51:17,029 - main - INFO - train - 112 : Epoch : 16, global_step : 885/1590, loss_value : 71.68552169799804 
+2022-01-12 20:51:20,126 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:51:23,526 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1351    0.2273    0.1695        66
+creative-work     0.3061    0.1056    0.1571       142
+        group     0.2429    0.1030    0.1447       165
+     location     0.3988    0.4333    0.4153       150
+       person     0.7659    0.4509    0.5676       428
+      product     0.1053    0.0472    0.0652       127
+
+    micro avg     0.4430    0.2885    0.3494      1078
+    macro avg     0.3257    0.2279    0.2532      1078
+ weighted avg     0.4577    0.2885    0.3441      1078
+
+2022-01-12 20:51:23,526 - main.utils - INFO - compute_f1 - 130 : F1 : 0.349438202247191, accuracy : 0.9421201232032854, precision : 0.443019943019943, recall : 0.2884972170686456
+2022-01-12 20:51:23,526 - main - INFO - train - 130 : Left patience is 82
+2022-01-12 20:51:24,829 - main - INFO - train - 112 : Epoch : 16, global_step : 895/1590, loss_value : 85.43431434631347 
+2022-01-12 20:51:29,217 - main - INFO - train - 112 : Epoch : 16, global_step : 905/1590, loss_value : 85.08524169921876 
+2022-01-12 20:51:33,586 - main - INFO - train - 112 : Epoch : 16, global_step : 915/1590, loss_value : 70.78576354980468 
+2022-01-12 20:51:35,161 - main - INFO - train - 112 : Epoch : 17, global_step : 919/1590, loss_value : 10.676998901367188 
+2022-01-12 20:51:35,187 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:51:38,565 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1500    0.2273    0.1807        66
+creative-work     0.1848    0.1197    0.1453       142
+        group     0.2162    0.1455    0.1739       165
+     location     0.5043    0.3933    0.4419       150
+       person     0.7500    0.4416    0.5559       428
+      product     0.1286    0.0709    0.0914       127
+
+    micro avg     0.4218    0.2904    0.3440      1078
+    macro avg     0.3223    0.2330    0.2649      1078
+ weighted avg     0.4497    0.2904    0.3498      1078
+
+2022-01-12 20:51:38,565 - main.utils - INFO - compute_f1 - 130 : F1 : 0.34395604395604396, accuracy : 0.9427190280629706, precision : 0.42183288409703507, recall : 0.29035250463821893
+2022-01-12 20:51:38,565 - main - INFO - train - 130 : Left patience is 81
+2022-01-12 20:51:42,915 - main - INFO - train - 112 : Epoch : 17, global_step : 929/1590, loss_value : 66.85350532531739 
+2022-01-12 20:51:47,347 - main - INFO - train - 112 : Epoch : 17, global_step : 939/1590, loss_value : 64.01635093688965 
+2022-01-12 20:51:50,431 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:51:53,808 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1300    0.1970    0.1566        66
+creative-work     0.2143    0.1056    0.1415       142
+        group     0.2857    0.1091    0.1579       165
+     location     0.4059    0.4600    0.4313       150
+       person     0.7500    0.4556    0.5669       428
+      product     0.1111    0.0472    0.0663       127
+
+    micro avg     0.4407    0.2931    0.3521      1078
+    macro avg     0.3162    0.2291    0.2534      1078
+ weighted avg     0.4473    0.2931    0.3453      1078
+
+2022-01-12 20:51:53,808 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3520891364902507, accuracy : 0.9422056810403833, precision : 0.4407252440725244, recall : 0.29313543599257885
+2022-01-12 20:51:53,808 - main - INFO - train - 130 : Left patience is 80
+2022-01-12 20:51:55,102 - main - INFO - train - 112 : Epoch : 17, global_step : 949/1590, loss_value : 70.809818649292 
+2022-01-12 20:51:59,498 - main - INFO - train - 112 : Epoch : 17, global_step : 959/1590, loss_value : 78.78918380737305 
+2022-01-12 20:52:03,917 - main - INFO - train - 112 : Epoch : 17, global_step : 969/1590, loss_value : 64.49758758544922 
+2022-01-12 20:52:05,501 - main - INFO - train - 112 : Epoch : 18, global_step : 973/1590, loss_value : 10.340586090087891 
+2022-01-12 20:52:05,527 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:52:08,918 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1415    0.2273    0.1744        66
+creative-work     0.1778    0.1127    0.1379       142
+        group     0.2651    0.1333    0.1774       165
+     location     0.4878    0.4000    0.4396       150
+       person     0.7519    0.4603    0.5710       428
+      product     0.1316    0.0787    0.0985       127
+
+    micro avg     0.4324    0.2968    0.3520      1078
+    macro avg     0.3259    0.2354    0.2665      1078
+ weighted avg     0.4546    0.2968    0.3555      1078
+
+2022-01-12 20:52:08,918 - main.utils - INFO - compute_f1 - 130 : F1 : 0.35203520352035206, accuracy : 0.9425479123887748, precision : 0.43243243243243246, recall : 0.29684601113172543
+2022-01-12 20:52:08,918 - main - INFO - train - 130 : Left patience is 79
+2022-01-12 20:52:13,283 - main - INFO - train - 112 : Epoch : 18, global_step : 983/1590, loss_value : 61.00784072875977 
+2022-01-12 20:52:17,657 - main - INFO - train - 112 : Epoch : 18, global_step : 993/1590, loss_value : 58.86477203369141 
+2022-01-12 20:52:20,743 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:52:24,143 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1296    0.2121    0.1609        66
+creative-work     0.2222    0.1127    0.1495       142
+        group     0.2632    0.1212    0.1660       165
+     location     0.4741    0.4267    0.4491       150
+       person     0.7425    0.4650    0.5718       428
+      product     0.1212    0.0630    0.0829       127
+
+    micro avg     0.4428    0.2978    0.3561      1078
+    macro avg     0.3255    0.2334    0.2634      1078
+ weighted avg     0.4525    0.2978    0.3543      1078
+
+2022-01-12 20:52:24,144 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3560732113144759, accuracy : 0.9424623545516769, precision : 0.44275862068965516, recall : 0.29777365491651203
+2022-01-12 20:52:24,144 - main - INFO - train - 130 : Left patience is 78
+2022-01-12 20:52:25,444 - main - INFO - train - 112 : Epoch : 18, global_step : 1003/1590, loss_value : 67.01126861572266 
+2022-01-12 20:52:29,835 - main - INFO - train - 112 : Epoch : 18, global_step : 1013/1590, loss_value : 71.23936347961425 
+2022-01-12 20:52:34,218 - main - INFO - train - 112 : Epoch : 18, global_step : 1023/1590, loss_value : 60.39634132385254 
+2022-01-12 20:52:35,806 - main - INFO - train - 112 : Epoch : 19, global_step : 1027/1590, loss_value : 9.540840911865235 
+2022-01-12 20:52:35,832 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:52:39,232 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1358    0.1667    0.1497        66
+creative-work     0.2179    0.1197    0.1545       142
+        group     0.3387    0.1273    0.1850       165
+     location     0.5172    0.4000    0.4511       150
+       person     0.7626    0.4579    0.5723       428
+      product     0.1587    0.0787    0.1053       127
+
+    micro avg     0.4795    0.2922    0.3631      1078
+    macro avg     0.3552    0.2251    0.2696      1078
+ weighted avg     0.4823    0.2922    0.3602      1078
+
+2022-01-12 20:52:39,232 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3631123919308357, accuracy : 0.9426334702258727, precision : 0.4794520547945205, recall : 0.2922077922077922
+2022-01-12 20:52:39,737 - main - INFO - train - 125 : Previous f1 score is 0.36302895322939865 and current f1 score is 0.3631123919308357, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:52:44,096 - main - INFO - train - 112 : Epoch : 19, global_step : 1037/1590, loss_value : 55.166788482666014 
+2022-01-12 20:52:48,476 - main - INFO - train - 112 : Epoch : 19, global_step : 1047/1590, loss_value : 52.452270889282225 
+2022-01-12 20:52:51,570 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:52:54,972 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1346    0.2121    0.1647        66
+creative-work     0.2740    0.1408    0.1860       142
+        group     0.2778    0.1212    0.1688       165
+     location     0.4891    0.4467    0.4669       150
+       person     0.7636    0.4603    0.5743       428
+      product     0.1455    0.0630    0.0879       127
+
+    micro avg     0.4664    0.3024    0.3669      1078
+    macro avg     0.3474    0.2407    0.2748      1078
+ weighted avg     0.4752    0.3024    0.3638      1078
+
+2022-01-12 20:52:54,972 - main.utils - INFO - compute_f1 - 130 : F1 : 0.36691052335396734, accuracy : 0.9429329226557153, precision : 0.4663805436337625, recall : 0.30241187384044527
+2022-01-12 20:52:55,470 - main - INFO - train - 125 : Previous f1 score is 0.3631123919308357 and current f1 score is 0.36691052335396734, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:52:56,768 - main - INFO - train - 112 : Epoch : 19, global_step : 1057/1590, loss_value : 60.768255615234374 
+2022-01-12 20:53:01,147 - main - INFO - train - 112 : Epoch : 19, global_step : 1067/1590, loss_value : 67.24521217346191 
+2022-01-12 20:53:05,524 - main - INFO - train - 112 : Epoch : 19, global_step : 1077/1590, loss_value : 53.658481979370116 
+2022-01-12 20:53:07,110 - main - INFO - train - 112 : Epoch : 20, global_step : 1081/1590, loss_value : 8.289723205566407 
+2022-01-12 20:53:07,137 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:53:10,541 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1443    0.2121    0.1718        66
+creative-work     0.1650    0.1197    0.1388       142
+        group     0.2759    0.1455    0.1905       165
+     location     0.5039    0.4267    0.4621       150
+       person     0.7549    0.4533    0.5664       428
+      product     0.1154    0.0945    0.1039       127
+
+    micro avg     0.4194    0.3015    0.3508      1078
+    macro avg     0.3266    0.2420    0.2722      1078
+ weighted avg     0.4562    0.3015    0.3594      1078
+
+2022-01-12 20:53:10,541 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3507825148407987, accuracy : 0.9428901437371663, precision : 0.41935483870967744, recall : 0.3014842300556586
+2022-01-12 20:53:10,541 - main - INFO - train - 130 : Left patience is 77
+2022-01-12 20:53:14,911 - main - INFO - train - 112 : Epoch : 20, global_step : 1091/1590, loss_value : 52.46068115234375 
+2022-01-12 20:53:19,298 - main - INFO - train - 112 : Epoch : 20, global_step : 1101/1590, loss_value : 49.130764389038085 
+2022-01-12 20:53:22,383 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:53:25,777 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1300    0.1970    0.1566        66
+creative-work     0.2530    0.1479    0.1867       142
+        group     0.3014    0.1333    0.1849       165
+     location     0.5470    0.4267    0.4794       150
+       person     0.7729    0.4533    0.5714       428
+      product     0.1667    0.0787    0.1070       127
+
+    micro avg     0.4737    0.3006    0.3678      1078
+    macro avg     0.3618    0.2395    0.2810      1078
+ weighted avg     0.4900    0.3006    0.3687      1078
+
+2022-01-12 20:53:25,777 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3677639046538025, accuracy : 0.9434890485968515, precision : 0.47368421052631576, recall : 0.300556586270872
+2022-01-12 20:53:26,285 - main - INFO - train - 125 : Previous f1 score is 0.36691052335396734 and current f1 score is 0.3677639046538025, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:53:27,585 - main - INFO - train - 112 : Epoch : 20, global_step : 1111/1590, loss_value : 56.44347648620605 
+2022-01-12 20:53:31,978 - main - INFO - train - 112 : Epoch : 20, global_step : 1121/1590, loss_value : 64.07990303039551 
+2022-01-12 20:53:36,374 - main - INFO - train - 112 : Epoch : 20, global_step : 1131/1590, loss_value : 48.5564208984375 
+2022-01-12 20:53:37,971 - main - INFO - train - 112 : Epoch : 21, global_step : 1135/1590, loss_value : 6.9138946533203125 
+2022-01-12 20:53:37,996 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:53:41,399 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1690    0.1818    0.1752        66
+creative-work     0.2157    0.1549    0.1803       142
+        group     0.3333    0.1758    0.2302       165
+     location     0.5667    0.4533    0.5037       150
+       person     0.7773    0.4486    0.5689       428
+      product     0.1622    0.0945    0.1194       127
+
+    micro avg     0.4779    0.3108    0.3766      1078
+    macro avg     0.3707    0.2515    0.2963      1078
+ weighted avg     0.4964    0.3108    0.3797      1078
+
+2022-01-12 20:53:41,399 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3766160764474424, accuracy : 0.9440451745379876, precision : 0.47788873038516405, recall : 0.310760667903525
+2022-01-12 20:53:41,908 - main - INFO - train - 125 : Previous f1 score is 0.3677639046538025 and current f1 score is 0.3766160764474424, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:53:46,277 - main - INFO - train - 112 : Epoch : 21, global_step : 1145/1590, loss_value : 48.16678886413574 
+2022-01-12 20:53:50,660 - main - INFO - train - 112 : Epoch : 21, global_step : 1155/1590, loss_value : 46.501686096191406 
+2022-01-12 20:53:53,758 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:53:57,151 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1558    0.1818    0.1678        66
+creative-work     0.2442    0.1479    0.1842       142
+        group     0.3253    0.1636    0.2177       165
+     location     0.5159    0.4333    0.4710       150
+       person     0.7538    0.4579    0.5698       428
+      product     0.1757    0.1024    0.1294       127
+
+    micro avg     0.4731    0.3098    0.3744      1078
+    macro avg     0.3618    0.2478    0.2900      1078
+ weighted avg     0.4833    0.3098    0.3749      1078
+
+2022-01-12 20:53:57,151 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3744394618834081, accuracy : 0.9440451745379876, precision : 0.4730878186968839, recall : 0.3098330241187384
+2022-01-12 20:53:57,151 - main - INFO - train - 130 : Left patience is 76
+2022-01-12 20:53:58,451 - main - INFO - train - 112 : Epoch : 21, global_step : 1165/1590, loss_value : 52.55250358581543 
+2022-01-12 20:54:02,841 - main - INFO - train - 112 : Epoch : 21, global_step : 1175/1590, loss_value : 59.362785720825194 
+2022-01-12 20:54:07,290 - main - INFO - train - 112 : Epoch : 21, global_step : 1185/1590, loss_value : 43.387451171875 
+2022-01-12 20:54:08,880 - main - INFO - train - 112 : Epoch : 22, global_step : 1189/1590, loss_value : 7.1335296630859375 
+2022-01-12 20:54:08,907 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:54:12,298 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1940    0.1970    0.1955        66
+creative-work     0.3111    0.1972    0.2414       142
+        group     0.3625    0.1758    0.2367       165
+     location     0.5271    0.4533    0.4875       150
+       person     0.7510    0.4509    0.5635       428
+      product     0.1429    0.0945    0.1137       127
+
+    micro avg     0.4851    0.3182    0.3843      1078
+    macro avg     0.3814    0.2614    0.3064      1078
+ weighted avg     0.4967    0.3182    0.3850      1078
+
+2022-01-12 20:54:12,299 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3843137254901961, accuracy : 0.9444301848049281, precision : 0.48514851485148514, recall : 0.3181818181818182
+2022-01-12 20:54:12,794 - main - INFO - train - 125 : Previous f1 score is 0.3766160764474424 and current f1 score is 0.3843137254901961, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:54:17,136 - main - INFO - train - 112 : Epoch : 22, global_step : 1199/1590, loss_value : 44.81746253967285 
+2022-01-12 20:54:21,452 - main - INFO - train - 112 : Epoch : 22, global_step : 1209/1590, loss_value : 45.270304107666014 
+2022-01-12 20:54:24,568 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:54:27,931 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1236    0.1667    0.1419        66
+creative-work     0.2958    0.1479    0.1972       142
+        group     0.3846    0.1515    0.2174       165
+     location     0.5078    0.4333    0.4676       150
+       person     0.7567    0.4650    0.5760       428
+      product     0.1613    0.0787    0.1058       127
+
+    micro avg     0.4882    0.3071    0.3770      1078
+    macro avg     0.3716    0.2405    0.2843      1078
+ weighted avg     0.4955    0.3071    0.3742      1078
+
+2022-01-12 20:54:27,931 - main.utils - INFO - compute_f1 - 130 : F1 : 0.37699316628701596, accuracy : 0.9436601642710473, precision : 0.4882005899705015, recall : 0.3070500927643785
+2022-01-12 20:54:27,931 - main - INFO - train - 130 : Left patience is 75
+2022-01-12 20:54:29,225 - main - INFO - train - 112 : Epoch : 22, global_step : 1219/1590, loss_value : 49.42317504882813 
+2022-01-12 20:54:33,599 - main - INFO - train - 112 : Epoch : 22, global_step : 1229/1590, loss_value : 54.91907272338867 
+2022-01-12 20:54:37,981 - main - INFO - train - 112 : Epoch : 22, global_step : 1239/1590, loss_value : 40.191156005859376 
+2022-01-12 20:54:39,587 - main - INFO - train - 112 : Epoch : 23, global_step : 1243/1590, loss_value : 6.680223083496093 
+2022-01-12 20:54:39,614 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:54:42,992 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1571    0.1667    0.1618        66
+creative-work     0.3295    0.2042    0.2522       142
+        group     0.4118    0.1697    0.2403       165
+     location     0.5447    0.4467    0.4908       150
+       person     0.7380    0.4673    0.5722       428
+      product     0.1687    0.1102    0.1333       127
+
+    micro avg     0.4964    0.3237    0.3919      1078
+    macro avg     0.3916    0.2608    0.3085      1078
+ weighted avg     0.5047    0.3237    0.3911      1078
+
+2022-01-12 20:54:42,992 - main.utils - INFO - compute_f1 - 130 : F1 : 0.39191465468837733, accuracy : 0.944558521560575, precision : 0.49644381223328593, recall : 0.323747680890538
+2022-01-12 20:54:43,479 - main - INFO - train - 125 : Previous f1 score is 0.3843137254901961 and current f1 score is 0.39191465468837733, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-12 20:54:47,848 - main - INFO - train - 112 : Epoch : 23, global_step : 1253/1590, loss_value : 45.43147201538086 
+2022-01-12 20:54:52,285 - main - INFO - train - 112 : Epoch : 23, global_step : 1263/1590, loss_value : 41.650404357910155 
+2022-01-12 20:54:55,440 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:54:58,837 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1236    0.1667    0.1419        66
+creative-work     0.2817    0.1408    0.1878       142
+        group     0.3770    0.1394    0.2035       165
+     location     0.5323    0.4400    0.4818       150
+       person     0.7617    0.4556    0.5702       428
+      product     0.1719    0.0866    0.1152       127
+
+    micro avg     0.4902    0.3024    0.3741      1078
+    macro avg     0.3747    0.2382    0.2834      1078
+ weighted avg     0.4991    0.3024    0.3716      1078
+
+2022-01-12 20:54:58,837 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3740676993689042, accuracy : 0.9437457221081451, precision : 0.49022556390977445, recall : 0.30241187384044527
+2022-01-12 20:54:58,837 - main - INFO - train - 130 : Left patience is 74
+2022-01-12 20:55:00,162 - main - INFO - train - 112 : Epoch : 23, global_step : 1273/1590, loss_value : 45.98571281433105 
+2022-01-12 20:55:04,566 - main - INFO - train - 112 : Epoch : 23, global_step : 1283/1590, loss_value : 53.73557815551758 
+2022-01-12 20:55:08,960 - main - INFO - train - 112 : Epoch : 23, global_step : 1293/1590, loss_value : 40.52271156311035 
+2022-01-12 20:55:10,584 - main - INFO - train - 112 : Epoch : 24, global_step : 1297/1590, loss_value : 6.436240386962891 
+2022-01-12 20:55:10,614 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:55:14,018 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1685    0.2273    0.1935        66
+creative-work     0.2917    0.1972    0.2353       142
+        group     0.3684    0.1697    0.2324       165
+     location     0.5036    0.4667    0.4844       150
+       person     0.7433    0.4533    0.5631       428
+      product     0.1579    0.1181    0.1351       127
+
+    micro avg     0.4630    0.3247    0.3817      1078
+    macro avg     0.3722    0.2720    0.3073      1078
+ weighted avg     0.4889    0.3247    0.3853      1078
+
+2022-01-12 20:55:14,018 - main.utils - INFO - compute_f1 - 130 : F1 : 0.38167938931297707, accuracy : 0.9439596167008898, precision : 0.46296296296296297, recall : 0.3246753246753247
+2022-01-12 20:55:14,018 - main - INFO - train - 130 : Left patience is 73
+2022-01-12 20:55:18,416 - main - INFO - train - 112 : Epoch : 24, global_step : 1307/1590, loss_value : 41.47819156646729 
+2022-01-12 20:55:22,902 - main - INFO - train - 112 : Epoch : 24, global_step : 1317/1590, loss_value : 40.49952163696289 
+2022-01-12 20:55:26,044 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:55:29,427 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1176    0.1515    0.1325        66
+creative-work     0.2727    0.1479    0.1918       142
+        group     0.3810    0.1455    0.2105       165
+     location     0.5156    0.4400    0.4748       150
+       person     0.7560    0.4416    0.5575       428
+      product     0.1613    0.0787    0.1058       127
+
+    micro avg     0.4812    0.2968    0.3672      1078
+    macro avg     0.3674    0.2342    0.2788      1078
+ weighted avg     0.4923    0.2968    0.3655      1078
+
+2022-01-12 20:55:29,427 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3671830177854274, accuracy : 0.9432323750855578, precision : 0.48120300751879697, recall : 0.29684601113172543
+2022-01-12 20:55:29,427 - main - INFO - train - 130 : Left patience is 72
+2022-01-12 20:55:30,740 - main - INFO - train - 112 : Epoch : 24, global_step : 1327/1590, loss_value : 44.64486579895019 
+2022-01-12 20:55:35,146 - main - INFO - train - 112 : Epoch : 24, global_step : 1337/1590, loss_value : 49.47678680419922 
+2022-01-12 20:55:39,541 - main - INFO - train - 112 : Epoch : 24, global_step : 1347/1590, loss_value : 36.46974983215332 
+2022-01-12 20:55:41,166 - main - INFO - train - 112 : Epoch : 25, global_step : 1351/1590, loss_value : 5.656658172607422 
+2022-01-12 20:55:41,193 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:55:44,586 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1529    0.1970    0.1722        66
+creative-work     0.2596    0.1901    0.2195       142
+        group     0.3571    0.1818    0.2410       165
+     location     0.5154    0.4467    0.4786       150
+       person     0.7539    0.4509    0.5643       428
+      product     0.1400    0.1102    0.1233       127
+
+    micro avg     0.4532    0.3191    0.3745      1078
+    macro avg     0.3632    0.2628    0.2998      1078
+ weighted avg     0.4858    0.3191    0.3815      1078
+
+2022-01-12 20:55:44,587 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3745236799129015, accuracy : 0.9429329226557153, precision : 0.45322793148880103, recall : 0.31910946196660483
+2022-01-12 20:55:44,587 - main - INFO - train - 130 : Left patience is 71
+2022-01-12 20:55:48,958 - main - INFO - train - 112 : Epoch : 25, global_step : 1361/1590, loss_value : 42.21877536773682 
+2022-01-12 20:55:53,348 - main - INFO - train - 112 : Epoch : 25, global_step : 1371/1590, loss_value : 38.93450927734375 
+2022-01-12 20:55:56,454 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:55:59,876 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1313    0.1970    0.1576        66
+creative-work     0.2561    0.1479    0.1875       142
+        group     0.3768    0.1576    0.2222       165
+     location     0.5462    0.4333    0.4833       150
+       person     0.7529    0.4626    0.5731       428
+      product     0.1566    0.1024    0.1238       127
+
+    micro avg     0.4699    0.3117    0.3748      1078
+    macro avg     0.3700    0.2501    0.2912      1078
+ weighted avg     0.4928    0.3117    0.3777      1078
+
+2022-01-12 20:55:59,877 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3747908533184607, accuracy : 0.9434034907597536, precision : 0.4699300699300699, recall : 0.3116883116883117
+2022-01-12 20:55:59,877 - main - INFO - train - 130 : Left patience is 70
+2022-01-12 20:56:01,199 - main - INFO - train - 112 : Epoch : 25, global_step : 1381/1590, loss_value : 43.04601516723633 
+2022-01-12 20:56:05,616 - main - INFO - train - 112 : Epoch : 25, global_step : 1391/1590, loss_value : 49.979988479614256 
+2022-01-12 20:56:10,095 - main - INFO - train - 112 : Epoch : 25, global_step : 1401/1590, loss_value : 35.515526962280276 
+2022-01-12 20:56:11,686 - main - INFO - train - 112 : Epoch : 26, global_step : 1405/1590, loss_value : 6.0551300048828125 
+2022-01-12 20:56:11,712 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:56:15,108 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1646    0.1970    0.1793        66
+creative-work     0.2967    0.1901    0.2318       142
+        group     0.3407    0.1879    0.2422       165
+     location     0.5360    0.4467    0.4873       150
+       person     0.7398    0.4650    0.5710       428
+      product     0.1573    0.1102    0.1296       127
+
+    micro avg     0.4718    0.3256    0.3853      1078
+    macro avg     0.3725    0.2661    0.3069      1078
+ weighted avg     0.4881    0.3256    0.3884      1078
+
+2022-01-12 20:56:15,108 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3852908891328211, accuracy : 0.943831279945243, precision : 0.4717741935483871, recall : 0.32560296846011133
+2022-01-12 20:56:15,108 - main - INFO - train - 130 : Left patience is 69
+2022-01-12 20:56:19,590 - main - INFO - train - 112 : Epoch : 26, global_step : 1415/1590, loss_value : 38.484717178344724 
+2022-01-12 20:56:24,111 - main - INFO - train - 112 : Epoch : 26, global_step : 1425/1590, loss_value : 38.03831768035889 
+2022-01-12 20:56:27,289 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:56:30,731 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1304    0.1818    0.1519        66
+creative-work     0.2471    0.1479    0.1850       142
+        group     0.3514    0.1576    0.2176       165
+     location     0.5360    0.4467    0.4873       150
+       person     0.7588    0.4556    0.5693       428
+      product     0.1429    0.0866    0.1078       127
+
+    micro avg     0.4676    0.3080    0.3714      1078
+    macro avg     0.3611    0.2460    0.2865      1078
+ weighted avg     0.4870    0.3080    0.3735      1078
+
+2022-01-12 20:56:30,731 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3713646532438479, accuracy : 0.9434890485968515, precision : 0.4676056338028169, recall : 0.3079777365491651
+2022-01-12 20:56:30,731 - main - INFO - train - 130 : Left patience is 68
+2022-01-12 20:56:32,048 - main - INFO - train - 112 : Epoch : 26, global_step : 1435/1590, loss_value : 41.694362258911134 
+2022-01-12 20:56:36,473 - main - INFO - train - 112 : Epoch : 26, global_step : 1445/1590, loss_value : 48.64025993347168 
+2022-01-12 20:56:40,889 - main - INFO - train - 112 : Epoch : 26, global_step : 1455/1590, loss_value : 34.90545787811279 
+2022-01-12 20:56:42,496 - main - INFO - train - 112 : Epoch : 27, global_step : 1459/1590, loss_value : 5.999494171142578 
+2022-01-12 20:56:42,524 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:56:45,937 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1413    0.1970    0.1646        66
+creative-work     0.2667    0.1690    0.2069       142
+        group     0.3333    0.1697    0.2249       165
+     location     0.5271    0.4533    0.4875       150
+       person     0.7724    0.4439    0.5638       428
+      product     0.1707    0.1102    0.1340       127
+
+    micro avg     0.4661    0.3126    0.3742      1078
+    macro avg     0.3686    0.2572    0.2969      1078
+ weighted avg     0.4949    0.3126    0.3792      1078
+
+2022-01-12 20:56:45,937 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3742365352581899, accuracy : 0.9434034907597536, precision : 0.4661134163208852, recall : 0.31261595547309834
+2022-01-12 20:56:45,937 - main - INFO - train - 130 : Left patience is 67
+2022-01-12 20:56:50,345 - main - INFO - train - 112 : Epoch : 27, global_step : 1469/1590, loss_value : 37.40636806488037 
+2022-01-12 20:56:54,889 - main - INFO - train - 112 : Epoch : 27, global_step : 1479/1590, loss_value : 37.92209930419922 
+2022-01-12 20:56:57,998 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:57:01,374 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1383    0.1970    0.1625        66
+creative-work     0.2414    0.1479    0.1834       142
+        group     0.3375    0.1636    0.2204       165
+     location     0.5231    0.4533    0.4857       150
+       person     0.7631    0.4439    0.5613       428
+      product     0.1646    0.1024    0.1262       127
+
+    micro avg     0.4618    0.3080    0.3695      1078
+    macro avg     0.3613    0.2514    0.2899      1078
+ weighted avg     0.4870    0.3080    0.3732      1078
+
+2022-01-12 20:57:01,375 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3695047301057318, accuracy : 0.943104038329911, precision : 0.4617524339360223, recall : 0.3079777365491651
+2022-01-12 20:57:01,375 - main - INFO - train - 130 : Left patience is 66
+2022-01-12 20:57:02,669 - main - INFO - train - 112 : Epoch : 27, global_step : 1489/1590, loss_value : 40.45680236816406 
+2022-01-12 20:57:07,156 - main - INFO - train - 112 : Epoch : 27, global_step : 1499/1590, loss_value : 46.166189956665036 
+2022-01-12 20:57:11,668 - main - INFO - train - 112 : Epoch : 27, global_step : 1509/1590, loss_value : 33.55311756134033 
+2022-01-12 20:57:13,260 - main - INFO - train - 112 : Epoch : 28, global_step : 1513/1590, loss_value : 5.7271484375 
+2022-01-12 20:57:13,289 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:57:16,751 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1354    0.1970    0.1605        66
+creative-work     0.2529    0.1549    0.1921       142
+        group     0.3537    0.1758    0.2348       165
+     location     0.5191    0.4533    0.4840       150
+       person     0.7640    0.4463    0.5634       428
+      product     0.1707    0.1102    0.1340       127
+
+    micro avg     0.4629    0.3126    0.3732      1078
+    macro avg     0.3660    0.2562    0.2948      1078
+ weighted avg     0.4914    0.3126    0.3779      1078
+
+2022-01-12 20:57:16,751 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3732004429678848, accuracy : 0.9432751540041068, precision : 0.46291208791208793, recall : 0.31261595547309834
+2022-01-12 20:57:16,751 - main - INFO - train - 130 : Left patience is 65
+2022-01-12 20:57:21,166 - main - INFO - train - 112 : Epoch : 28, global_step : 1523/1590, loss_value : 36.81609878540039 
+2022-01-12 20:57:25,630 - main - INFO - train - 112 : Epoch : 28, global_step : 1533/1590, loss_value : 36.07396564483643 
+2022-01-12 20:57:28,756 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:57:32,183 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1368    0.1970    0.1615        66
+creative-work     0.2674    0.1620    0.2018       142
+        group     0.3590    0.1697    0.2305       165
+     location     0.5231    0.4533    0.4857       150
+       person     0.7692    0.4439    0.5630       428
+      product     0.1707    0.1102    0.1340       127
+
+    micro avg     0.4680    0.3117    0.3742      1078
+    macro avg     0.3710    0.2560    0.2961      1078
+ weighted avg     0.4969    0.3117    0.3786      1078
+
+2022-01-12 20:57:32,183 - main.utils - INFO - compute_f1 - 130 : F1 : 0.37416481069042323, accuracy : 0.9433179329226558, precision : 0.467966573816156, recall : 0.3116883116883117
+2022-01-12 20:57:32,183 - main - INFO - train - 130 : Left patience is 64
+2022-01-12 20:57:33,508 - main - INFO - train - 112 : Epoch : 28, global_step : 1543/1590, loss_value : 39.84598731994629 
+2022-01-12 20:57:37,915 - main - INFO - train - 112 : Epoch : 28, global_step : 1553/1590, loss_value : 46.238875198364255 
+2022-01-12 20:57:42,326 - main - INFO - train - 112 : Epoch : 28, global_step : 1563/1590, loss_value : 33.69715003967285 
+2022-01-12 20:57:43,961 - main - INFO - train - 112 : Epoch : 29, global_step : 1567/1590, loss_value : 5.54837646484375 
+2022-01-12 20:57:43,990 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:57:47,485 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1383    0.1970    0.1625        66
+creative-work     0.2471    0.1479    0.1850       142
+        group     0.3415    0.1697    0.2267       165
+     location     0.5231    0.4533    0.4857       150
+       person     0.7610    0.4463    0.5626       428
+      product     0.1687    0.1102    0.1333       127
+
+    micro avg     0.4621    0.3108    0.3716      1078
+    macro avg     0.3633    0.2541    0.2926      1078
+ weighted avg     0.4881    0.3108    0.3757      1078
+
+2022-01-12 20:57:47,485 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3716028840820854, accuracy : 0.9434034907597536, precision : 0.46206896551724136, recall : 0.310760667903525
+2022-01-12 20:57:47,485 - main - INFO - train - 130 : Left patience is 63
+2022-01-12 20:57:52,031 - main - INFO - train - 112 : Epoch : 29, global_step : 1577/1590, loss_value : 36.783718490600585 
+2022-01-12 20:57:56,636 - main - INFO - train - 112 : Epoch : 29, global_step : 1587/1590, loss_value : 35.9448356628418 
+2022-01-12 20:57:59,948 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-12 20:58:03,386 - main.utils - INFO - compute_f1 - 129 :                precision    recall  f1-score   support
+
+  corporation     0.1383    0.1970    0.1625        66
+creative-work     0.2619    0.1549    0.1947       142
+        group     0.3457    0.1697    0.2276       165
+     location     0.5231    0.4533    0.4857       150
+       person     0.7631    0.4439    0.5613       428
+      product     0.1687    0.1102    0.1333       127
+
+    micro avg     0.4646    0.3108    0.3724      1078
+    macro avg     0.3668    0.2548    0.2942      1078
+ weighted avg     0.4915    0.3108    0.3766      1078
+
+2022-01-12 20:58:03,386 - main.utils - INFO - compute_f1 - 130 : F1 : 0.3724291272929405, accuracy : 0.9433607118412046, precision : 0.4646324549237171, recall : 0.310760667903525
+2022-01-12 20:58:03,386 - main - INFO - train - 130 : Left patience is 62
+2022-01-12 20:58:04,703 - main - INFO - train - 112 : Epoch : 29, global_step : 1597/1590, loss_value : 39.21389198303223 
+2022-01-12 20:58:09,118 - main - INFO - train - 112 : Epoch : 29, global_step : 1607/1590, loss_value : 45.80727005004883 
+2022-01-12 20:58:13,551 - main - INFO - train - 112 : Epoch : 29, global_step : 1617/1590, loss_value : 33.34075241088867 
