@@ -30,7 +30,7 @@ class InteractionFunction(Enum):
     addition = 1
     mlp = 2
 
-path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NoiseCoNLL03'
+path_folder='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/13cg'
 
 class Config:
     def __init__(self, args):
@@ -252,13 +252,27 @@ class Config:
         self.idx2labels.append(self.START_TAG)
         self.label2idx[self.STOP_TAG] = len(self.label2idx)
         self.idx2labels.append(self.STOP_TAG)
+        #self.label2idx={'<PAD>': 0, 'O': 1, 'B-Gene_or_gene_product': 2, 'I-Gene_or_gene_product': 3, 'E-Gene_or_gene_product': 4, 'B-Cancer': 5, 'I-Cancer': 6, 'E-Cancer': 7, 'S-Cancer': 8, 'B-Cell': 9, 'E-Cell': 10, 'S-Gene_or_gene_product': 11, 'S-Cell': 12, 'S-Organism': 13, 'I-Cell': 14, 'S-Simple_chemical': 15, 'B-Simple_chemical': 16, 'I-Simple_chemical': 17, 'E-Simple_chemical': 18, 'S-Multi-tissue_structure': 19, 'B-Multi-tissue_structure': 20, 'E-Multi-tissue_structure': 21, 'S-Organ': 22, 'S-Organism_subdivision': 23, 'B-Tissue': 24, 'I-Tissue': 25, 'E-Tissue': 26, 'S-Tissue': 27, 'S-Immaterial_anatomical_entity': 28, 'S-Organism_substance': 29, 'B-Organism_substance': 30, 'I-Organism_substance': 31, 'E-Organism_substance': 32, 'I-Multi-tissue_structure': 33, 'B-Organism': 34, 'I-Organism': 35, 'E-Organism': 36, 'B-Organism_subdivision': 37, 'E-Organism_subdivision': 38, 'S-Cellular_component': 39, 'B-Immaterial_anatomical_entity': 40, 'I-Immaterial_anatomical_entity': 41, 'E-Immaterial_anatomical_entity': 42, 'B-Cellular_component': 43, 'E-Cellular_component': 44, 'S-Pathological_formation': 45, 'I-Cellular_component': 46, 'B-Pathological_formation': 47, 'I-Pathological_formation': 48, 'E-Pathological_formation': 49, 'B-Organ': 50, 'E-Organ': 51, 'B-Amino_acid': 52, 'I-Amino_acid': 53, 'E-Amino_acid': 54, 'S-Amino_acid': 55, 'B-Anatomical_system': 56, 'E-Anatomical_system': 57, 'S-Anatomical_system': 58, 'I-Anatomical_system': 59, 'S-Developing_anatomical_structure': 60, 'B-Developing_anatomical_structure': 61, 'E-Developing_anatomical_structure': 62, 'I-Organ': 63,'<START>': 64, '<STOP>': 65}
         self.label_size = len(self.label2idx)
+        #self.idx2labels={k:v for v,k in self.label2idx.items()}
         print("#labels: " + str(self.label_size))
         print("label 2idx: " + str(self.label2idx))
+
+    def reset_label2id(self):
+        new_label2idx={self.PAD:0,'O':1,'I-Organ':2,'I-Developing_anatomical_structure':3,'I-Organism_subdivision':4}
+        for key in self.label2idx.keys():
+            if key not in new_label2idx:
+                new_label2idx[key]=len(new_label2idx)
+        self.label2idx=new_label2idx
+        self.idx2labels={k:v for v,k in self.label2idx.items()}
+        self.label_size = len(self.label2idx)
 
     def use_iobes(self, insts):
         for inst in insts:
             output = inst.output
+            # if 'I-Organ' in output:
+            #     print(output,inst.input.words)
+                #raise Exception('checkout bug ..')
             for pos in range(len(inst)):
                 curr_entity = output[pos]
                 if pos == len(inst) - 1:
@@ -274,9 +288,14 @@ class Config:
                     elif curr_entity.startswith(self.I):
                         if next_entity.startswith(self.O) or next_entity.startswith(self.B):
                             output[pos] = curr_entity.replace(self.I, self.E)
+            # if 'I-Organ' in output:
+            #     print(output,inst.input.words)
+            #     raise Exception('checkout bug ..')
 
     def map_insts_ids(self, insts: List[Instance]):
         insts_ids = []
+        bad_count=0
+        print("before map_insts_ids length : ",len(insts))
         for inst in insts:
             words = inst.input.words
             inst.word_ids = []
@@ -305,5 +324,6 @@ class Config:
                 inst.dep_label_ids.append(self.deplabel2idx[label])
             for label in inst.output:
                 inst.output_ids.append(self.label2idx[label])
-            insts_ids.append([inst.word_ids, inst.char_ids, inst.output_ids])
+                insts_ids.append([inst.word_ids, inst.char_ids, inst.output_ids])
+        print("length of insts_ids : ",len(insts_ids))
         return insts_ids

@@ -28,7 +28,7 @@ if not os.path.exists(save_dir):
 
 logger=logging.getLogger('main')
 logger.setLevel(logging.INFO)
-fh=logging.FileHandler('log_wnut.txt',mode='w')
+fh=logging.FileHandler('log_13CG.txt',mode='w')
 fh.setLevel(logging.INFO)
 ch=logging.StreamHandler()
 ch.setLevel(logging.INFO)
@@ -167,7 +167,7 @@ def main():
     # input and output parameters
     parser.add_argument('--model_name_or_path', default = '/home/xhsun/NLP/huggingfaceModels/English/bert-base-uncased', help='path to the BERT')
     #parser.add_argument('--file_path', default='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/NCBI', help='path to the ner data')
-    parser.add_argument('--file_path', default='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/W-NUT17', help='path to the ner data')
+    parser.add_argument('--file_path', default='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB', help='path to the ner data')
     parser.add_argument('--save_dir', default=save_dir, help='path to save checkpoints and logs')
     parser.add_argument('--ckpt', default = None,help='Fine tuned model')
     # training parameters

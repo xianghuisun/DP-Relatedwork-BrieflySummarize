@@ -51,7 +51,8 @@ def parse_arguments(parser):
     parser.add_argument('--dataset', type=str, default="ontonotes")
     parser.add_argument('--affix', type=str, default="sd")
     #parser.add_argument('--path_folder', type=str, default='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NCBI/Spacy')
-    parser.add_argument('--path_folder', type=str, default='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NoiseCoNLL03')
+    #parser.add_argument('--path_folder', type=str, default='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NoiseCoNLL03')
+    parser.add_argument('--path_folder', type=str, default='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/13cg')
     parser.add_argument('--embedding_file', type=str, default="/home/xhsun/Desktop/NER_Parsing/pcode/glove.6B.100d.txt")
     # parser.add_argument('--embedding_file', type=str, default=None)
     parser.add_argument('--embedding_dim', type=int, default=100)
@@ -300,8 +301,13 @@ def main():
         reader.load_elmo_vec(conf.test_file.replace(".sd", "").replace(".ud", "").replace(".sud", "").replace(".predsd", "").replace(".predud", "").replace(".stud", "").replace(".ssd", "")  + "."+conf.context_emb.name+".vec", tests)
 
     conf.use_iobes(trains + devs + tests)
+    print(trains[0].input.words)
+    print(trains[0].output)
+    #raise Exception("check bug")
     conf.build_label_idx(trains)
-
+    if 'I-Organ' not in conf.label2idx:
+        conf.reset_label2id()
+    print(conf.label2idx)
     conf.build_deplabel_idx(trains + devs + tests)
     logger.info("# deplabels: ", len(conf.deplabels))
     logger.info("dep label 2idx: ", conf.deplabel2idx)

@@ -34,7 +34,8 @@ class InteractionFunction(Enum):
     mlp = 2
 
 #path_folder='/home/xhsun/Desktop/gitRepositories/Some-NER-models/data/NCBI/Spacy'
-path_folder='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/ontonotes5'
+#path_folder='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/ontonotes5'
+path_folder='/home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB'
 
 class Config:
     def __init__(self, args):
@@ -266,6 +267,15 @@ class Config:
         print("#labels: " + str(self.label_size))
         print("label 2idx: " + str(self.label2idx))
 
+    def reset_label2id(self):
+        new_label2idx={self.PAD:0,'O':1,'I-Organ':2,'I-Developing_anatomical_structure':3,'I-Organism_subdivision':4}
+        for key in self.label2idx.keys():
+            if key not in new_label2idx:
+                new_label2idx[key]=len(new_label2idx)
+        self.label2idx=new_label2idx
+        self.idx2labels={k:v for v,k in self.label2idx.items()}
+        self.label_size = len(self.label2idx)
+        
     def use_iobes(self, insts):
         for inst in insts:
             output = inst.output

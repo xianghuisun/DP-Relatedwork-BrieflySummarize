@@ -1,0 +1,1950 @@
+2022-01-13 12:25:53,344 - main - INFO - <module> - 52 : Using device cuda
+2022-01-13 12:25:53,386 - main - INFO - main - 193 : train sentences num : 3033
+2022-01-13 12:25:53,386 - main - INFO - main - 194 : test sentences num : 1906
+2022-01-13 12:25:53,386 - main - INFO - main - 195 : Logging some examples...
+2022-01-13 12:25:53,386 - main - INFO - main - 201 : Together  O
+2022-01-13 12:25:53,386 - main - INFO - main - 201 : ,  O
+2022-01-13 12:25:53,386 - main - INFO - main - 201 : the  O
+2022-01-13 12:25:53,386 - main - INFO - main - 201 : results  O
+2022-01-13 12:25:53,386 - main - INFO - main - 201 : of  O
+2022-01-13 12:25:53,386 - main - INFO - main - 201 : this  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : study  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : identify  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : molecular  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : mechanisms  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : that  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : initiate  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : hemangiosarcoma  B-Cancer
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : ,  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : a  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : key  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : step  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : in  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : understanding  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : safety  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : concerns  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : that  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : can  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : impact  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : drug  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : decision  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : processes  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : ,  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : and  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : identified  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : hypoxia  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : as  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : a  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : possible  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : contributing  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : factor  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : for  O
+2022-01-13 12:25:53,387 - main - INFO - main - 201 : 2  B-Simple_chemical
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : -  I-Simple_chemical
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : BE  I-Simple_chemical
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : -  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : induced  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : hemangiosarcoma  B-Cancer
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : in  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : mice  B-Organism
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : .  O
+2022-01-13 12:25:53,388 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : As  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : for  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : adverse  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : events  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : ,  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : only  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : pigmentation  B-Pathological_formation
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : of  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : the  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : skin  B-Organ
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : and  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : Grade  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : 2  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : oral  B-Pathological_formation
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : aphta  I-Pathological_formation
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : were  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : observed  O
+2022-01-13 12:25:53,388 - main - INFO - main - 201 : .  O
+2022-01-13 12:25:53,388 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : c  B-Gene_or_gene_product
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : -  I-Gene_or_gene_product
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : myc  I-Gene_or_gene_product
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : is  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : a  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : major  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : target  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : that  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : transduces  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : Myb  B-Gene_or_gene_product
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : '  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : s  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : proliferative  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : signal  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : ,  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : as  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : shown  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : by  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : the  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : ability  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : of  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : a  O
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : c  B-Gene_or_gene_product
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : -  I-Gene_or_gene_product
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : Myc  I-Gene_or_gene_product
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : -  I-Gene_or_gene_product
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : estrogen  I-Gene_or_gene_product
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : receptor  I-Gene_or_gene_product
+2022-01-13 12:25:53,389 - main - INFO - main - 201 : fusion  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : protein  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : alone  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : to  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : also  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : reverse  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : growth  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : arrest  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : in  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : this  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : system  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : .  O
+2022-01-13 12:25:53,390 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : Additionally  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : ,  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : this  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : sequence  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : shares  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : some  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : homology  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : with  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : the  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : DNA  B-Cellular_component
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : binding  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : domain  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : of  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : GCN4  B-Gene_or_gene_product
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : and  O
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : c  B-Gene_or_gene_product
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : -  I-Gene_or_gene_product
+2022-01-13 12:25:53,390 - main - INFO - main - 201 : jun  I-Gene_or_gene_product
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : protein  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : .  O
+2022-01-13 12:25:53,391 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : METHODS  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : :  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : Forty  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : patients  B-Organism
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : with  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : recurrent  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : or  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : metastatic  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : advanced  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : cancer  B-Cancer
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : ,  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : without  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : bone  B-Cancer
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : metastases  I-Cancer
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : ,  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : were  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : randomized  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : into  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : the  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : trial  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : to  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : either  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : receive  O
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : zoledronic  B-Simple_chemical
+2022-01-13 12:25:53,391 - main - INFO - main - 201 : acid  I-Simple_chemical
+2022-01-13 12:25:53,392 - main - INFO - main - 201 : or  O
+2022-01-13 12:25:53,392 - main - INFO - main - 201 : no  O
+2022-01-13 12:25:53,392 - main - INFO - main - 201 : treatment  O
+2022-01-13 12:25:53,392 - main - INFO - main - 201 : .  O
+2022-01-13 12:25:53,392 - main - INFO - main - 202 : --------------------------------------------------
+2022-01-13 12:25:53,397 - main - INFO - main - 212 : Tag scheme : B-Organ B-Gene_or_gene_product I-Organism_substance B-Amino_acid B-Immaterial_anatomical_entity I-Anatomical_system I-Cell B-Developing_anatomical_structure I-Immaterial_anatomical_entity I-Organ I-Tissue I-Cellular_component B-Simple_chemical B-Cell B-Tissue I-Organism I-Developing_anatomical_structure B-Organism B-Organism_subdivision I-Organism_subdivision B-Cancer B-Pathological_formation I-Cancer B-Cellular_component I-Amino_acid I-Gene_or_gene_product I-Multi-tissue_structure I-Simple_chemical B-Multi-tissue_structure I-Pathological_formation B-Anatomical_system B-Organism_substance
+2022-01-13 12:25:53,397 - main - INFO - main - 213 : Tag has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/label.json
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : model_name_or_path:/home/xhsun/NLP/huggingfaceModels/English/bert-base-uncased
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : file_path:/home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : save_dir:/home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : ckpt:None
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : learning_rate:3e-05
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : weight_decay:1e-05
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : epochs:30
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : train_batch_size:64
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : lstm_hidden_size:150
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : test_batch_size:64
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : max_grad_norm:1
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : warmup_proportion:0.1
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : max_len:196
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : patience:100
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : seed:666
+2022-01-13 12:25:53,418 - main - INFO - main - 243 : num_workers:1
+2022-01-13 12:25:53,419 - main - INFO - train - 62 : n_tags : 33
+2022-01-13 12:25:53,419 - main - INFO - train - 66 : Under an epoch, loss will be output every 9 step, and the model will be evaluated every 24 step
+2022-01-13 12:25:56,104 - main - INFO - train - 74 : Using device : cuda
+2022-01-13 12:25:56,106 - main - INFO - train - 79 : num_train_steps : 1410, warmup_proportion : 0.1, warmup_steps : 141
+2022-01-13 12:25:56,106 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:26:01,948 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0048    0.0161    0.0074        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.0053    0.0054    0.0054       924
+                           Cell     0.0078    0.0099    0.0087      1013
+             Cellular_component     0.0026    0.0333    0.0049       180
+Developing_anatomical_structure     0.0002    0.1176    0.0005        17
+           Gene_or_gene_product     0.0180    0.0075    0.0106      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0018    0.0165    0.0033       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0063    0.1081    0.0120       518
+           Organism_subdivision     0.0004    0.0256    0.0007        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0010    0.0114    0.0018        88
+                Simple_chemical     0.0000    0.0000    0.0000       727
+                         Tissue     0.0050    0.0109    0.0069       184
+
+                      micro avg     0.0029    0.0157    0.0048      6881
+                      macro avg     0.0033    0.0227    0.0039      6881
+                   weighted avg     0.0093    0.0157    0.0073      6881
+
+2022-01-13 12:26:01,948 - main.utils - INFO - compute_f1 - 130 : F1 : 0.004835135316634208, accuracy : 0.0035057133652953328, precision : 0.00285774767146486, recall : 0.015695393111466355
+2022-01-13 12:26:01,948 - main - INFO - train - 90 : Previous f1 score is -1 and current f1 score is 0.004835135316634208
+2022-01-13 12:26:02,447 - main - INFO - train - 112 : Epoch : 0, global_step : 1/1410, loss_value : 879.6298828125 
+2022-01-13 12:26:02,631 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:26:08,428 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0048    0.0161    0.0074        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.0053    0.0054    0.0054       924
+                           Cell     0.0078    0.0099    0.0087      1013
+             Cellular_component     0.0026    0.0333    0.0049       180
+Developing_anatomical_structure     0.0002    0.1176    0.0005        17
+           Gene_or_gene_product     0.0180    0.0075    0.0106      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0018    0.0165    0.0033       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0063    0.1081    0.0120       518
+           Organism_subdivision     0.0004    0.0256    0.0007        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0010    0.0114    0.0018        88
+                Simple_chemical     0.0000    0.0000    0.0000       727
+                         Tissue     0.0050    0.0109    0.0069       184
+
+                      micro avg     0.0029    0.0157    0.0048      6881
+                      macro avg     0.0033    0.0227    0.0039      6881
+                   weighted avg     0.0093    0.0157    0.0073      6881
+
+2022-01-13 12:26:08,428 - main.utils - INFO - compute_f1 - 130 : F1 : 0.004835135316634208, accuracy : 0.0035057133652953328, precision : 0.00285774767146486, recall : 0.015695393111466355
+2022-01-13 12:26:08,428 - main - INFO - train - 130 : Left patience is 99
+2022-01-13 12:26:13,598 - main - INFO - train - 112 : Epoch : 0, global_step : 10/1410, loss_value : 9200.744683159723 
+2022-01-13 12:26:18,917 - main - INFO - train - 112 : Epoch : 0, global_step : 19/1410, loss_value : 8912.5712890625 
+2022-01-13 12:26:22,712 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:26:28,384 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.0075    0.0032    0.0045       924
+                           Cell     0.0000    0.0000    0.0000      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0007    0.0588    0.0014        17
+           Gene_or_gene_product     0.0312    0.0016    0.0030      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0169    0.0193    0.0180       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.0000    0.0000    0.0000       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.0048    0.0026    0.0034      6881
+                      macro avg     0.0035    0.0052    0.0017      6881
+                   weighted avg     0.0137    0.0026    0.0031      6881
+
+2022-01-13 12:26:28,384 - main.utils - INFO - compute_f1 - 130 : F1 : 0.003374261880213703, accuracy : 0.7058232741467851, precision : 0.004751847940865892, recall : 0.0026158988519110592
+2022-01-13 12:26:28,384 - main - INFO - train - 130 : Left patience is 98
+2022-01-13 12:26:30,009 - main - INFO - train - 112 : Epoch : 0, global_step : 28/1410, loss_value : 8478.991861979166 
+2022-01-13 12:26:35,431 - main - INFO - train - 112 : Epoch : 0, global_step : 37/1410, loss_value : 7356.803602430556 
+2022-01-13 12:26:40,797 - main - INFO - train - 112 : Epoch : 0, global_step : 46/1410, loss_value : 6205.912163628473 
+2022-01-13 12:26:42,582 - main - INFO - train - 112 : Epoch : 1, global_step : 49/1410, loss_value : 454.15150282118054 
+2022-01-13 12:26:42,763 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:26:48,353 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.0000    0.0000    0.0000       924
+                           Cell     0.0000    0.0000    0.0000      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.0000    0.0000    0.0000      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0000    0.0000    0.0000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.0000    0.0000    0.0000       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.0000    0.0000    0.0000      6881
+                      macro avg     0.0000    0.0000    0.0000      6881
+                   weighted avg     0.0000    0.0000    0.0000      6881
+
+2022-01-13 12:26:48,353 - main.utils - INFO - compute_f1 - 130 : F1 : 0.0, accuracy : 0.7701578518504482, precision : 0.0, recall : 0.0
+2022-01-13 12:26:48,354 - main - INFO - train - 130 : Left patience is 97
+2022-01-13 12:26:53,533 - main - INFO - train - 112 : Epoch : 1, global_step : 58/1410, loss_value : 4744.413519965277 
+2022-01-13 12:26:58,875 - main - INFO - train - 112 : Epoch : 1, global_step : 67/1410, loss_value : 4327.276746961806 
+2022-01-13 12:27:02,608 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:27:08,101 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.0000    0.0000    0.0000       924
+                           Cell     0.0000    0.0000    0.0000      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.0000    0.0000    0.0000      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0000    0.0000    0.0000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.0000    0.0000    0.0000       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.0000    0.0000    0.0000      6881
+                      macro avg     0.0000    0.0000    0.0000      6881
+                   weighted avg     0.0000    0.0000    0.0000      6881
+
+2022-01-13 12:27:08,101 - main.utils - INFO - compute_f1 - 130 : F1 : 0.0, accuracy : 0.7701578518504482, precision : 0.0, recall : 0.0
+2022-01-13 12:27:08,101 - main - INFO - train - 130 : Left patience is 96
+2022-01-13 12:27:09,711 - main - INFO - train - 112 : Epoch : 1, global_step : 76/1410, loss_value : 4222.546196831598 
+2022-01-13 12:27:15,133 - main - INFO - train - 112 : Epoch : 1, global_step : 85/1410, loss_value : 3919.3053385416665 
+2022-01-13 12:27:20,505 - main - INFO - train - 112 : Epoch : 1, global_step : 94/1410, loss_value : 3798.2029622395835 
+2022-01-13 12:27:22,275 - main - INFO - train - 112 : Epoch : 2, global_step : 97/1410, loss_value : 272.8296169704861 
+2022-01-13 12:27:22,455 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:27:27,956 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.0000    0.0000    0.0000       924
+                           Cell     0.0000    0.0000    0.0000      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.0637    0.0321    0.0427      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0000    0.0000    0.0000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.0000    0.0000    0.0000       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.0637    0.0118    0.0199      6881
+                      macro avg     0.0040    0.0020    0.0027      6881
+                   weighted avg     0.0233    0.0118    0.0156      6881
+
+2022-01-13 12:27:27,956 - main.utils - INFO - compute_f1 - 130 : F1 : 0.01987242394504416, accuracy : 0.7728297739288624, precision : 0.06372934697088907, recall : 0.011771544833599767
+2022-01-13 12:27:28,410 - main - INFO - train - 125 : Previous f1 score is 0.004835135316634208 and current f1 score is 0.01987242394504416, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:27:33,604 - main - INFO - train - 112 : Epoch : 2, global_step : 106/1410, loss_value : 3155.9008517795137 
+2022-01-13 12:27:38,952 - main - INFO - train - 112 : Epoch : 2, global_step : 115/1410, loss_value : 2990.910698784722 
+2022-01-13 12:27:42,684 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:27:48,220 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.0000    0.0000    0.0000       924
+                           Cell     0.0000    0.0000    0.0000      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.1376    0.2750    0.1835      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0000    0.0000    0.0000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.0000    0.0000    0.0000       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.1376    0.1007    0.1163      6881
+                      macro avg     0.0086    0.0172    0.0115      6881
+                   weighted avg     0.0504    0.1007    0.0672      6881
+
+2022-01-13 12:27:48,220 - main.utils - INFO - compute_f1 - 130 : F1 : 0.1163141993957704, accuracy : 0.7924807185764908, precision : 0.13763654419066534, recall : 0.10071210579857579
+2022-01-13 12:27:48,687 - main - INFO - train - 125 : Previous f1 score is 0.01987242394504416 and current f1 score is 0.1163141993957704, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:27:50,297 - main - INFO - train - 112 : Epoch : 2, global_step : 124/1410, loss_value : 2934.741156684028 
+2022-01-13 12:27:55,699 - main - INFO - train - 112 : Epoch : 2, global_step : 133/1410, loss_value : 2632.150689019097 
+2022-01-13 12:28:01,025 - main - INFO - train - 112 : Epoch : 2, global_step : 142/1410, loss_value : 2814.432373046875 
+2022-01-13 12:28:02,764 - main - INFO - train - 112 : Epoch : 3, global_step : 145/1410, loss_value : 196.73110622829861 
+2022-01-13 12:28:02,954 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:28:08,502 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.0000    0.0000    0.0000       924
+                           Cell     0.0000    0.0000    0.0000      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.1952    0.4976    0.2804      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0000    0.0000    0.0000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.0000    0.0000    0.0000       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.1948    0.1822    0.1883      6881
+                      macro avg     0.0122    0.0311    0.0175      6881
+                   weighted avg     0.0715    0.1822    0.1027      6881
+
+2022-01-13 12:28:08,502 - main.utils - INFO - compute_f1 - 130 : F1 : 0.18830242510699, accuracy : 0.8047033408500881, precision : 0.19478098788443615, recall : 0.1822409533498038
+2022-01-13 12:28:08,996 - main - INFO - train - 125 : Previous f1 score is 0.1163141993957704 and current f1 score is 0.18830242510699, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:28:14,191 - main - INFO - train - 112 : Epoch : 3, global_step : 154/1410, loss_value : 2376.0576443142363 
+2022-01-13 12:28:19,541 - main - INFO - train - 112 : Epoch : 3, global_step : 163/1410, loss_value : 2273.111870659722 
+2022-01-13 12:28:23,285 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:28:28,828 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.0000    0.0000    0.0000       924
+                           Cell     0.0404    0.0780    0.0532      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.3074    0.6032    0.4073      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0000    0.0000    0.0000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.0000    0.0000    0.0000       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.2301    0.2324    0.2312      6881
+                      macro avg     0.0217    0.0426    0.0288      6881
+                   weighted avg     0.1185    0.2324    0.1570      6881
+
+2022-01-13 12:28:28,828 - main.utils - INFO - compute_f1 - 130 : F1 : 0.23121972380883526, accuracy : 0.8312330636144852, precision : 0.23007194244604318, recall : 0.23237901467809913
+2022-01-13 12:28:29,304 - main - INFO - train - 125 : Previous f1 score is 0.18830242510699 and current f1 score is 0.23121972380883526, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:28:30,924 - main - INFO - train - 112 : Epoch : 3, global_step : 172/1410, loss_value : 2298.5029568142363 
+2022-01-13 12:28:36,284 - main - INFO - train - 112 : Epoch : 3, global_step : 181/1410, loss_value : 1991.665066189236 
+2022-01-13 12:28:41,619 - main - INFO - train - 112 : Epoch : 3, global_step : 190/1410, loss_value : 2170.519585503472 
+2022-01-13 12:28:43,424 - main - INFO - train - 112 : Epoch : 4, global_step : 193/1410, loss_value : 141.22417534722223 
+2022-01-13 12:28:43,629 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:28:49,205 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.1132    0.0065    0.0123       924
+                           Cell     0.2004    0.2833    0.2348      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.5843    0.7615    0.6613      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0000    0.0000    0.0000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.2885    0.1238    0.1732       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.4531    0.3345    0.3849      6881
+                      macro avg     0.0742    0.0734    0.0676      6881
+                   weighted avg     0.2892    0.3345    0.2967      6881
+
+2022-01-13 12:28:49,206 - main.utils - INFO - compute_f1 - 130 : F1 : 0.38488547065708073, accuracy : 0.8647363135055238, precision : 0.4530604211769337, recall : 0.33454439761662547
+2022-01-13 12:28:49,692 - main - INFO - train - 125 : Previous f1 score is 0.23121972380883526 and current f1 score is 0.38488547065708073, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:28:54,864 - main - INFO - train - 112 : Epoch : 4, global_step : 202/1410, loss_value : 1793.593994140625 
+2022-01-13 12:29:00,216 - main - INFO - train - 112 : Epoch : 4, global_step : 211/1410, loss_value : 1696.7250569661458 
+2022-01-13 12:29:03,975 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:29:09,565 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.2353    0.2078    0.2207       924
+                           Cell     0.2131    0.4709    0.2934      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7034    0.8111    0.7534      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0000    0.0000    0.0000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.5263    0.3026    0.3843       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.4599    0.4262    0.4424      6881
+                      macro avg     0.1049    0.1120    0.1032      6881
+                   weighted avg     0.3762    0.4262    0.3894      6881
+
+2022-01-13 12:29:09,565 - main.utils - INFO - compute_f1 - 130 : F1 : 0.4424164718304548, accuracy : 0.8858463929051942, precision : 0.4598620257133898, recall : 0.4262461851475076
+2022-01-13 12:29:10,048 - main - INFO - train - 125 : Previous f1 score is 0.38488547065708073 and current f1 score is 0.4424164718304548, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:29:11,673 - main - INFO - train - 112 : Epoch : 4, global_step : 220/1410, loss_value : 1720.0190972222222 
+2022-01-13 12:29:17,047 - main - INFO - train - 112 : Epoch : 4, global_step : 229/1410, loss_value : 1465.4705674913193 
+2022-01-13 12:29:22,376 - main - INFO - train - 112 : Epoch : 4, global_step : 238/1410, loss_value : 1672.9401448567708 
+2022-01-13 12:29:24,137 - main - INFO - train - 112 : Epoch : 5, global_step : 241/1410, loss_value : 104.60969373914931 
+2022-01-13 12:29:24,318 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:29:29,884 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.2359    0.4199    0.3021       924
+                           Cell     0.4889    0.7167    0.5813      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.6642    0.8274    0.7369      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0000    0.0000    0.0000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.4810    0.4360    0.4574       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.5075    0.5110    0.5092      6881
+                      macro avg     0.1169    0.1500    0.1299      6881
+                   weighted avg     0.3977    0.5110    0.4443      6881
+
+2022-01-13 12:29:29,884 - main.utils - INFO - compute_f1 - 130 : F1 : 0.5092331088420595, accuracy : 0.8974626215156052, precision : 0.5075057736720554, recall : 0.510972242406627
+2022-01-13 12:29:30,366 - main - INFO - train - 125 : Previous f1 score is 0.4424164718304548 and current f1 score is 0.5092331088420595, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:29:35,539 - main - INFO - train - 112 : Epoch : 5, global_step : 250/1410, loss_value : 1402.3461235894097 
+2022-01-13 12:29:40,888 - main - INFO - train - 112 : Epoch : 5, global_step : 259/1410, loss_value : 1334.6014539930557 
+2022-01-13 12:29:44,639 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:29:50,233 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.3973    0.6742    0.5000       924
+                           Cell     0.4284    0.8124    0.5610      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7396    0.8147    0.7753      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0000    0.0000    0.0000       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.0000    0.0000    0.0000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.5272    0.5461    0.5365       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.5538    0.5662    0.5599      6881
+                      macro avg     0.1308    0.1780    0.1483      6881
+                   weighted avg     0.4430    0.5662    0.4903      6881
+
+2022-01-13 12:29:50,233 - main.utils - INFO - compute_f1 - 130 : F1 : 0.5599310146593849, accuracy : 0.9044929980481704, precision : 0.5538024164889837, recall : 0.5661967737247493
+2022-01-13 12:29:50,719 - main - INFO - train - 125 : Previous f1 score is 0.5092331088420595 and current f1 score is 0.5599310146593849, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:29:52,350 - main - INFO - train - 112 : Epoch : 5, global_step : 268/1410, loss_value : 1359.2355278862847 
+2022-01-13 12:29:57,723 - main - INFO - train - 112 : Epoch : 5, global_step : 277/1410, loss_value : 1135.1976725260417 
+2022-01-13 12:30:03,106 - main - INFO - train - 112 : Epoch : 5, global_step : 286/1410, loss_value : 1344.2213406032986 
+2022-01-13 12:30:04,862 - main - INFO - train - 112 : Epoch : 6, global_step : 289/1410, loss_value : 88.02925618489583 
+2022-01-13 12:30:05,048 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:30:10,629 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.3282    0.6753    0.4418       924
+                           Cell     0.6294    0.7828    0.6978      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.5488    0.8417    0.6644      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0164    0.0033    0.0055       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.5000    0.0058    0.0115       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6041    0.2036    0.3045       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.5029    0.5363    0.5190      6881
+                      macro avg     0.1642    0.1570    0.1328      6881
+                   weighted avg     0.4399    0.5363    0.4386      6881
+
+2022-01-13 12:30:10,629 - main.utils - INFO - compute_f1 - 130 : F1 : 0.5190238413390533, accuracy : 0.8919292793390309, precision : 0.5028618152085037, recall : 0.5362592646417672
+2022-01-13 12:30:10,629 - main - INFO - train - 130 : Left patience is 95
+2022-01-13 12:30:15,819 - main - INFO - train - 112 : Epoch : 6, global_step : 298/1410, loss_value : 1197.696017795139 
+2022-01-13 12:30:21,189 - main - INFO - train - 112 : Epoch : 6, global_step : 307/1410, loss_value : 1092.565165201823 
+2022-01-13 12:30:24,942 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:30:30,488 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.4358    0.7673    0.5559       924
+                           Cell     0.5257    0.8470    0.6488      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7639    0.8155    0.7889      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0998    0.1551    0.1214       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.6792    0.0695    0.1261       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.5357    0.6506    0.5876       727
+                         Tissue     0.0000    0.0000    0.0000       184
+
+                      micro avg     0.5680    0.6072    0.5869      6881
+                      macro avg     0.1900    0.2066    0.1768      6881
+                   weighted avg     0.5278    0.6072    0.5360      6881
+
+2022-01-13 12:30:30,488 - main.utils - INFO - compute_f1 - 130 : F1 : 0.5869214019807544, accuracy : 0.9121866176498455, precision : 0.5679717237629146, recall : 0.6071791890713559
+2022-01-13 12:30:30,955 - main - INFO - train - 125 : Previous f1 score is 0.5599310146593849 and current f1 score is 0.5869214019807544, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:30:32,578 - main - INFO - train - 112 : Epoch : 6, global_step : 316/1410, loss_value : 1110.0640665690105 
+2022-01-13 12:30:37,978 - main - INFO - train - 112 : Epoch : 6, global_step : 325/1410, loss_value : 906.8944634331597 
+2022-01-13 12:30:43,375 - main - INFO - train - 112 : Epoch : 6, global_step : 334/1410, loss_value : 1082.1271362304688 
+2022-01-13 12:30:45,150 - main - INFO - train - 112 : Epoch : 7, global_step : 337/1410, loss_value : 59.310709635416664 
+2022-01-13 12:30:45,332 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:30:50,903 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.5590    0.7890    0.6544       924
+                           Cell     0.7137    0.8440    0.7734      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7633    0.8444    0.8018      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0831    0.0957    0.0890       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.6221    0.2066    0.3101       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6804    0.5447    0.6050       727
+                         Tissue     0.2500    0.0054    0.0106       184
+
+                      micro avg     0.6636    0.6169    0.6394      6881
+                      macro avg     0.2295    0.2081    0.2028      6881
+                   weighted avg     0.5887    0.6169    0.5868      6881
+
+2022-01-13 12:30:50,903 - main.utils - INFO - compute_f1 - 130 : F1 : 0.639403524627203, accuracy : 0.9180800060639366, precision : 0.6635923088947945, recall : 0.6169161459090249
+2022-01-13 12:30:51,397 - main - INFO - train - 125 : Previous f1 score is 0.5869214019807544 and current f1 score is 0.639403524627203, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:30:56,566 - main - INFO - train - 112 : Epoch : 7, global_step : 346/1410, loss_value : 910.890638563368 
+2022-01-13 12:31:01,930 - main - INFO - train - 112 : Epoch : 7, global_step : 355/1410, loss_value : 857.563462999132 
+2022-01-13 12:31:05,693 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:31:11,287 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.5909    0.7911    0.6765       924
+                           Cell     0.7606    0.8470    0.8015      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7651    0.8556    0.8078      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.0893    0.1947    0.1224       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.7135    0.4710    0.5674       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6601    0.6492    0.6546       727
+                         Tissue     1.0000    0.0054    0.0108       184
+
+                      micro avg     0.6550    0.6570    0.6560      6881
+                      macro avg     0.2862    0.2384    0.2276      6881
+                   weighted avg     0.6257    0.6570    0.6222      6881
+
+2022-01-13 12:31:11,287 - main.utils - INFO - compute_f1 - 130 : F1 : 0.656025538707103, accuracy : 0.9248640351708325, precision : 0.6550275282526804, recall : 0.657026594971661
+2022-01-13 12:31:11,770 - main - INFO - train - 125 : Previous f1 score is 0.639403524627203 and current f1 score is 0.656025538707103, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:31:13,400 - main - INFO - train - 112 : Epoch : 7, global_step : 364/1410, loss_value : 929.762681749132 
+2022-01-13 12:31:18,819 - main - INFO - train - 112 : Epoch : 7, global_step : 373/1410, loss_value : 733.9461737738716 
+2022-01-13 12:31:24,181 - main - INFO - train - 112 : Epoch : 7, global_step : 382/1410, loss_value : 865.0781182183159 
+2022-01-13 12:31:25,966 - main - INFO - train - 112 : Epoch : 8, global_step : 385/1410, loss_value : 50.79126993815104 
+2022-01-13 12:31:26,149 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:31:31,813 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.6841    0.8203    0.7461       924
+                           Cell     0.7397    0.8529    0.7923      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7802    0.8226    0.8008      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.1057    0.2211    0.1430       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.6763    0.6776    0.6770       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.5625    0.7180    0.6308       727
+                         Tissue     0.1250    0.0217    0.0370       184
+
+                      micro avg     0.6584    0.6742    0.6662      6881
+                      macro avg     0.2296    0.2584    0.2392      6881
+                   weighted avg     0.6048    0.6742    0.6350      6881
+
+2022-01-13 12:31:31,814 - main.utils - INFO - compute_f1 - 130 : F1 : 0.6661879801823796, accuracy : 0.923916545072104, precision : 0.6583877377235311, recall : 0.674175265223078
+2022-01-13 12:31:32,291 - main - INFO - train - 125 : Previous f1 score is 0.656025538707103 and current f1 score is 0.6661879801823796, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:31:37,454 - main - INFO - train - 112 : Epoch : 8, global_step : 394/1410, loss_value : 740.0397271050347 
+2022-01-13 12:31:42,914 - main - INFO - train - 112 : Epoch : 8, global_step : 403/1410, loss_value : 695.3310072157118 
+2022-01-13 12:31:46,694 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:31:52,290 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.5995    0.8149    0.6908       924
+                           Cell     0.7688    0.8500    0.8073      1013
+             Cellular_component     0.0000    0.0000    0.0000       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7581    0.8607    0.8062      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.1087    0.3102    0.1610       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.6655    0.7259    0.6944       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6567    0.6974    0.6765       727
+                         Tissue     0.3333    0.0054    0.0107       184
+
+                      micro avg     0.6397    0.6919    0.6648      6881
+                      macro avg     0.2432    0.2665    0.2404      6881
+                   weighted avg     0.6045    0.6919    0.6380      6881
+
+2022-01-13 12:31:52,290 - main.utils - INFO - compute_f1 - 130 : F1 : 0.6648048593171821, accuracy : 0.9271380114077807, precision : 0.63974737973663, recall : 0.6919052463304752
+2022-01-13 12:31:52,290 - main - INFO - train - 130 : Left patience is 94
+2022-01-13 12:31:53,930 - main - INFO - train - 112 : Epoch : 8, global_step : 412/1410, loss_value : 764.7078653971354 
+2022-01-13 12:31:59,327 - main - INFO - train - 112 : Epoch : 8, global_step : 421/1410, loss_value : 603.4000854492188 
+2022-01-13 12:32:04,832 - main - INFO - train - 112 : Epoch : 8, global_step : 430/1410, loss_value : 720.6678738064236 
+2022-01-13 12:32:06,591 - main - INFO - train - 112 : Epoch : 9, global_step : 433/1410, loss_value : 40.91957261827257 
+2022-01-13 12:32:06,776 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:32:12,381 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7056    0.8377    0.7660       924
+                           Cell     0.7891    0.8460    0.8166      1013
+             Cellular_component     0.5714    0.0444    0.0825       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7573    0.8631    0.8068      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.1462    0.3333    0.2032       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.7159    0.7394    0.7274       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6580    0.6933    0.6752       727
+                         Tissue     0.1837    0.0978    0.1277       184
+
+                      micro avg     0.6733    0.7005    0.6866      6881
+                      macro avg     0.2829    0.2784    0.2628      6881
+                   weighted avg     0.6380    0.7005    0.6591      6881
+
+2022-01-13 12:32:12,381 - main.utils - INFO - compute_f1 - 130 : F1 : 0.6866096866096867, accuracy : 0.9282181501203313, precision : 0.673278390836709, recall : 0.7004795814561837
+2022-01-13 12:32:12,874 - main - INFO - train - 125 : Previous f1 score is 0.6661879801823796 and current f1 score is 0.6866096866096867, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:32:18,028 - main - INFO - train - 112 : Epoch : 9, global_step : 442/1410, loss_value : 612.7467346191406 
+2022-01-13 12:32:23,417 - main - INFO - train - 112 : Epoch : 9, global_step : 451/1410, loss_value : 606.090087890625 
+2022-01-13 12:32:27,161 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:32:32,732 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7140    0.8377    0.7709       924
+                           Cell     0.8028    0.8519    0.8266      1013
+             Cellular_component     0.6667    0.0111    0.0219       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7753    0.8433    0.8078      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.1436    0.4785    0.2209       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.6735    0.7568    0.7127       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.5816    0.7497    0.6550       727
+                         Tissue     0.3333    0.0109    0.0211       184
+
+                      micro avg     0.6518    0.7045    0.6771      6881
+                      macro avg     0.2932    0.2837    0.2523      6881
+                   weighted avg     0.6428    0.7045    0.6548      6881
+
+2022-01-13 12:32:32,732 - main.utils - INFO - compute_f1 - 130 : F1 : 0.6771422585376073, accuracy : 0.9291845900210343, precision : 0.6517881150847001, recall : 0.7045487574480453
+2022-01-13 12:32:32,732 - main - INFO - train - 130 : Left patience is 93
+2022-01-13 12:32:34,346 - main - INFO - train - 112 : Epoch : 9, global_step : 460/1410, loss_value : 670.2288411458334 
+2022-01-13 12:32:39,691 - main - INFO - train - 112 : Epoch : 9, global_step : 469/1410, loss_value : 514.4117499457466 
+2022-01-13 12:32:45,180 - main - INFO - train - 112 : Epoch : 9, global_step : 478/1410, loss_value : 617.5556945800781 
+2022-01-13 12:32:46,990 - main - INFO - train - 112 : Epoch : 10, global_step : 481/1410, loss_value : 33.761990017361114 
+2022-01-13 12:32:47,180 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:32:52,927 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7031    0.8485    0.7690       924
+                           Cell     0.7888    0.8588    0.8223      1013
+             Cellular_component     0.2892    0.1333    0.1825       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7527    0.8698    0.8071      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.2146    0.4257    0.2854       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.6542    0.7741    0.7091       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7374    0.6217    0.6746       727
+                         Tissue     0.2293    0.1957    0.2111       184
+
+                      micro avg     0.6792    0.7104    0.6944      6881
+                      macro avg     0.2731    0.2955    0.2788      6881
+                   weighted avg     0.6365    0.7104    0.6675      6881
+
+2022-01-13 12:32:52,927 - main.utils - INFO - compute_f1 - 130 : F1 : 0.6944168205711039, accuracy : 0.930871122396771, precision : 0.6791718771710434, recall : 0.7103618660078477
+2022-01-13 12:32:53,405 - main - INFO - train - 125 : Previous f1 score is 0.6866096866096867 and current f1 score is 0.6944168205711039, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:32:58,630 - main - INFO - train - 112 : Epoch : 10, global_step : 490/1410, loss_value : 543.1793484157986 
+2022-01-13 12:33:04,112 - main - INFO - train - 112 : Epoch : 10, global_step : 499/1410, loss_value : 551.2582058376736 
+2022-01-13 12:33:08,015 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:33:13,710 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7007    0.8463    0.7667       924
+                           Cell     0.8093    0.8549    0.8315      1013
+             Cellular_component     0.8125    0.1444    0.2453       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7739    0.8599    0.8147      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.2556    0.7096    0.3759       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.6678    0.7761    0.7179       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7102    0.7111    0.7107       727
+                         Tissue     0.2800    0.0380    0.0670       184
+
+                      micro avg     0.6906    0.7240    0.7069      6881
+                      macro avg     0.3131    0.3088    0.2831      6881
+                   weighted avg     0.6620    0.7240    0.6776      6881
+
+2022-01-13 12:33:13,710 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7069173465768002, accuracy : 0.932538704970533, precision : 0.6906016079844747, recall : 0.7240226711233833
+2022-01-13 12:33:14,190 - main - INFO - train - 125 : Previous f1 score is 0.6944168205711039 and current f1 score is 0.7069173465768002, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:33:15,852 - main - INFO - train - 112 : Epoch : 10, global_step : 508/1410, loss_value : 615.043199327257 
+2022-01-13 12:33:21,277 - main - INFO - train - 112 : Epoch : 10, global_step : 517/1410, loss_value : 450.3890109592014 
+2022-01-13 12:33:26,675 - main - INFO - train - 112 : Epoch : 10, global_step : 526/1410, loss_value : 541.7477315266927 
+2022-01-13 12:33:28,447 - main - INFO - train - 112 : Epoch : 11, global_step : 529/1410, loss_value : 29.153700086805557 
+2022-01-13 12:33:28,635 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:33:34,329 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7636    0.8496    0.8043       924
+                           Cell     0.7904    0.8598    0.8236      1013
+             Cellular_component     0.3128    0.3667    0.3376       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7714    0.8556    0.8113      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.3694    0.5974    0.4565       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.6710    0.7954    0.7279       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6573    0.7043    0.6799       727
+                         Tissue     0.2547    0.2935    0.2727       184
+
+                      micro avg     0.6966    0.7320    0.7139      6881
+                      macro avg     0.2869    0.3326    0.3071      6881
+                   weighted avg     0.6526    0.7320    0.6892      6881
+
+2022-01-13 12:33:34,329 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7138605442176871, accuracy : 0.9336946428909818, precision : 0.6965841515696307, recall : 0.7320156953931115
+2022-01-13 12:33:34,808 - main - INFO - train - 125 : Previous f1 score is 0.7069173465768002 and current f1 score is 0.7138605442176871, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:33:39,990 - main - INFO - train - 112 : Epoch : 11, global_step : 538/1410, loss_value : 469.4002380371094 
+2022-01-13 12:33:45,528 - main - INFO - train - 112 : Epoch : 11, global_step : 547/1410, loss_value : 507.2771267361111 
+2022-01-13 12:33:49,399 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:33:55,106 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7382    0.8301    0.7815       924
+                           Cell     0.7893    0.8618    0.8240      1013
+             Cellular_component     0.4762    0.2778    0.3509       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7768    0.8675    0.8196      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.3038    0.7822    0.4377       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.6995    0.7954    0.7444       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7131    0.6974    0.7051       727
+                         Tissue     0.1972    0.0761    0.1098       184
+
+                      micro avg     0.6994    0.7333    0.7159      6881
+                      macro avg     0.2934    0.3243    0.2983      6881
+                   weighted avg     0.6589    0.7333    0.6883      6881
+
+2022-01-13 12:33:55,106 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7159477866061295, accuracy : 0.9345284341778628, precision : 0.6993762993762994, recall : 0.733323644819067
+2022-01-13 12:33:55,591 - main - INFO - train - 125 : Previous f1 score is 0.7138605442176871 and current f1 score is 0.7159477866061295, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:33:57,201 - main - INFO - train - 112 : Epoch : 11, global_step : 556/1410, loss_value : 534.7089775933159 
+2022-01-13 12:34:02,598 - main - INFO - train - 112 : Epoch : 11, global_step : 565/1410, loss_value : 410.29974534776477 
+2022-01-13 12:34:08,158 - main - INFO - train - 112 : Epoch : 11, global_step : 574/1410, loss_value : 482.9152018229167 
+2022-01-13 12:34:10,031 - main - INFO - train - 112 : Epoch : 12, global_step : 577/1410, loss_value : 27.103101942274307 
+2022-01-13 12:34:10,232 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:34:16,144 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7750    0.8312    0.8021       924
+                           Cell     0.7541    0.8628    0.8048      1013
+             Cellular_component     0.2786    0.4333    0.3391       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7931    0.8595    0.8250      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.4078    0.5182    0.4564       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.6629    0.7973    0.7239       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.0000    0.0000    0.0000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7549    0.6864    0.7190       727
+                         Tissue     0.3148    0.5217    0.3926       184
+
+                      micro avg     0.7079    0.7341    0.7207      6881
+                      macro avg     0.2963    0.3444    0.3164      6881
+                   weighted avg     0.6689    0.7341    0.6982      6881
+
+2022-01-13 12:34:16,145 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7207477168949772, accuracy : 0.9358549203160828, precision : 0.7079187105816398, recall : 0.7340502833890423
+2022-01-13 12:34:16,657 - main - INFO - train - 125 : Previous f1 score is 0.7159477866061295 and current f1 score is 0.7207477168949772, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:34:22,002 - main - INFO - train - 112 : Epoch : 12, global_step : 586/1410, loss_value : 413.42493693033856 
+2022-01-13 12:34:27,455 - main - INFO - train - 112 : Epoch : 12, global_step : 595/1410, loss_value : 453.5826110839844 
+2022-01-13 12:34:31,289 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:34:36,895 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7625    0.8409    0.7998       924
+                           Cell     0.7247    0.8707    0.7910      1013
+             Cellular_component     0.3583    0.3722    0.3651       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7698    0.8730    0.8181      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.3727    0.6667    0.4781       303
+                          Organ     0.0000    0.0000    0.0000       156
+                       Organism     0.7372    0.8069    0.7705       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     1.0000    0.0098    0.0194       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7983    0.6424    0.7119       727
+                         Tissue     0.3143    0.4783    0.3793       184
+
+                      micro avg     0.7031    0.7415    0.7218      6881
+                      macro avg     0.3649    0.3476    0.3208      6881
+                   weighted avg     0.6798    0.7415    0.6977      6881
+
+2022-01-13 12:34:36,895 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7217938742307421, accuracy : 0.935930719523981, precision : 0.7031422271223815, recall : 0.7414619968027903
+2022-01-13 12:34:37,381 - main - INFO - train - 125 : Previous f1 score is 0.7207477168949772 and current f1 score is 0.7217938742307421, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:34:39,057 - main - INFO - train - 112 : Epoch : 12, global_step : 604/1410, loss_value : 491.48538547092016 
+2022-01-13 12:34:44,546 - main - INFO - train - 112 : Epoch : 12, global_step : 613/1410, loss_value : 357.95015292697485 
+2022-01-13 12:34:50,048 - main - INFO - train - 112 : Epoch : 12, global_step : 622/1410, loss_value : 445.99220106336804 
+2022-01-13 12:34:51,845 - main - INFO - train - 112 : Epoch : 13, global_step : 625/1410, loss_value : 26.406538221571182 
+2022-01-13 12:34:52,035 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:34:57,689 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7226    0.8344    0.7745       924
+                           Cell     0.7121    0.8717    0.7838      1013
+             Cellular_component     0.2745    0.4667    0.3457       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7594    0.8667    0.8095      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.4538    0.5842    0.5108       303
+                          Organ     1.0000    0.0064    0.0127       156
+                       Organism     0.6268    0.8494    0.7213       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     1.0000    0.0196    0.0385       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7698    0.6671    0.7148       727
+                         Tissue     0.3210    0.5652    0.4094       184
+
+                      micro avg     0.6807    0.7457    0.7117      6881
+                      macro avg     0.4150    0.3582    0.3201      6881
+                   weighted avg     0.6817    0.7457    0.6890      6881
+
+2022-01-13 12:34:57,689 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7116998404882446, accuracy : 0.9342252373462697, precision : 0.6806845317060228, recall : 0.745676500508647
+2022-01-13 12:34:57,697 - main - INFO - train - 130 : Left patience is 92
+2022-01-13 12:35:03,048 - main - INFO - train - 112 : Epoch : 13, global_step : 634/1410, loss_value : 387.90653822157117 
+2022-01-13 12:35:08,540 - main - INFO - train - 112 : Epoch : 13, global_step : 643/1410, loss_value : 414.29815673828125 
+2022-01-13 12:35:12,378 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:35:18,067 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7620    0.8452    0.8014       924
+                           Cell     0.7910    0.8628    0.8253      1013
+             Cellular_component     0.3310    0.5167    0.4035       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7888    0.8579    0.8219      2520
+   Immaterial_anatomical_entity     1.0000    0.0323    0.0625        31
+         Multi-tissue_structure     0.4015    0.6865    0.5067       303
+                          Organ     1.0000    0.0256    0.0500       156
+                       Organism     0.7327    0.8359    0.7809       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     1.0000    0.0686    0.1284       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7141    0.7180    0.7160       727
+                         Tissue     0.3204    0.5380    0.4016       184
+
+                      micro avg     0.7089    0.7534    0.7304      6881
+                      macro avg     0.4901    0.3742    0.3436      6881
+                   weighted avg     0.7151    0.7534    0.7115      6881
+
+2022-01-13 12:35:18,068 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7304494856981824, accuracy : 0.9381667961569802, precision : 0.7088746068644879, recall : 0.7533788693503851
+2022-01-13 12:35:18,558 - main - INFO - train - 125 : Previous f1 score is 0.7217938742307421 and current f1 score is 0.7304494856981824, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:35:20,183 - main - INFO - train - 112 : Epoch : 13, global_step : 652/1410, loss_value : 456.8838127983941 
+2022-01-13 12:35:25,667 - main - INFO - train - 112 : Epoch : 13, global_step : 661/1410, loss_value : 328.41161092122394 
+2022-01-13 12:35:31,229 - main - INFO - train - 112 : Epoch : 13, global_step : 670/1410, loss_value : 395.51278347439234 
+2022-01-13 12:35:32,981 - main - INFO - train - 112 : Epoch : 14, global_step : 673/1410, loss_value : 21.980024549696182 
+2022-01-13 12:35:33,174 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:35:38,882 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7577    0.8290    0.7917       924
+                           Cell     0.8094    0.8509    0.8296      1013
+             Cellular_component     0.2555    0.5833    0.3553       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7811    0.8440    0.8114      2520
+   Immaterial_anatomical_entity     0.0000    0.0000    0.0000        31
+         Multi-tissue_structure     0.4617    0.6568    0.5422       303
+                          Organ     1.0000    0.0321    0.0621       156
+                       Organism     0.6998    0.8417    0.7642       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     1.0000    0.0196    0.0385       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6223    0.7455    0.6783       727
+                         Tissue     0.3882    0.6413    0.4836       184
+
+                      micro avg     0.6933    0.7502    0.7206      6881
+                      macro avg     0.4235    0.3778    0.3348      6881
+                   weighted avg     0.7003    0.7502    0.7029      6881
+
+2022-01-13 12:35:38,882 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7205974733021567, accuracy : 0.9344715847719391, precision : 0.6932581251678753, recall : 0.7501816596424938
+2022-01-13 12:35:38,891 - main - INFO - train - 130 : Left patience is 91
+2022-01-13 12:35:44,144 - main - INFO - train - 112 : Epoch : 14, global_step : 682/1410, loss_value : 340.03476969401044 
+2022-01-13 12:35:49,615 - main - INFO - train - 112 : Epoch : 14, global_step : 691/1410, loss_value : 370.1083713107639 
+2022-01-13 12:35:53,514 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:35:59,118 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7754    0.8333    0.8033       924
+                           Cell     0.8126    0.8648    0.8379      1013
+             Cellular_component     0.3403    0.5444    0.4188       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7751    0.8738    0.8215      2520
+   Immaterial_anatomical_entity     0.7500    0.0968    0.1714        31
+         Multi-tissue_structure     0.4406    0.7228    0.5475       303
+                          Organ     0.9474    0.1154    0.2057       156
+                       Organism     0.7570    0.8359    0.7945       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.9600    0.2353    0.3780       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7717    0.6836    0.7250       727
+                         Tissue     0.3826    0.6196    0.4730       184
+
+                      micro avg     0.7238    0.7636    0.7431      6881
+                      macro avg     0.4820    0.4016    0.3860      6881
+                   weighted avg     0.7238    0.7636    0.7272      6881
+
+2022-01-13 12:35:59,119 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7431400282885431, accuracy : 0.940725019423547, precision : 0.7237911558065849, recall : 0.7635518093300392
+2022-01-13 12:35:59,608 - main - INFO - train - 125 : Previous f1 score is 0.7304494856981824 and current f1 score is 0.7431400282885431, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:36:01,267 - main - INFO - train - 112 : Epoch : 14, global_step : 700/1410, loss_value : 411.38757663302954 
+2022-01-13 12:36:06,712 - main - INFO - train - 112 : Epoch : 14, global_step : 709/1410, loss_value : 296.72760009765625 
+2022-01-13 12:36:12,127 - main - INFO - train - 112 : Epoch : 14, global_step : 718/1410, loss_value : 363.13509792751734 
+2022-01-13 12:36:13,871 - main - INFO - train - 112 : Epoch : 15, global_step : 721/1410, loss_value : 21.421797010633682 
+2022-01-13 12:36:14,058 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:36:19,780 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7529    0.8312    0.7901       924
+                           Cell     0.8218    0.8559    0.8385      1013
+             Cellular_component     0.2798    0.6000    0.3816       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7897    0.8480    0.8178      2520
+   Immaterial_anatomical_entity     1.0000    0.0645    0.1212        31
+         Multi-tissue_structure     0.4767    0.7096    0.5703       303
+                          Organ     0.9565    0.1410    0.2458       156
+                       Organism     0.7040    0.8494    0.7699       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     1.0000    0.1765    0.3000       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6274    0.7552    0.6854       727
+                         Tissue     0.4220    0.6467    0.5107       184
+
+                      micro avg     0.7047    0.7622    0.7323      6881
+                      macro avg     0.4894    0.4049    0.3770      6881
+                   weighted avg     0.7112    0.7622    0.7187      6881
+
+2022-01-13 12:36:19,780 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7323373359396815, accuracy : 0.9376172518997177, precision : 0.704688969501545, recall : 0.7622438599040837
+2022-01-13 12:36:19,781 - main - INFO - train - 130 : Left patience is 90
+2022-01-13 12:36:25,180 - main - INFO - train - 112 : Epoch : 15, global_step : 730/1410, loss_value : 319.98524305555554 
+2022-01-13 12:36:30,590 - main - INFO - train - 112 : Epoch : 15, global_step : 739/1410, loss_value : 348.4928148057726 
+2022-01-13 12:36:34,363 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:36:40,005 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7713    0.8539    0.8105       924
+                           Cell     0.8327    0.8549    0.8436      1013
+             Cellular_component     0.3462    0.5500    0.4249       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7974    0.8619    0.8284      2520
+   Immaterial_anatomical_entity     0.7000    0.2258    0.3415        31
+         Multi-tissue_structure     0.4540    0.7492    0.5654       303
+                          Organ     0.8293    0.2179    0.3452       156
+                       Organism     0.7735    0.8436    0.8070       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.9459    0.3431    0.5036       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7526    0.6988    0.7247       727
+                         Tissue     0.4265    0.6467    0.5140       184
+
+                      micro avg     0.7372    0.7692    0.7529      6881
+                      macro avg     0.4768    0.4279    0.4193      6881
+                   weighted avg     0.7323    0.7692    0.7403      6881
+
+2022-01-13 12:36:40,005 - main.utils - INFO - compute_f1 - 130 : F1 : 0.752862527558495, accuracy : 0.9422978529874363, precision : 0.7371866295264624, recall : 0.7692195901758465
+2022-01-13 12:36:40,512 - main - INFO - train - 125 : Previous f1 score is 0.7431400282885431 and current f1 score is 0.752862527558495, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:36:42,180 - main - INFO - train - 112 : Epoch : 15, global_step : 748/1410, loss_value : 381.6692606608073 
+2022-01-13 12:36:47,581 - main - INFO - train - 112 : Epoch : 15, global_step : 757/1410, loss_value : 272.72523328993054 
+2022-01-13 12:36:53,112 - main - INFO - train - 112 : Epoch : 15, global_step : 766/1410, loss_value : 329.86849297417535 
+2022-01-13 12:36:54,975 - main - INFO - train - 112 : Epoch : 16, global_step : 769/1410, loss_value : 19.268741183810764 
+2022-01-13 12:36:55,165 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:37:00,842 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7930    0.8333    0.8127       924
+                           Cell     0.8254    0.8588    0.8418      1013
+             Cellular_component     0.3086    0.5778    0.4023       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8240    0.8194    0.8217      2520
+   Immaterial_anatomical_entity     0.7000    0.2258    0.3415        31
+         Multi-tissue_structure     0.4847    0.7327    0.5834       303
+                          Organ     0.8421    0.2051    0.3299       156
+                       Organism     0.7552    0.8340    0.7927       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.9706    0.3235    0.4853       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6065    0.7758    0.6807       727
+                         Tissue     0.5063    0.6576    0.5721       184
+
+                      micro avg     0.7302    0.7586    0.7441      6881
+                      macro avg     0.4760    0.4277    0.4165      6881
+                   weighted avg     0.7303    0.7586    0.7333      6881
+
+2022-01-13 12:37:00,842 - main.utils - INFO - compute_f1 - 130 : F1 : 0.744119743406985, accuracy : 0.9400807261564117, precision : 0.7301720520352497, recall : 0.7586106670542072
+2022-01-13 12:37:00,842 - main - INFO - train - 130 : Left patience is 89
+2022-01-13 12:37:06,188 - main - INFO - train - 112 : Epoch : 16, global_step : 778/1410, loss_value : 283.0659010145399 
+2022-01-13 12:37:11,781 - main - INFO - train - 112 : Epoch : 16, global_step : 787/1410, loss_value : 318.45944044325086 
+2022-01-13 12:37:15,655 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:37:21,307 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7992    0.8442    0.8211       924
+                           Cell     0.8490    0.8549    0.8519      1013
+             Cellular_component     0.3446    0.5667    0.4286       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7972    0.8472    0.8215      2520
+   Immaterial_anatomical_entity     0.7692    0.3226    0.4545        31
+         Multi-tissue_structure     0.5186    0.7360    0.6085       303
+                          Organ     0.7656    0.3141    0.4455       156
+                       Organism     0.7804    0.8301    0.8045       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.9130    0.4118    0.5676       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7485    0.6960    0.7213       727
+                         Tissue     0.4862    0.6685    0.5629       184
+
+                      micro avg     0.7520    0.7653    0.7586      6881
+                      macro avg     0.4857    0.4432    0.4430      6881
+                   weighted avg     0.7413    0.7653    0.7469      6881
+
+2022-01-13 12:37:21,307 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7585710169979833, accuracy : 0.9427715980368006, precision : 0.7519634442381836, recall : 0.76529574189798
+2022-01-13 12:37:21,794 - main - INFO - train - 125 : Previous f1 score is 0.752862527558495 and current f1 score is 0.7585710169979833, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:37:23,449 - main - INFO - train - 112 : Epoch : 16, global_step : 796/1410, loss_value : 346.9351298014323 
+2022-01-13 12:37:28,890 - main - INFO - train - 112 : Epoch : 16, global_step : 805/1410, loss_value : 246.50491841634116 
+2022-01-13 12:37:34,369 - main - INFO - train - 112 : Epoch : 16, global_step : 814/1410, loss_value : 303.0032552083333 
+2022-01-13 12:37:36,129 - main - INFO - train - 112 : Epoch : 17, global_step : 817/1410, loss_value : 17.031482272677952 
+2022-01-13 12:37:36,310 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:37:41,925 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7774    0.8355    0.8054       924
+                           Cell     0.8245    0.8578    0.8408      1013
+             Cellular_component     0.2948    0.5667    0.3878       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8113    0.8290    0.8200      2520
+   Immaterial_anatomical_entity     0.7143    0.3226    0.4444        31
+         Multi-tissue_structure     0.5214    0.7228    0.6058       303
+                          Organ     0.8226    0.3269    0.4679       156
+                       Organism     0.7736    0.8378    0.8044       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.9130    0.4118    0.5676       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6564    0.7359    0.6939       727
+                         Tissue     0.5217    0.6522    0.5797       184
+
+                      micro avg     0.7368    0.7620    0.7492      6881
+                      macro avg     0.4769    0.4437    0.4386      6881
+                   weighted avg     0.7305    0.7620    0.7395      6881
+
+2022-01-13 12:37:41,925 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7491605344002287, accuracy : 0.9410471660571147, precision : 0.7367903316469927, recall : 0.7619532044760936
+2022-01-13 12:37:41,925 - main - INFO - train - 130 : Left patience is 88
+2022-01-13 12:37:47,340 - main - INFO - train - 112 : Epoch : 17, global_step : 826/1410, loss_value : 261.51752217610675 
+2022-01-13 12:37:53,128 - main - INFO - train - 112 : Epoch : 17, global_step : 835/1410, loss_value : 313.19835408528644 
+2022-01-13 12:37:57,228 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:38:02,960 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8132    0.8431    0.8278       924
+                           Cell     0.8429    0.8529    0.8479      1013
+             Cellular_component     0.3529    0.5667    0.4350       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7923    0.8599    0.8247      2520
+   Immaterial_anatomical_entity     0.7857    0.3548    0.4889        31
+         Multi-tissue_structure     0.5547    0.7360    0.6326       303
+                          Organ     0.7363    0.4295    0.5425       156
+                       Organism     0.7930    0.8282    0.8102       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8772    0.4902    0.6289       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7880    0.6699    0.7242       727
+                         Tissue     0.5060    0.6848    0.5820       184
+
+                      micro avg     0.7601    0.7710    0.7655      6881
+                      macro avg     0.4901    0.4572    0.4590      6881
+                   weighted avg     0.7468    0.7710    0.7542      6881
+
+2022-01-13 12:38:02,960 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7655122655122656, accuracy : 0.9438327869473764, precision : 0.760137555523714, recall : 0.7709635227437872
+2022-01-13 12:38:03,470 - main - INFO - train - 125 : Previous f1 score is 0.7585710169979833 and current f1 score is 0.7655122655122656, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:38:05,147 - main - INFO - train - 112 : Epoch : 17, global_step : 844/1410, loss_value : 324.0901048448351 
+2022-01-13 12:38:10,572 - main - INFO - train - 112 : Epoch : 17, global_step : 853/1410, loss_value : 234.08097161187067 
+2022-01-13 12:38:16,153 - main - INFO - train - 112 : Epoch : 17, global_step : 862/1410, loss_value : 282.2229190402561 
+2022-01-13 12:38:17,993 - main - INFO - train - 112 : Epoch : 18, global_step : 865/1410, loss_value : 16.159525553385418 
+2022-01-13 12:38:18,176 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:38:23,776 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8049    0.8258    0.8152       924
+                           Cell     0.8369    0.8559    0.8463      1013
+             Cellular_component     0.2781    0.5778    0.3755       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8311    0.8258    0.8284      2520
+   Immaterial_anatomical_entity     0.7333    0.3548    0.4783        31
+         Multi-tissue_structure     0.5734    0.6964    0.6289       303
+                          Organ     0.7176    0.3910    0.5062       156
+                       Organism     0.7724    0.8320    0.8011       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8214    0.4510    0.5823       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6109    0.7689    0.6809       727
+                         Tissue     0.5184    0.6902    0.5921       184
+
+                      micro avg     0.7406    0.7646    0.7524      6881
+                      macro avg     0.4686    0.4543    0.4459      6881
+                   weighted avg     0.7365    0.7646    0.7453      6881
+
+2022-01-13 12:38:23,776 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7523775473721844, accuracy : 0.9412745636808095, precision : 0.7405686936936937, recall : 0.7645691033280047
+2022-01-13 12:38:23,776 - main - INFO - train - 130 : Left patience is 87
+2022-01-13 12:38:29,013 - main - INFO - train - 112 : Epoch : 18, global_step : 874/1410, loss_value : 238.09198337131076 
+2022-01-13 12:38:34,472 - main - INFO - train - 112 : Epoch : 18, global_step : 883/1410, loss_value : 279.46783277723523 
+2022-01-13 12:38:38,347 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:38:43,930 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8115    0.8387    0.8249       924
+                           Cell     0.8228    0.8618    0.8419      1013
+             Cellular_component     0.3175    0.5944    0.4139       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7940    0.8567    0.8242      2520
+   Immaterial_anatomical_entity     0.7500    0.3871    0.5106        31
+         Multi-tissue_structure     0.5827    0.7096    0.6399       303
+                          Organ     0.6379    0.4744    0.5441       156
+                       Organism     0.7974    0.8282    0.8125       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8387    0.5098    0.6341       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7633    0.6699    0.7136       727
+                         Tissue     0.5134    0.7283    0.6022       184
+
+                      micro avg     0.7518    0.7727    0.7621      6881
+                      macro avg     0.4768    0.4662    0.4601      6881
+                   weighted avg     0.7395    0.7727    0.7522      6881
+
+2022-01-13 12:38:43,931 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7621300078836092, accuracy : 0.9426389494229785, precision : 0.7518382352941176, recall : 0.7727074553117279
+2022-01-13 12:38:43,931 - main - INFO - train - 130 : Left patience is 86
+2022-01-13 12:38:45,544 - main - INFO - train - 112 : Epoch : 18, global_step : 892/1410, loss_value : 296.18684556749133 
+2022-01-13 12:38:50,920 - main - INFO - train - 112 : Epoch : 18, global_step : 901/1410, loss_value : 218.34162394205728 
+2022-01-13 12:38:56,256 - main - INFO - train - 112 : Epoch : 18, global_step : 910/1410, loss_value : 259.77464803059894 
+2022-01-13 12:38:58,007 - main - INFO - train - 112 : Epoch : 19, global_step : 913/1410, loss_value : 14.704935709635416 
+2022-01-13 12:38:58,193 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:39:03,746 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7900    0.8344    0.8116       924
+                           Cell     0.8267    0.8618    0.8439      1013
+             Cellular_component     0.2961    0.5889    0.3941       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8025    0.8548    0.8278      2520
+   Immaterial_anatomical_entity     0.7333    0.3548    0.4783        31
+         Multi-tissue_structure     0.5983    0.6931    0.6422       303
+                          Organ     0.6410    0.4808    0.5495       156
+                       Organism     0.7544    0.8359    0.7930       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8060    0.5294    0.6391       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6471    0.7414    0.6910       727
+                         Tissue     0.5055    0.7446    0.6022       184
+
+                      micro avg     0.7345    0.7794    0.7563      6881
+                      macro avg     0.4626    0.4700    0.4545      6881
+                   weighted avg     0.7242    0.7794    0.7479      6881
+
+2022-01-13 12:39:03,746 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7562574913628992, accuracy : 0.941520911106479, precision : 0.7344563133388113, recall : 0.7793925301555007
+2022-01-13 12:39:03,746 - main - INFO - train - 130 : Left patience is 85
+2022-01-13 12:39:08,906 - main - INFO - train - 112 : Epoch : 19, global_step : 922/1410, loss_value : 219.67864651150174 
+2022-01-13 12:39:14,247 - main - INFO - train - 112 : Epoch : 19, global_step : 931/1410, loss_value : 261.8837670220269 
+2022-01-13 12:39:17,983 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:39:23,505 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8000    0.8485    0.8235       924
+                           Cell     0.8484    0.8618    0.8550      1013
+             Cellular_component     0.3777    0.5833    0.4585       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7892    0.8663    0.8260      2520
+   Immaterial_anatomical_entity     0.7222    0.4194    0.5306        31
+         Multi-tissue_structure     0.5919    0.7228    0.6508       303
+                          Organ     0.5778    0.5000    0.5361       156
+                       Organism     0.7832    0.8301    0.8060       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8730    0.5392    0.6667       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7677    0.6726    0.7170       727
+                         Tissue     0.5226    0.7554    0.6178       184
+
+                      micro avg     0.7570    0.7801    0.7684      6881
+                      macro avg     0.4784    0.4750    0.4680      6881
+                   weighted avg     0.7406    0.7801    0.7570      6881
+
+2022-01-13 12:39:23,505 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7683939307185801, accuracy : 0.9436053893236815, precision : 0.7570159356931322, recall : 0.7801191687254759
+2022-01-13 12:39:23,983 - main - INFO - train - 125 : Previous f1 score is 0.7655122655122656 and current f1 score is 0.7683939307185801, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:39:25,616 - main - INFO - train - 112 : Epoch : 19, global_step : 940/1410, loss_value : 270.58329433865015 
+2022-01-13 12:39:30,941 - main - INFO - train - 112 : Epoch : 19, global_step : 949/1410, loss_value : 196.44012705485025 
+2022-01-13 12:39:36,388 - main - INFO - train - 112 : Epoch : 19, global_step : 958/1410, loss_value : 244.8964114718967 
+2022-01-13 12:39:38,212 - main - INFO - train - 112 : Epoch : 20, global_step : 961/1410, loss_value : 14.194055345323351 
+2022-01-13 12:39:38,432 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:39:44,173 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7872    0.8409    0.8132       924
+                           Cell     0.8234    0.8608    0.8417      1013
+             Cellular_component     0.3055    0.5889    0.4023       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8063    0.8440    0.8247      2520
+   Immaterial_anatomical_entity     0.6842    0.4194    0.5200        31
+         Multi-tissue_structure     0.6239    0.7063    0.6625       303
+                          Organ     0.5896    0.5064    0.5448       156
+                       Organism     0.7646    0.8340    0.7978       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8358    0.5490    0.6627       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6356    0.7414    0.6844       727
+                         Tissue     0.5106    0.7826    0.6180       184
+
+                      micro avg     0.7352    0.7788    0.7564      6881
+                      macro avg     0.4604    0.4796    0.4608      6881
+                   weighted avg     0.7249    0.7788    0.7483      6881
+
+2022-01-13 12:39:44,173 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7563867325335216, accuracy : 0.9411798146709367, precision : 0.7352174509534916, recall : 0.7788112192995205
+2022-01-13 12:39:44,173 - main - INFO - train - 130 : Left patience is 84
+2022-01-13 12:39:49,400 - main - INFO - train - 112 : Epoch : 20, global_step : 970/1410, loss_value : 203.33344184027777 
+2022-01-13 12:39:54,787 - main - INFO - train - 112 : Epoch : 20, global_step : 979/1410, loss_value : 246.6491444905599 
+2022-01-13 12:39:58,741 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:40:04,329 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7976    0.8485    0.8222       924
+                           Cell     0.8506    0.8598    0.8552      1013
+             Cellular_component     0.3621    0.5833    0.4468       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7897    0.8615    0.8241      2520
+   Immaterial_anatomical_entity     0.6667    0.4516    0.5385        31
+         Multi-tissue_structure     0.5781    0.7327    0.6463       303
+                          Organ     0.5971    0.5321    0.5627       156
+                       Organism     0.8064    0.8282    0.8171       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8730    0.5392    0.6667       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7207    0.7098    0.7152       727
+                         Tissue     0.5769    0.7337    0.6459       184
+
+                      micro avg     0.7546    0.7826    0.7684      6881
+                      macro avg     0.4762    0.4800    0.4713      6881
+                   weighted avg     0.7382    0.7826    0.7577      6881
+
+2022-01-13 12:40:04,329 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7683527145608903, accuracy : 0.9437948873434273, precision : 0.7546244394618834, recall : 0.782589739863392
+2022-01-13 12:40:04,329 - main - INFO - train - 130 : Left patience is 83
+2022-01-13 12:40:05,943 - main - INFO - train - 112 : Epoch : 20, global_step : 988/1410, loss_value : 260.8429361979167 
+2022-01-13 12:40:11,300 - main - INFO - train - 112 : Epoch : 20, global_step : 997/1410, loss_value : 185.34125349256726 
+2022-01-13 12:40:16,686 - main - INFO - train - 112 : Epoch : 20, global_step : 1006/1410, loss_value : 227.85971069335938 
+2022-01-13 12:40:18,461 - main - INFO - train - 112 : Epoch : 21, global_step : 1009/1410, loss_value : 13.259452819824219 
+2022-01-13 12:40:18,644 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:40:24,220 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.4000    0.0323    0.0597        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8052    0.8366    0.8206       924
+                           Cell     0.8354    0.8569    0.8460      1013
+             Cellular_component     0.2964    0.5944    0.3956       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8034    0.8480    0.8251      2520
+   Immaterial_anatomical_entity     0.6364    0.4516    0.5283        31
+         Multi-tissue_structure     0.6254    0.6997    0.6604       303
+                          Organ     0.5686    0.5577    0.5631       156
+                       Organism     0.7653    0.8436    0.8026       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7600    0.5588    0.6441       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6459    0.7428    0.6910       727
+                         Tissue     0.5036    0.7609    0.6061       184
+
+                      micro avg     0.7363    0.7810    0.7580      6881
+                      macro avg     0.4779    0.4865    0.4652      6881
+                   weighted avg     0.7306    0.7810    0.7512      6881
+
+2022-01-13 12:40:24,220 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7579689703808181, accuracy : 0.9421841541755889, precision : 0.7362652418139471, recall : 0.7809911350094463
+2022-01-13 12:40:24,220 - main - INFO - train - 130 : Left patience is 82
+2022-01-13 12:40:29,471 - main - INFO - train - 112 : Epoch : 21, global_step : 1018/1410, loss_value : 192.82867940266928 
+2022-01-13 12:40:34,943 - main - INFO - train - 112 : Epoch : 21, global_step : 1027/1410, loss_value : 234.97506713867188 
+2022-01-13 12:40:38,749 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:40:44,446 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.0000    0.0000    0.0000        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7961    0.8409    0.8179       924
+                           Cell     0.8529    0.8529    0.8529      1013
+             Cellular_component     0.3745    0.5722    0.4527       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7935    0.8583    0.8246      2520
+   Immaterial_anatomical_entity     0.6667    0.4516    0.5385        31
+         Multi-tissue_structure     0.6055    0.7294    0.6617       303
+                          Organ     0.5796    0.5833    0.5815       156
+                       Organism     0.7993    0.8301    0.8144       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8769    0.5588    0.6826       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7027    0.7153    0.7089       727
+                         Tissue     0.5472    0.7554    0.6347       184
+
+                      micro avg     0.7544    0.7817    0.7678      6881
+                      macro avg     0.4747    0.4843    0.4732      6881
+                   weighted avg     0.7377    0.7817    0.7573      6881
+
+2022-01-13 12:40:44,446 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7678252801370352, accuracy : 0.9437948873434273, precision : 0.7544179523141655, recall : 0.7817177735794216
+2022-01-13 12:40:44,446 - main - INFO - train - 130 : Left patience is 81
+2022-01-13 12:40:46,083 - main - INFO - train - 112 : Epoch : 21, global_step : 1036/1410, loss_value : 246.43561808268228 
+2022-01-13 12:40:51,462 - main - INFO - train - 112 : Epoch : 21, global_step : 1045/1410, loss_value : 182.8459006415473 
+2022-01-13 12:40:56,867 - main - INFO - train - 112 : Epoch : 21, global_step : 1054/1410, loss_value : 217.24610900878906 
+2022-01-13 12:40:58,682 - main - INFO - train - 112 : Epoch : 22, global_step : 1057/1410, loss_value : 12.144475301106771 
+2022-01-13 12:40:58,887 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:41:04,458 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.5000    0.0323    0.0606        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8048    0.8387    0.8214       924
+                           Cell     0.8404    0.8578    0.8490      1013
+             Cellular_component     0.3025    0.6000    0.4022       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7959    0.8571    0.8254      2520
+   Immaterial_anatomical_entity     0.6364    0.4516    0.5283        31
+         Multi-tissue_structure     0.6324    0.7096    0.6687       303
+                          Organ     0.5506    0.5577    0.5541       156
+                       Organism     0.7802    0.8359    0.8071       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8028    0.5588    0.6590       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7189    0.7070    0.7129       727
+                         Tissue     0.5036    0.7554    0.6043       184
+
+                      micro avg     0.7452    0.7808    0.7626      6881
+                      macro avg     0.4918    0.4851    0.4683      6881
+                   weighted avg     0.7389    0.7808    0.7550      6881
+
+2022-01-13 12:41:04,458 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7626144347455822, accuracy : 0.942619999621004, precision : 0.7452149791955617, recall : 0.7808458072954513
+2022-01-13 12:41:04,459 - main - INFO - train - 130 : Left patience is 80
+2022-01-13 12:41:09,682 - main - INFO - train - 112 : Epoch : 22, global_step : 1066/1410, loss_value : 182.18990580240884 
+2022-01-13 12:41:15,069 - main - INFO - train - 112 : Epoch : 22, global_step : 1075/1410, loss_value : 221.33163113064236 
+2022-01-13 12:41:19,008 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:41:24,622 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.5000    0.0161    0.0312        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7923    0.8420    0.8164       924
+                           Cell     0.8492    0.8559    0.8525      1013
+             Cellular_component     0.3852    0.6056    0.4708       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7951    0.8575    0.8251      2520
+   Immaterial_anatomical_entity     0.6667    0.5161    0.5818        31
+         Multi-tissue_structure     0.6116    0.7327    0.6667       303
+                          Organ     0.5563    0.5705    0.5633       156
+                       Organism     0.7687    0.8340    0.8000       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8358    0.5490    0.6627       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7127    0.7166    0.7147       727
+                         Tissue     0.5512    0.7609    0.6393       184
+
+                      micro avg     0.7523    0.7836    0.7677      6881
+                      macro avg     0.5015    0.4911    0.4765      6881
+                   weighted avg     0.7400    0.7836    0.7573      6881
+
+2022-01-13 12:41:24,622 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7676537585421412, accuracy : 0.9434916905118341, precision : 0.752337100599972, recall : 0.7836070338613573
+2022-01-13 12:41:24,622 - main - INFO - train - 130 : Left patience is 79
+2022-01-13 12:41:26,301 - main - INFO - train - 112 : Epoch : 22, global_step : 1084/1410, loss_value : 225.29789564344617 
+2022-01-13 12:41:31,821 - main - INFO - train - 112 : Epoch : 22, global_step : 1093/1410, loss_value : 166.66796451144748 
+2022-01-13 12:41:37,223 - main - INFO - train - 112 : Epoch : 22, global_step : 1102/1410, loss_value : 203.7332967122396 
+2022-01-13 12:41:38,998 - main - INFO - train - 112 : Epoch : 23, global_step : 1105/1410, loss_value : 11.862011379665798 
+2022-01-13 12:41:39,183 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:41:44,958 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.5000    0.0323    0.0606        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8073    0.8431    0.8248       924
+                           Cell     0.8402    0.8509    0.8455      1013
+             Cellular_component     0.3226    0.6111    0.4223       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8007    0.8579    0.8284      2520
+   Immaterial_anatomical_entity     0.5769    0.4839    0.5263        31
+         Multi-tissue_structure     0.6416    0.7030    0.6709       303
+                          Organ     0.5583    0.5833    0.5705       156
+                       Organism     0.7548    0.8378    0.7941       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7671    0.5490    0.6400       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7157    0.7166    0.7162       727
+                         Tissue     0.5129    0.7554    0.6110       184
+
+                      micro avg     0.7473    0.7824    0.7644      6881
+                      macro avg     0.4874    0.4890    0.4694      6881
+                   weighted avg     0.7393    0.7824    0.7563      6881
+
+2022-01-13 12:41:44,959 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7644469686213262, accuracy : 0.9425631502150803, precision : 0.7472588480222068, recall : 0.7824444121493969
+2022-01-13 12:41:44,959 - main - INFO - train - 130 : Left patience is 78
+2022-01-13 12:41:50,283 - main - INFO - train - 112 : Epoch : 23, global_step : 1114/1410, loss_value : 171.01153055826822 
+2022-01-13 12:41:55,893 - main - INFO - train - 112 : Epoch : 23, global_step : 1123/1410, loss_value : 215.95927937825522 
+2022-01-13 12:41:59,661 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:42:05,317 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     1.0000    0.0161    0.0317        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8017    0.8398    0.8203       924
+                           Cell     0.8545    0.8519    0.8532      1013
+             Cellular_component     0.3955    0.5889    0.4732       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8049    0.8548    0.8291      2520
+   Immaterial_anatomical_entity     0.6957    0.5161    0.5926        31
+         Multi-tissue_structure     0.6246    0.7360    0.6758       303
+                          Organ     0.5617    0.5833    0.5723       156
+                       Organism     0.7989    0.8359    0.8170       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8615    0.5490    0.6707       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6997    0.7276    0.7134       727
+                         Tissue     0.5405    0.7609    0.6321       184
+
+                      micro avg     0.7602    0.7830    0.7714      6881
+                      macro avg     0.5400    0.4913    0.4801      6881
+                   weighted avg     0.7523    0.7830    0.7612      6881
+
+2022-01-13 12:42:05,317 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7714224353926551, accuracy : 0.9439464857592238, precision : 0.760158013544018, recall : 0.7830257230053771
+2022-01-13 12:42:05,819 - main - INFO - train - 125 : Previous f1 score is 0.7683939307185801 and current f1 score is 0.7714224353926551, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:42:07,500 - main - INFO - train - 112 : Epoch : 23, global_step : 1132/1410, loss_value : 222.9708777533637 
+2022-01-13 12:42:13,113 - main - INFO - train - 112 : Epoch : 23, global_step : 1141/1410, loss_value : 158.33645545111762 
+2022-01-13 12:42:18,725 - main - INFO - train - 112 : Epoch : 23, global_step : 1150/1410, loss_value : 196.6033172607422 
+2022-01-13 12:42:20,510 - main - INFO - train - 112 : Epoch : 24, global_step : 1153/1410, loss_value : 11.822825961642796 
+2022-01-13 12:42:20,696 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:42:26,488 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.3333    0.0161    0.0308        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8100    0.8442    0.8267       924
+                           Cell     0.8428    0.8519    0.8473      1013
+             Cellular_component     0.3415    0.6222    0.4409       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8088    0.8492    0.8285      2520
+   Immaterial_anatomical_entity     0.6250    0.4839    0.5455        31
+         Multi-tissue_structure     0.6380    0.7096    0.6719       303
+                          Organ     0.5750    0.5897    0.5823       156
+                       Organism     0.7732    0.8359    0.8033       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7403    0.5588    0.6369       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.6809    0.7249    0.7022       727
+                         Tissue     0.5203    0.7663    0.6198       184
+
+                      micro avg     0.7498    0.7813    0.7652      6881
+                      macro avg     0.4806    0.4908    0.4710      6881
+                   weighted avg     0.7399    0.7813    0.7569      6881
+
+2022-01-13 12:42:26,488 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7652124403957014, accuracy : 0.9431316442743173, precision : 0.7497907949790795, recall : 0.7812817904374364
+2022-01-13 12:42:26,488 - main - INFO - train - 130 : Left patience is 77
+2022-01-13 12:42:31,817 - main - INFO - train - 112 : Epoch : 24, global_step : 1162/1410, loss_value : 163.926389058431 
+2022-01-13 12:42:37,412 - main - INFO - train - 112 : Epoch : 24, global_step : 1171/1410, loss_value : 199.53856913248697 
+2022-01-13 12:42:41,340 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:42:47,181 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.2500    0.0161    0.0303        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7977    0.8366    0.8167       924
+                           Cell     0.8379    0.8519    0.8448      1013
+             Cellular_component     0.3857    0.6000    0.4696       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8116    0.8516    0.8311      2520
+   Immaterial_anatomical_entity     0.6667    0.5161    0.5818        31
+         Multi-tissue_structure     0.6236    0.7327    0.6737       303
+                          Organ     0.5636    0.5962    0.5794       156
+                       Organism     0.7806    0.8378    0.8082       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.8261    0.5588    0.6667       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7072    0.7276    0.7173       727
+                         Tissue     0.5618    0.7663    0.6483       184
+
+                      micro avg     0.7583    0.7823    0.7701      6881
+                      macro avg     0.4883    0.4932    0.4792      6881
+                   weighted avg     0.7440    0.7823    0.7603      6881
+
+2022-01-13 12:42:47,181 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7701001430615165, accuracy : 0.9442117829868678, precision : 0.7582758134948584, recall : 0.7822990844354019
+2022-01-13 12:42:47,181 - main - INFO - train - 130 : Left patience is 76
+2022-01-13 12:42:48,876 - main - INFO - train - 112 : Epoch : 24, global_step : 1180/1410, loss_value : 210.72214931911893 
+2022-01-13 12:42:54,329 - main - INFO - train - 112 : Epoch : 24, global_step : 1189/1410, loss_value : 155.32032352023654 
+2022-01-13 12:42:59,751 - main - INFO - train - 112 : Epoch : 24, global_step : 1198/1410, loss_value : 193.1629672580295 
+2022-01-13 12:43:01,533 - main - INFO - train - 112 : Epoch : 25, global_step : 1201/1410, loss_value : 10.304154290093315 
+2022-01-13 12:43:01,714 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:43:07,362 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.3333    0.0161    0.0308        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8073    0.8387    0.8227       924
+                           Cell     0.8432    0.8549    0.8490      1013
+             Cellular_component     0.3599    0.6278    0.4575       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8036    0.8508    0.8265      2520
+   Immaterial_anatomical_entity     0.6250    0.4839    0.5455        31
+         Multi-tissue_structure     0.6476    0.7096    0.6772       303
+                          Organ     0.5497    0.6026    0.5749       156
+                       Organism     0.7778    0.8378    0.8067       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7632    0.5686    0.6517       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7063    0.7276    0.7168       727
+                         Tissue     0.5444    0.7989    0.6476       184
+
+                      micro avg     0.7535    0.7835    0.7682      6881
+                      macro avg     0.4851    0.4948    0.4754      6881
+                   weighted avg     0.7421    0.7835    0.7592      6881
+
+2022-01-13 12:43:07,362 - main.utils - INFO - compute_f1 - 130 : F1 : 0.768167569108008, accuracy : 0.9437569877394781, precision : 0.7534591194968554, recall : 0.7834617061473623
+2022-01-13 12:43:07,363 - main - INFO - train - 130 : Left patience is 75
+2022-01-13 12:43:12,570 - main - INFO - train - 112 : Epoch : 25, global_step : 1210/1410, loss_value : 161.12532467312283 
+2022-01-13 12:43:17,971 - main - INFO - train - 112 : Epoch : 25, global_step : 1219/1410, loss_value : 194.63153245713977 
+2022-01-13 12:43:21,919 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:43:27,515 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.2500    0.0161    0.0303        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7967    0.8442    0.8198       924
+                           Cell     0.8432    0.8549    0.8490      1013
+             Cellular_component     0.3894    0.6556    0.4886       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8074    0.8552    0.8306      2520
+   Immaterial_anatomical_entity     0.6400    0.5161    0.5714        31
+         Multi-tissue_structure     0.6264    0.7195    0.6697       303
+                          Organ     0.5536    0.5962    0.5741       156
+                       Organism     0.7754    0.8398    0.8063       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7887    0.5490    0.6474       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7314    0.7153    0.7232       727
+                         Tissue     0.5823    0.7880    0.6697       184
+
+                      micro avg     0.7591    0.7852    0.7719      6881
+                      macro avg     0.4865    0.4969    0.4800      6881
+                   weighted avg     0.7452    0.7852    0.7620      6881
+
+2022-01-13 12:43:27,515 - main.utils - INFO - compute_f1 - 130 : F1 : 0.771912279448532, accuracy : 0.9444391806105626, precision : 0.7590615341388031, recall : 0.785205638715303
+2022-01-13 12:43:27,990 - main - INFO - train - 125 : Previous f1 score is 0.7714224353926551 and current f1 score is 0.771912279448532, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:43:29,600 - main - INFO - train - 112 : Epoch : 25, global_step : 1228/1410, loss_value : 205.33450995551215 
+2022-01-13 12:43:34,996 - main - INFO - train - 112 : Epoch : 25, global_step : 1237/1410, loss_value : 147.35164218478732 
+2022-01-13 12:43:40,363 - main - INFO - train - 112 : Epoch : 25, global_step : 1246/1410, loss_value : 186.1587151421441 
+2022-01-13 12:43:42,134 - main - INFO - train - 112 : Epoch : 26, global_step : 1249/1410, loss_value : 11.779529995388454 
+2022-01-13 12:43:42,324 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:43:47,925 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.2000    0.0161    0.0299        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8065    0.8387    0.8223       924
+                           Cell     0.8412    0.8578    0.8495      1013
+             Cellular_component     0.3834    0.6667    0.4868       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8058    0.8560    0.8301      2520
+   Immaterial_anatomical_entity     0.6154    0.5161    0.5614        31
+         Multi-tissue_structure     0.6429    0.7129    0.6761       303
+                          Organ     0.5602    0.5962    0.5776       156
+                       Organism     0.7792    0.8378    0.8074       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7308    0.5588    0.6333       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7383    0.7139    0.7259       727
+                         Tissue     0.5509    0.7935    0.6503       184
+
+                      micro avg     0.7585    0.7852    0.7716      6881
+                      macro avg     0.4784    0.4978    0.4782      6881
+                   weighted avg     0.7451    0.7852    0.7621      6881
+
+2022-01-13 12:43:47,925 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7716366752356469, accuracy : 0.9444391806105626, precision : 0.7585287098132809, recall : 0.785205638715303
+2022-01-13 12:43:47,925 - main - INFO - train - 130 : Left patience is 74
+2022-01-13 12:43:53,139 - main - INFO - train - 112 : Epoch : 26, global_step : 1258/1410, loss_value : 153.6742435031467 
+2022-01-13 12:43:58,513 - main - INFO - train - 112 : Epoch : 26, global_step : 1267/1410, loss_value : 188.98796590169272 
+2022-01-13 12:44:02,297 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:44:07,853 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.2857    0.0323    0.0580        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8062    0.8420    0.8237       924
+                           Cell     0.8367    0.8549    0.8457      1013
+             Cellular_component     0.3930    0.6833    0.4990       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8061    0.8532    0.8290      2520
+   Immaterial_anatomical_entity     0.5714    0.5161    0.5424        31
+         Multi-tissue_structure     0.6329    0.7228    0.6749       303
+                          Organ     0.5439    0.5962    0.5688       156
+                       Organism     0.7736    0.8378    0.8044       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7500    0.5588    0.6404       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7120    0.7208    0.7163       727
+                         Tissue     0.5676    0.7989    0.6637       184
+
+                      micro avg     0.7546    0.7861    0.7700      6881
+                      macro avg     0.4799    0.5011    0.4791      6881
+                   weighted avg     0.7421    0.7861    0.7608      6881
+
+2022-01-13 12:44:07,853 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7700192184497118, accuracy : 0.9443444316006898, precision : 0.7546037946428571, recall : 0.7860776049992734
+2022-01-13 12:44:07,853 - main - INFO - train - 130 : Left patience is 73
+2022-01-13 12:44:09,470 - main - INFO - train - 112 : Epoch : 26, global_step : 1276/1410, loss_value : 202.02154710557727 
+2022-01-13 12:44:14,873 - main - INFO - train - 112 : Epoch : 26, global_step : 1285/1410, loss_value : 146.67766571044922 
+2022-01-13 12:44:20,269 - main - INFO - train - 112 : Epoch : 26, global_step : 1294/1410, loss_value : 180.47049967447916 
+2022-01-13 12:44:22,055 - main - INFO - train - 112 : Epoch : 27, global_step : 1297/1410, loss_value : 13.276326497395834 
+2022-01-13 12:44:22,240 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:44:27,836 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.3333    0.0323    0.0588        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8004    0.8420    0.8207       924
+                           Cell     0.8468    0.8569    0.8518      1013
+             Cellular_component     0.3802    0.6611    0.4828       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8012    0.8619    0.8304      2520
+   Immaterial_anatomical_entity     0.6400    0.5161    0.5714        31
+         Multi-tissue_structure     0.6395    0.7261    0.6801       303
+                          Organ     0.5617    0.5833    0.5723       156
+                       Organism     0.7866    0.8398    0.8123       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7733    0.5686    0.6554       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7274    0.7194    0.7234       727
+                         Tissue     0.5647    0.7826    0.6560       184
+
+                      micro avg     0.7573    0.7885    0.7726      6881
+                      macro avg     0.4910    0.4994    0.4822      6881
+                   weighted avg     0.7449    0.7885    0.7632      6881
+
+2022-01-13 12:44:27,836 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7726043001566282, accuracy : 0.944818176650054, precision : 0.7572923935799023, recall : 0.7885481761371894
+2022-01-13 12:44:28,337 - main - INFO - train - 125 : Previous f1 score is 0.771912279448532 and current f1 score is 0.7726043001566282, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:44:33,565 - main - INFO - train - 112 : Epoch : 27, global_step : 1306/1410, loss_value : 149.08684624565973 
+2022-01-13 12:44:38,959 - main - INFO - train - 112 : Epoch : 27, global_step : 1315/1410, loss_value : 187.43003167046442 
+2022-01-13 12:44:42,739 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:44:48,283 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.3750    0.0484    0.0857        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8052    0.8452    0.8247       924
+                           Cell     0.8465    0.8549    0.8507      1013
+             Cellular_component     0.3993    0.6722    0.5010       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.7987    0.8643    0.8302      2520
+   Immaterial_anatomical_entity     0.5926    0.5161    0.5517        31
+         Multi-tissue_structure     0.6537    0.7228    0.6865       303
+                          Organ     0.5465    0.6026    0.5732       156
+                       Organism     0.7880    0.8398    0.8131       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7733    0.5686    0.6554       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7188    0.7208    0.7198       727
+                         Tissue     0.5608    0.7772    0.6515       184
+
+                      micro avg     0.7572    0.7903    0.7734      6881
+                      macro avg     0.4912    0.5021    0.4840      6881
+                   weighted avg     0.7446    0.7903    0.7640      6881
+
+2022-01-13 12:44:48,283 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7733769465974543, accuracy : 0.9446665782342575, precision : 0.7571707045391256, recall : 0.7902921087051301
+2022-01-13 12:44:48,754 - main - INFO - train - 125 : Previous f1 score is 0.7726043001566282 and current f1 score is 0.7733769465974543, best model has been saved in /home/xhsun/Desktop/tmpFiles/pcode/WNUT-17-crf/pytorch_model.bin/pytorch_model.bin
+2022-01-13 12:44:50,368 - main - INFO - train - 112 : Epoch : 27, global_step : 1324/1410, loss_value : 196.65692138671875 
+2022-01-13 12:44:55,786 - main - INFO - train - 112 : Epoch : 27, global_step : 1333/1410, loss_value : 144.2760764227973 
+2022-01-13 12:45:01,267 - main - INFO - train - 112 : Epoch : 27, global_step : 1342/1410, loss_value : 181.01843092176648 
+2022-01-13 12:45:03,045 - main - INFO - train - 112 : Epoch : 28, global_step : 1345/1410, loss_value : 10.298440721299913 
+2022-01-13 12:45:03,234 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:45:08,783 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.2857    0.0323    0.0580        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8010    0.8409    0.8205       924
+                           Cell     0.8442    0.8559    0.8500      1013
+             Cellular_component     0.4027    0.6667    0.5021       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8011    0.8631    0.8309      2520
+   Immaterial_anatomical_entity     0.5926    0.5161    0.5517        31
+         Multi-tissue_structure     0.6518    0.7228    0.6854       303
+                          Organ     0.5460    0.6090    0.5758       156
+                       Organism     0.7820    0.8378    0.8089       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7703    0.5588    0.6477       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7164    0.7194    0.7179       727
+                         Tissue     0.5428    0.7935    0.6446       184
+
+                      micro avg     0.7556    0.7893    0.7721      6881
+                      macro avg     0.4835    0.5010    0.4809      6881
+                   weighted avg     0.7426    0.7893    0.7626      6881
+
+2022-01-13 12:45:08,784 - main.utils - INFO - compute_f1 - 130 : F1 : 0.772052029284242, accuracy : 0.9444770802145117, precision : 0.7555648302726767, recall : 0.7892748147071647
+2022-01-13 12:45:08,784 - main - INFO - train - 130 : Left patience is 72
+2022-01-13 12:45:14,036 - main - INFO - train - 112 : Epoch : 28, global_step : 1354/1410, loss_value : 147.1051313612196 
+2022-01-13 12:45:19,434 - main - INFO - train - 112 : Epoch : 28, global_step : 1363/1410, loss_value : 187.255736456977 
+2022-01-13 12:45:23,254 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:45:28,854 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.2857    0.0323    0.0580        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7992    0.8398    0.8190       924
+                           Cell     0.8426    0.8559    0.8492      1013
+             Cellular_component     0.4020    0.6722    0.5031       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8007    0.8623    0.8303      2520
+   Immaterial_anatomical_entity     0.5926    0.5161    0.5517        31
+         Multi-tissue_structure     0.6518    0.7228    0.6854       303
+                          Organ     0.5460    0.6090    0.5758       156
+                       Organism     0.7806    0.8378    0.8082       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7763    0.5784    0.6629       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7145    0.7194    0.7169       727
+                         Tissue     0.5428    0.7935    0.6446       184
+
+                      micro avg     0.7544    0.7893    0.7714      6881
+                      macro avg     0.4834    0.5025    0.4816      6881
+                   weighted avg     0.7417    0.7893    0.7621      6881
+
+2022-01-13 12:45:28,854 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7714488636363637, accuracy : 0.9443823312046389, precision : 0.7544103347687179, recall : 0.7892748147071647
+2022-01-13 12:45:28,854 - main - INFO - train - 130 : Left patience is 71
+2022-01-13 12:45:30,478 - main - INFO - train - 112 : Epoch : 28, global_step : 1372/1410, loss_value : 196.21478441026477 
+2022-01-13 12:45:35,864 - main - INFO - train - 112 : Epoch : 28, global_step : 1381/1410, loss_value : 141.4965125189887 
+2022-01-13 12:45:41,260 - main - INFO - train - 112 : Epoch : 28, global_step : 1390/1410, loss_value : 177.5102284749349 
+2022-01-13 12:45:43,025 - main - INFO - train - 112 : Epoch : 29, global_step : 1393/1410, loss_value : 9.848744710286459 
+2022-01-13 12:45:43,225 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:45:48,809 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.2857    0.0323    0.0580        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.7992    0.8355    0.8169       924
+                           Cell     0.8460    0.8569    0.8514      1013
+             Cellular_component     0.4060    0.6722    0.5063       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8018    0.8603    0.8300      2520
+   Immaterial_anatomical_entity     0.5926    0.5161    0.5517        31
+         Multi-tissue_structure     0.6471    0.7261    0.6843       303
+                          Organ     0.5562    0.6026    0.5785       156
+                       Organism     0.7824    0.8398    0.8101       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7662    0.5784    0.6592       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7137    0.7235    0.7186       727
+                         Tissue     0.5455    0.7826    0.6429       184
+
+                      micro avg     0.7559    0.7884    0.7718      6881
+                      macro avg     0.4839    0.5016    0.4817      6881
+                   weighted avg     0.7427    0.7884    0.7624      6881
+
+2022-01-13 12:45:48,809 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7718025323659126, accuracy : 0.9445339296204355, precision : 0.7558868608053504, recall : 0.7884028484231943
+2022-01-13 12:45:48,809 - main - INFO - train - 130 : Left patience is 70
+2022-01-13 12:45:54,022 - main - INFO - train - 112 : Epoch : 29, global_step : 1402/1410, loss_value : 146.00079769558377 
+2022-01-13 12:45:59,396 - main - INFO - train - 112 : Epoch : 29, global_step : 1411/1410, loss_value : 182.34660169813367 
+2022-01-13 12:46:03,156 - main - INFO - predict - 144 : Evaluating the model...
+2022-01-13 12:46:08,771 - main.utils - INFO - compute_f1 - 129 :                                  precision    recall  f1-score   support
+
+                     Amino_acid     0.2857    0.0323    0.0580        62
+              Anatomical_system     0.0000    0.0000    0.0000        17
+                         Cancer     0.8000    0.8355    0.8174       924
+                           Cell     0.8450    0.8559    0.8504      1013
+             Cellular_component     0.4060    0.6722    0.5063       180
+Developing_anatomical_structure     0.0000    0.0000    0.0000        17
+           Gene_or_gene_product     0.8020    0.8599    0.8300      2520
+   Immaterial_anatomical_entity     0.5926    0.5161    0.5517        31
+         Multi-tissue_structure     0.6471    0.7261    0.6843       303
+                          Organ     0.5562    0.6026    0.5785       156
+                       Organism     0.7810    0.8398    0.8093       518
+           Organism_subdivision     0.0000    0.0000    0.0000        39
+             Organism_substance     0.7662    0.5784    0.6592       102
+         Pathological_formation     0.0000    0.0000    0.0000        88
+                Simple_chemical     0.7137    0.7235    0.7186       727
+                         Tissue     0.5455    0.7826    0.6429       184
+
+                      micro avg     0.7558    0.7881    0.7716      6881
+                      macro avg     0.4838    0.5016    0.4817      6881
+                   weighted avg     0.7427    0.7881    0.7622      6881
+
+2022-01-13 12:46:08,771 - main.utils - INFO - compute_f1 - 130 : F1 : 0.7716277746158224, accuracy : 0.9445339296204355, precision : 0.7558188153310105, recall : 0.7881121929952042
+2022-01-13 12:46:08,771 - main - INFO - train - 130 : Left patience is 69
+2022-01-13 12:46:10,428 - main - INFO - train - 112 : Epoch : 29, global_step : 1420/1410, loss_value : 195.92003716362848 
+2022-01-13 12:46:15,844 - main - INFO - train - 112 : Epoch : 29, global_step : 1429/1410, loss_value : 143.60281626383463 
+2022-01-13 12:46:21,538 - main - INFO - train - 112 : Epoch : 29, global_step : 1438/1410, loss_value : 175.50264824761285 

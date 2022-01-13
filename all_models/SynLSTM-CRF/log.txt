@@ -92,3 +92,470 @@
 2022-01-12 09:11:52,512 - main - INFO - learn_from_insts - 128 : number of instances: 59924
 2022-01-12 09:11:52,513 - main - INFO - learn_from_insts - 129 : [Shuffled] Shuffle the training instance ids
 2022-01-12 09:12:21,677 - main - INFO - learn_from_insts - 147 : [Info] The model will be saved to: /home/xhsun/Desktop/NER_Parsing/train_models/SynLSTM/model_files/gcn_2_hidden_200_dataset_conll03_sd_context_none.m, please ensure models folder exist
+2022-01-13 11:31:05,960 - main - INFO - parse_arguments - 97 : mode : train
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : device : cuda
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : seed : 42
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : digit2zero : True
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : dataset : conll03
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : affix : sd
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : path_folder : /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : embedding_file : /home/xhsun/Desktop/NER_Parsing/pcode/glove.6B.100d.txt
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : embedding_dim : 100
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : optimizer : sgd
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : learning_rate : 0.2
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : momentum : 0.0
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : l2 : 1e-08
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : lr_decay : 0.1
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : batch_size : 100
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : num_epochs : 200
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : train_num : -1
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : dev_num : -1
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : test_num : -1
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : eval_freq : 4000
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : eval_epoch : 0
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : hidden_dim : 200
+2022-01-13 11:31:05,969 - main - INFO - parse_arguments - 97 : num_lstm_layer : 0
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : dep_emb_size : 50
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : dep_hidden_dim : 200
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : num_gcn_layers : 2
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : gcn_mlp_layers : 0
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : gcn_dropout : 0.5
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : gcn_adj_directed : 0
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : gcn_adj_selfloop : 0
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : gcn_gate : 0
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : dropout : 0.5
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : use_char_rnn : 1
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : dep_model : dggcn
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : inter_func : mlp
+2022-01-13 11:31:05,970 - main - INFO - parse_arguments - 97 : context_emb : none
+2022-01-13 11:31:10,003 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/train.conllx
+2022-01-13 11:31:10,138 - main.reader - INFO - read_conll - 68 : number of sentences: 3033, number of entities: 10826
+2022-01-13 11:31:10,138 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/test.conllx
+2022-01-13 11:31:10,222 - main.reader - INFO - read_conll - 68 : number of sentences: 1906, number of entities: 6881
+2022-01-13 11:31:10,222 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/test.conllx
+2022-01-13 11:31:10,306 - main.reader - INFO - read_conll - 68 : number of sentences: 1906, number of entities: 6881
+2022-01-13 11:31:10,404 - main - INFO - main - 280 : dep label 2idx: 
+2022-01-13 11:31:10,422 - main - INFO - main - 284 : pos label 2idx: 
+2022-01-13 11:31:29,938 - main - INFO - parse_arguments - 97 : mode : train
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : device : cuda
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : seed : 42
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : digit2zero : True
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : dataset : conll03
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : affix : sd
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : path_folder : /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : embedding_file : /home/xhsun/Desktop/NER_Parsing/pcode/glove.6B.100d.txt
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : embedding_dim : 100
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : optimizer : sgd
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : learning_rate : 0.2
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : momentum : 0.0
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : l2 : 1e-08
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : lr_decay : 0.1
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : batch_size : 100
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : num_epochs : 200
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : train_num : -1
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : dev_num : -1
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : test_num : -1
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : eval_freq : 4000
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : eval_epoch : 0
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : hidden_dim : 200
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : num_lstm_layer : 0
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : dep_emb_size : 50
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : dep_hidden_dim : 200
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : num_gcn_layers : 2
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : gcn_mlp_layers : 0
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : gcn_dropout : 0.5
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : gcn_adj_directed : 0
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : gcn_adj_selfloop : 0
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : gcn_gate : 0
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : dropout : 0.5
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : use_char_rnn : 1
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : dep_model : dggcn
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : inter_func : mlp
+2022-01-13 11:31:29,939 - main - INFO - parse_arguments - 97 : context_emb : none
+2022-01-13 11:31:33,943 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/train.conllx
+2022-01-13 11:31:34,080 - main.reader - INFO - read_conll - 68 : number of sentences: 3033, number of entities: 10826
+2022-01-13 11:31:34,080 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/test.conllx
+2022-01-13 11:31:34,164 - main.reader - INFO - read_conll - 68 : number of sentences: 1906, number of entities: 6881
+2022-01-13 11:31:34,165 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/test.conllx
+2022-01-13 11:31:34,250 - main.reader - INFO - read_conll - 68 : number of sentences: 1906, number of entities: 6881
+2022-01-13 11:31:34,278 - main - INFO - main - 280 : dep label 2idx: 
+2022-01-13 11:31:34,295 - main - INFO - main - 284 : pos label 2idx: 
+2022-01-13 11:31:34,724 - main - INFO - main - 292 : num chars: 75
+2022-01-13 11:31:34,724 - main - INFO - main - 295 : num words: 9321
+2022-01-13 11:31:34,966 - main - INFO - get_optimizer - 104 : Using SGD: lr is: 0.2, L2 regularization is: 1e-08
+2022-01-13 11:31:34,966 - main - INFO - learn_from_insts - 129 : number of instances: 3033
+2022-01-13 11:31:34,966 - main - INFO - learn_from_insts - 130 : [Shuffled] Shuffle the training instance ids
+2022-01-13 11:31:38,291 - main - INFO - learn_from_insts - 148 : [Info] The model will be saved to: /home/xhsun/Desktop/NER_Parsing/train_models/SynLSTM/model_files/gcn_2_hidden_200_dataset_conll03_sd_context_none.m, please ensure models folder exist
+2022-01-13 11:32:13,794 - main - INFO - learn_from_insts - 175 : Epoch 1: 111086.49023, Time is 35.50s
+2022-01-13 11:32:30,308 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:32:46,796 - main - INFO - evaluate - 216 : [test set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:32:46,799 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 11:33:21,397 - main - INFO - learn_from_insts - 175 : Epoch 2: 59815.63623, Time is 34.54s
+2022-01-13 11:33:37,936 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:34:12,000 - main - INFO - learn_from_insts - 175 : Epoch 3: 43946.02686, Time is 34.06s
+2022-01-13 11:34:28,515 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:35:02,512 - main - INFO - learn_from_insts - 175 : Epoch 4: 35350.45020, Time is 33.99s
+2022-01-13 11:35:18,801 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:35:53,270 - main - INFO - learn_from_insts - 175 : Epoch 5: 30271.33203, Time is 34.46s
+2022-01-13 11:36:09,716 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:36:43,517 - main - INFO - learn_from_insts - 175 : Epoch 6: 26568.27930, Time is 33.80s
+2022-01-13 11:36:59,926 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:37:34,570 - main - INFO - learn_from_insts - 175 : Epoch 7: 23994.38086, Time is 34.64s
+2022-01-13 11:37:51,037 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:38:26,056 - main - INFO - learn_from_insts - 175 : Epoch 8: 22442.09570, Time is 35.01s
+2022-01-13 11:38:42,532 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:39:16,785 - main - INFO - learn_from_insts - 175 : Epoch 9: 20894.94922, Time is 34.25s
+2022-01-13 11:39:33,640 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:40:08,248 - main - INFO - learn_from_insts - 175 : Epoch 10: 19315.53027, Time is 34.60s
+2022-01-13 11:40:25,443 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:40:59,843 - main - INFO - learn_from_insts - 175 : Epoch 11: 18722.58496, Time is 34.40s
+2022-01-13 11:41:16,364 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:41:50,814 - main - INFO - learn_from_insts - 175 : Epoch 12: 17765.66797, Time is 34.45s
+2022-01-13 11:42:07,741 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:42:42,869 - main - INFO - learn_from_insts - 175 : Epoch 13: 16672.19043, Time is 35.12s
+2022-01-13 11:42:59,401 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:43:33,833 - main - INFO - learn_from_insts - 175 : Epoch 14: 16356.78320, Time is 34.43s
+2022-01-13 11:43:50,492 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:44:25,238 - main - INFO - learn_from_insts - 175 : Epoch 15: 15653.43652, Time is 34.74s
+2022-01-13 11:44:41,969 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:45:16,118 - main - INFO - learn_from_insts - 175 : Epoch 16: 15301.18652, Time is 34.14s
+2022-01-13 11:45:33,195 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:46:08,148 - main - INFO - learn_from_insts - 175 : Epoch 17: 14906.17383, Time is 34.95s
+2022-01-13 11:46:25,043 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:47:00,291 - main - INFO - learn_from_insts - 175 : Epoch 18: 14332.14160, Time is 35.24s
+2022-01-13 11:47:17,359 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:47:52,171 - main - INFO - learn_from_insts - 175 : Epoch 19: 14097.73828, Time is 34.80s
+2022-01-13 11:48:09,020 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:48:43,701 - main - INFO - learn_from_insts - 175 : Epoch 20: 13780.68945, Time is 34.68s
+2022-01-13 11:49:00,171 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:49:35,671 - main - INFO - learn_from_insts - 175 : Epoch 21: 13483.03516, Time is 35.50s
+2022-01-13 11:49:52,782 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:50:27,262 - main - INFO - learn_from_insts - 175 : Epoch 22: 13117.39844, Time is 34.47s
+2022-01-13 11:50:43,939 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:51:18,369 - main - INFO - learn_from_insts - 175 : Epoch 23: 12793.91113, Time is 34.43s
+2022-01-13 11:51:35,227 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:52:10,785 - main - INFO - learn_from_insts - 175 : Epoch 24: 12505.51562, Time is 35.55s
+2022-01-13 11:52:27,678 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:53:02,705 - main - INFO - learn_from_insts - 175 : Epoch 25: 12259.08984, Time is 35.02s
+2022-01-13 11:53:19,530 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:53:53,985 - main - INFO - learn_from_insts - 175 : Epoch 26: 12053.17480, Time is 34.45s
+2022-01-13 11:54:10,896 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:54:45,747 - main - INFO - learn_from_insts - 175 : Epoch 27: 11841.31445, Time is 34.85s
+2022-01-13 11:55:02,693 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:55:37,259 - main - INFO - learn_from_insts - 175 : Epoch 28: 11443.92969, Time is 34.56s
+2022-01-13 11:55:54,419 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:56:28,491 - main - INFO - learn_from_insts - 175 : Epoch 29: 11403.88770, Time is 34.07s
+2022-01-13 11:56:45,761 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:57:20,775 - main - INFO - learn_from_insts - 175 : Epoch 30: 11291.27539, Time is 35.01s
+2022-01-13 11:57:37,618 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:58:11,849 - main - INFO - learn_from_insts - 175 : Epoch 31: 11127.74414, Time is 34.23s
+2022-01-13 11:58:28,272 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:59:02,476 - main - INFO - learn_from_insts - 175 : Epoch 32: 10983.70996, Time is 34.20s
+2022-01-13 11:59:19,254 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 11:59:53,749 - main - INFO - learn_from_insts - 175 : Epoch 33: 10767.19141, Time is 34.49s
+2022-01-13 12:00:10,267 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:00:44,943 - main - INFO - learn_from_insts - 175 : Epoch 34: 10553.16602, Time is 34.67s
+2022-01-13 12:01:01,851 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:01:35,977 - main - INFO - learn_from_insts - 175 : Epoch 35: 10500.95996, Time is 34.12s
+2022-01-13 12:01:52,459 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:02:27,616 - main - INFO - learn_from_insts - 175 : Epoch 36: 10486.40527, Time is 35.15s
+2022-01-13 12:02:44,806 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:03:20,642 - main - INFO - learn_from_insts - 175 : Epoch 37: 10196.88867, Time is 35.83s
+2022-01-13 12:03:37,148 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:04:11,864 - main - INFO - learn_from_insts - 175 : Epoch 38: 10092.78027, Time is 34.71s
+2022-01-13 12:04:28,470 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:05:02,828 - main - INFO - learn_from_insts - 175 : Epoch 39: 9842.33594, Time is 34.35s
+2022-01-13 12:05:19,268 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:05:54,430 - main - INFO - learn_from_insts - 175 : Epoch 40: 9677.13086, Time is 35.16s
+2022-01-13 12:06:11,674 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:06:46,994 - main - INFO - learn_from_insts - 175 : Epoch 41: 9535.84180, Time is 35.31s
+2022-01-13 12:07:03,886 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:07:39,053 - main - INFO - learn_from_insts - 175 : Epoch 42: 9634.93262, Time is 35.16s
+2022-01-13 12:07:55,446 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:08:30,501 - main - INFO - learn_from_insts - 175 : Epoch 43: 9398.65820, Time is 35.05s
+2022-01-13 12:08:47,745 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:09:22,466 - main - INFO - learn_from_insts - 175 : Epoch 44: 9155.75000, Time is 34.72s
+2022-01-13 12:09:38,878 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:10:13,368 - main - INFO - learn_from_insts - 175 : Epoch 45: 9410.37695, Time is 34.49s
+2022-01-13 12:10:29,988 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:11:05,424 - main - INFO - learn_from_insts - 175 : Epoch 46: 9106.26270, Time is 35.43s
+2022-01-13 12:11:22,218 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:11:57,148 - main - INFO - learn_from_insts - 175 : Epoch 47: 9030.23242, Time is 34.93s
+2022-01-13 12:12:14,174 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:12:49,554 - main - INFO - learn_from_insts - 175 : Epoch 48: 9117.52246, Time is 35.38s
+2022-01-13 12:13:06,055 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:13:40,302 - main - INFO - learn_from_insts - 175 : Epoch 49: 8922.57422, Time is 34.24s
+2022-01-13 12:13:56,943 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:14:31,807 - main - INFO - learn_from_insts - 175 : Epoch 50: 8819.17285, Time is 34.86s
+2022-01-13 12:14:49,118 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:15:23,872 - main - INFO - learn_from_insts - 175 : Epoch 51: 8789.19922, Time is 34.75s
+2022-01-13 12:15:40,453 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:16:14,137 - main - INFO - learn_from_insts - 175 : Epoch 52: 8862.04102, Time is 33.68s
+2022-01-13 12:16:30,794 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:17:06,125 - main - INFO - learn_from_insts - 175 : Epoch 53: 8479.46973, Time is 35.33s
+2022-01-13 12:17:22,504 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:17:57,715 - main - INFO - learn_from_insts - 175 : Epoch 54: 8396.96582, Time is 35.21s
+2022-01-13 12:18:14,167 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:18:48,172 - main - INFO - learn_from_insts - 175 : Epoch 55: 8459.13281, Time is 34.00s
+2022-01-13 12:19:05,105 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:19:39,636 - main - INFO - learn_from_insts - 175 : Epoch 56: 8343.93164, Time is 34.53s
+2022-01-13 12:19:56,249 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 12:20:30,405 - main - INFO - learn_from_insts - 175 : Epoch 57: 8118.43750, Time is 34.15s
+2022-01-13 12:20:47,347 - main - INFO - evaluate - 216 : [dev set] Precision: 0.00, Recall: 0.00, F1: 0.00
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : mode : train
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : device : cuda
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : seed : 42
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : digit2zero : True
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : dataset : conll03
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : affix : sd
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : path_folder : /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : embedding_file : /home/xhsun/Desktop/NER_Parsing/pcode/glove.6B.100d.txt
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : embedding_dim : 100
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : optimizer : sgd
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : learning_rate : 0.2
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : momentum : 0.0
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : l2 : 1e-08
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : lr_decay : 0.1
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : batch_size : 100
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : num_epochs : 200
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : train_num : -1
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : dev_num : -1
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : test_num : -1
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : eval_freq : 4000
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : eval_epoch : 0
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : hidden_dim : 200
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : num_lstm_layer : 0
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : dep_emb_size : 50
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : dep_hidden_dim : 200
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : num_gcn_layers : 2
+2022-01-13 16:09:24,171 - main - INFO - parse_arguments - 97 : gcn_mlp_layers : 0
+2022-01-13 16:09:24,172 - main - INFO - parse_arguments - 97 : gcn_dropout : 0.5
+2022-01-13 16:09:24,172 - main - INFO - parse_arguments - 97 : gcn_adj_directed : 0
+2022-01-13 16:09:24,172 - main - INFO - parse_arguments - 97 : gcn_adj_selfloop : 0
+2022-01-13 16:09:24,172 - main - INFO - parse_arguments - 97 : gcn_gate : 0
+2022-01-13 16:09:24,172 - main - INFO - parse_arguments - 97 : dropout : 0.5
+2022-01-13 16:09:24,172 - main - INFO - parse_arguments - 97 : use_char_rnn : 1
+2022-01-13 16:09:24,172 - main - INFO - parse_arguments - 97 : dep_model : dggcn
+2022-01-13 16:09:24,172 - main - INFO - parse_arguments - 97 : inter_func : mlp
+2022-01-13 16:09:24,172 - main - INFO - parse_arguments - 97 : context_emb : none
+2022-01-13 16:09:28,316 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/train.conllx
+2022-01-13 16:09:28,462 - main.reader - INFO - read_conll - 68 : number of sentences: 3033, number of entities: 10826
+2022-01-13 16:09:28,462 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/test.conllx
+2022-01-13 16:09:28,544 - main.reader - INFO - read_conll - 68 : number of sentences: 1906, number of entities: 6880
+2022-01-13 16:09:28,544 - main.reader - INFO - read_conll - 23 : Reading file: /home/xhsun/Desktop/gitRepositories/ADP2NER/data/BioNLP13CG-IOB/test.conllx
+2022-01-13 16:09:28,627 - main.reader - INFO - read_conll - 68 : number of sentences: 1906, number of entities: 6880
+2022-01-13 16:09:28,723 - main - INFO - main - 286 : dep label 2idx: 
+2022-01-13 16:09:28,741 - main - INFO - main - 290 : pos label 2idx: 
+2022-01-13 16:09:29,184 - main - INFO - main - 298 : num chars: 75
+2022-01-13 16:09:29,184 - main - INFO - main - 301 : num words: 9321
+2022-01-13 16:09:29,435 - main - INFO - get_optimizer - 104 : Using SGD: lr is: 0.2, L2 regularization is: 1e-08
+2022-01-13 16:09:29,435 - main - INFO - learn_from_insts - 129 : number of instances: 3033
+2022-01-13 16:09:29,435 - main - INFO - learn_from_insts - 130 : [Shuffled] Shuffle the training instance ids
+2022-01-13 16:09:32,830 - main - INFO - learn_from_insts - 148 : [Info] The model will be saved to: /home/xhsun/Desktop/NER_Parsing/train_models/SynLSTM/model_files/gcn_2_hidden_200_dataset_conll03_sd_context_none.m, please ensure models folder exist
+2022-01-13 16:10:11,185 - main - INFO - learn_from_insts - 175 : Epoch 1: 133525.32031, Time is 38.35s
+2022-01-13 16:10:28,084 - main - INFO - evaluate - 216 : [dev set] Precision: 23.65, Recall: 17.89, F1: 20.37
+2022-01-13 16:10:45,080 - main - INFO - evaluate - 216 : [test set] Precision: 23.65, Recall: 17.89, F1: 20.37
+2022-01-13 16:10:45,084 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:11:23,663 - main - INFO - learn_from_insts - 175 : Epoch 2: 77877.11035, Time is 38.52s
+2022-01-13 16:11:40,439 - main - INFO - evaluate - 216 : [dev set] Precision: 59.17, Recall: 24.01, F1: 34.16
+2022-01-13 16:11:56,887 - main - INFO - evaluate - 216 : [test set] Precision: 59.17, Recall: 24.01, F1: 34.16
+2022-01-13 16:11:56,891 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:12:35,041 - main - INFO - learn_from_insts - 175 : Epoch 3: 55013.29980, Time is 38.10s
+2022-01-13 16:12:52,163 - main - INFO - evaluate - 216 : [dev set] Precision: 54.67, Recall: 53.26, F1: 53.95
+2022-01-13 16:13:09,274 - main - INFO - evaluate - 216 : [test set] Precision: 54.67, Recall: 53.26, F1: 53.95
+2022-01-13 16:13:09,277 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:13:47,658 - main - INFO - learn_from_insts - 175 : Epoch 4: 42782.71826, Time is 38.33s
+2022-01-13 16:14:05,332 - main - INFO - evaluate - 216 : [dev set] Precision: 56.52, Recall: 55.39, F1: 55.95
+2022-01-13 16:14:22,738 - main - INFO - evaluate - 216 : [test set] Precision: 56.52, Recall: 55.39, F1: 55.95
+2022-01-13 16:14:22,741 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:15:01,689 - main - INFO - learn_from_insts - 175 : Epoch 5: 35612.51367, Time is 38.89s
+2022-01-13 16:15:18,815 - main - INFO - evaluate - 216 : [dev set] Precision: 71.48, Recall: 54.90, F1: 62.10
+2022-01-13 16:15:35,220 - main - INFO - evaluate - 216 : [test set] Precision: 71.48, Recall: 54.90, F1: 62.10
+2022-01-13 16:15:35,224 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:16:13,672 - main - INFO - learn_from_insts - 175 : Epoch 6: 30884.79590, Time is 38.41s
+2022-01-13 16:16:30,674 - main - INFO - evaluate - 216 : [dev set] Precision: 68.13, Recall: 63.08, F1: 65.51
+2022-01-13 16:16:47,414 - main - INFO - evaluate - 216 : [test set] Precision: 68.13, Recall: 63.08, F1: 65.51
+2022-01-13 16:16:47,418 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:17:25,742 - main - INFO - learn_from_insts - 175 : Epoch 7: 27919.39062, Time is 38.27s
+2022-01-13 16:17:42,361 - main - INFO - evaluate - 216 : [dev set] Precision: 67.80, Recall: 68.36, F1: 68.08
+2022-01-13 16:17:58,956 - main - INFO - evaluate - 216 : [test set] Precision: 67.80, Recall: 68.36, F1: 68.08
+2022-01-13 16:17:58,961 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:18:36,756 - main - INFO - learn_from_insts - 175 : Epoch 8: 25708.30664, Time is 37.74s
+2022-01-13 16:18:53,588 - main - INFO - evaluate - 216 : [dev set] Precision: 72.03, Recall: 68.36, F1: 70.15
+2022-01-13 16:19:10,574 - main - INFO - evaluate - 216 : [test set] Precision: 72.03, Recall: 68.36, F1: 70.15
+2022-01-13 16:19:10,578 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:19:49,367 - main - INFO - learn_from_insts - 175 : Epoch 9: 23710.34766, Time is 38.74s
+2022-01-13 16:20:06,594 - main - INFO - evaluate - 216 : [dev set] Precision: 70.49, Recall: 70.09, F1: 70.29
+2022-01-13 16:20:23,364 - main - INFO - evaluate - 216 : [test set] Precision: 70.49, Recall: 70.09, F1: 70.29
+2022-01-13 16:20:23,368 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:21:02,853 - main - INFO - learn_from_insts - 175 : Epoch 10: 21921.34668, Time is 39.44s
+2022-01-13 16:21:19,877 - main - INFO - evaluate - 216 : [dev set] Precision: 71.20, Recall: 69.68, F1: 70.43
+2022-01-13 16:21:36,687 - main - INFO - evaluate - 216 : [test set] Precision: 71.20, Recall: 69.68, F1: 70.43
+2022-01-13 16:21:36,691 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:22:15,188 - main - INFO - learn_from_insts - 175 : Epoch 11: 20858.93652, Time is 38.45s
+2022-01-13 16:22:32,010 - main - INFO - evaluate - 216 : [dev set] Precision: 74.06, Recall: 70.13, F1: 72.04
+2022-01-13 16:22:48,707 - main - INFO - evaluate - 216 : [test set] Precision: 74.06, Recall: 70.13, F1: 72.04
+2022-01-13 16:22:48,712 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:23:26,662 - main - INFO - learn_from_insts - 175 : Epoch 12: 19925.06055, Time is 37.90s
+2022-01-13 16:23:43,832 - main - INFO - evaluate - 216 : [dev set] Precision: 74.39, Recall: 72.72, F1: 73.55
+2022-01-13 16:24:00,988 - main - INFO - evaluate - 216 : [test set] Precision: 74.39, Recall: 72.72, F1: 73.55
+2022-01-13 16:24:00,991 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:24:39,684 - main - INFO - learn_from_insts - 175 : Epoch 13: 18743.52734, Time is 38.64s
+2022-01-13 16:24:57,219 - main - INFO - evaluate - 216 : [dev set] Precision: 77.84, Recall: 71.61, F1: 74.60
+2022-01-13 16:25:14,474 - main - INFO - evaluate - 216 : [test set] Precision: 77.84, Recall: 71.61, F1: 74.60
+2022-01-13 16:25:14,478 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:25:53,244 - main - INFO - learn_from_insts - 175 : Epoch 14: 18230.87891, Time is 38.71s
+2022-01-13 16:26:10,495 - main - INFO - evaluate - 216 : [dev set] Precision: 74.07, Recall: 73.40, F1: 73.73
+2022-01-13 16:26:49,048 - main - INFO - learn_from_insts - 175 : Epoch 15: 17459.09961, Time is 38.55s
+2022-01-13 16:27:06,139 - main - INFO - evaluate - 216 : [dev set] Precision: 76.44, Recall: 73.87, F1: 75.13
+2022-01-13 16:27:23,287 - main - INFO - evaluate - 216 : [test set] Precision: 76.44, Recall: 73.87, F1: 75.13
+2022-01-13 16:27:23,291 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:28:01,777 - main - INFO - learn_from_insts - 175 : Epoch 16: 16940.91699, Time is 38.44s
+2022-01-13 16:28:18,897 - main - INFO - evaluate - 216 : [dev set] Precision: 77.32, Recall: 74.36, F1: 75.81
+2022-01-13 16:28:36,616 - main - INFO - evaluate - 216 : [test set] Precision: 77.32, Recall: 74.36, F1: 75.81
+2022-01-13 16:28:36,619 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:29:14,560 - main - INFO - learn_from_insts - 175 : Epoch 17: 16354.00781, Time is 37.89s
+2022-01-13 16:29:31,305 - main - INFO - evaluate - 216 : [dev set] Precision: 76.03, Recall: 75.39, F1: 75.71
+2022-01-13 16:30:09,983 - main - INFO - learn_from_insts - 175 : Epoch 18: 15906.65625, Time is 38.67s
+2022-01-13 16:30:26,408 - main - INFO - evaluate - 216 : [dev set] Precision: 77.09, Recall: 74.81, F1: 75.93
+2022-01-13 16:30:43,298 - main - INFO - evaluate - 216 : [test set] Precision: 77.09, Recall: 74.81, F1: 75.93
+2022-01-13 16:30:43,302 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:31:21,068 - main - INFO - learn_from_insts - 175 : Epoch 19: 15334.78613, Time is 37.72s
+2022-01-13 16:31:37,979 - main - INFO - evaluate - 216 : [dev set] Precision: 76.93, Recall: 75.55, F1: 76.23
+2022-01-13 16:31:54,462 - main - INFO - evaluate - 216 : [test set] Precision: 76.93, Recall: 75.55, F1: 76.23
+2022-01-13 16:31:54,465 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:32:33,194 - main - INFO - learn_from_insts - 175 : Epoch 20: 15009.35547, Time is 38.68s
+2022-01-13 16:32:50,174 - main - INFO - evaluate - 216 : [dev set] Precision: 77.79, Recall: 75.33, F1: 76.54
+2022-01-13 16:33:07,223 - main - INFO - evaluate - 216 : [test set] Precision: 77.79, Recall: 75.33, F1: 76.54
+2022-01-13 16:33:07,227 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:33:46,785 - main - INFO - learn_from_insts - 175 : Epoch 21: 14735.09082, Time is 39.50s
+2022-01-13 16:34:04,136 - main - INFO - evaluate - 216 : [dev set] Precision: 75.86, Recall: 76.22, F1: 76.04
+2022-01-13 16:34:43,426 - main - INFO - learn_from_insts - 175 : Epoch 22: 14283.07617, Time is 39.29s
+2022-01-13 16:35:00,901 - main - INFO - evaluate - 216 : [dev set] Precision: 75.86, Recall: 76.21, F1: 76.04
+2022-01-13 16:35:39,524 - main - INFO - learn_from_insts - 175 : Epoch 23: 14022.70508, Time is 38.62s
+2022-01-13 16:35:56,781 - main - INFO - evaluate - 216 : [dev set] Precision: 77.18, Recall: 76.41, F1: 76.79
+2022-01-13 16:36:14,349 - main - INFO - evaluate - 216 : [test set] Precision: 77.18, Recall: 76.41, F1: 76.79
+2022-01-13 16:36:14,353 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:36:53,547 - main - INFO - learn_from_insts - 175 : Epoch 24: 13649.22656, Time is 39.14s
+2022-01-13 16:37:11,245 - main - INFO - evaluate - 216 : [dev set] Precision: 77.63, Recall: 76.32, F1: 76.97
+2022-01-13 16:37:28,722 - main - INFO - evaluate - 216 : [test set] Precision: 77.63, Recall: 76.32, F1: 76.97
+2022-01-13 16:37:28,729 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:38:07,060 - main - INFO - learn_from_insts - 175 : Epoch 25: 13537.55371, Time is 38.29s
+2022-01-13 16:38:23,819 - main - INFO - evaluate - 216 : [dev set] Precision: 78.43, Recall: 75.26, F1: 76.81
+2022-01-13 16:39:02,819 - main - INFO - learn_from_insts - 175 : Epoch 26: 13078.12988, Time is 38.99s
+2022-01-13 16:39:19,900 - main - INFO - evaluate - 216 : [dev set] Precision: 76.78, Recall: 76.60, F1: 76.69
+2022-01-13 16:39:58,564 - main - INFO - learn_from_insts - 175 : Epoch 27: 12942.00977, Time is 38.66s
+2022-01-13 16:40:16,041 - main - INFO - evaluate - 216 : [dev set] Precision: 79.02, Recall: 76.64, F1: 77.81
+2022-01-13 16:40:33,489 - main - INFO - evaluate - 216 : [test set] Precision: 79.02, Recall: 76.64, F1: 77.81
+2022-01-13 16:40:33,492 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:41:12,010 - main - INFO - learn_from_insts - 175 : Epoch 28: 12619.64453, Time is 38.46s
+2022-01-13 16:41:28,790 - main - INFO - evaluate - 216 : [dev set] Precision: 79.07, Recall: 76.95, F1: 78.00
+2022-01-13 16:41:45,337 - main - INFO - evaluate - 216 : [test set] Precision: 79.07, Recall: 76.95, F1: 78.00
+2022-01-13 16:41:45,341 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:42:23,083 - main - INFO - learn_from_insts - 175 : Epoch 29: 12470.81152, Time is 37.69s
+2022-01-13 16:42:39,991 - main - INFO - evaluate - 216 : [dev set] Precision: 78.27, Recall: 77.01, F1: 77.63
+2022-01-13 16:43:18,090 - main - INFO - learn_from_insts - 175 : Epoch 30: 12167.95605, Time is 38.09s
+2022-01-13 16:43:35,099 - main - INFO - evaluate - 216 : [dev set] Precision: 78.21, Recall: 76.57, F1: 77.38
+2022-01-13 16:44:14,505 - main - INFO - learn_from_insts - 175 : Epoch 31: 12152.63281, Time is 39.40s
+2022-01-13 16:44:31,303 - main - INFO - evaluate - 216 : [dev set] Precision: 78.54, Recall: 77.28, F1: 77.90
+2022-01-13 16:45:09,850 - main - INFO - learn_from_insts - 175 : Epoch 32: 11807.50879, Time is 38.54s
+2022-01-13 16:45:26,656 - main - INFO - evaluate - 216 : [dev set] Precision: 78.61, Recall: 77.15, F1: 77.88
+2022-01-13 16:46:04,464 - main - INFO - learn_from_insts - 175 : Epoch 33: 11635.03809, Time is 37.80s
+2022-01-13 16:46:21,436 - main - INFO - evaluate - 216 : [dev set] Precision: 79.26, Recall: 77.11, F1: 78.17
+2022-01-13 16:46:38,420 - main - INFO - evaluate - 216 : [test set] Precision: 79.26, Recall: 77.11, F1: 78.17
+2022-01-13 16:46:38,424 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:47:16,834 - main - INFO - learn_from_insts - 175 : Epoch 34: 11447.32422, Time is 38.35s
+2022-01-13 16:47:33,838 - main - INFO - evaluate - 216 : [dev set] Precision: 77.98, Recall: 77.79, F1: 77.89
+2022-01-13 16:48:11,899 - main - INFO - learn_from_insts - 175 : Epoch 35: 11484.84863, Time is 38.06s
+2022-01-13 16:48:29,153 - main - INFO - evaluate - 216 : [dev set] Precision: 78.22, Recall: 77.30, F1: 77.75
+2022-01-13 16:49:06,969 - main - INFO - learn_from_insts - 175 : Epoch 36: 11358.72461, Time is 37.81s
+2022-01-13 16:49:23,564 - main - INFO - evaluate - 216 : [dev set] Precision: 78.26, Recall: 77.86, F1: 78.06
+2022-01-13 16:49:59,478 - main - INFO - learn_from_insts - 175 : Epoch 37: 11170.89355, Time is 35.91s
+2022-01-13 16:50:14,401 - main - INFO - evaluate - 216 : [dev set] Precision: 78.88, Recall: 78.21, F1: 78.54
+2022-01-13 16:50:29,243 - main - INFO - evaluate - 216 : [test set] Precision: 78.88, Recall: 78.21, F1: 78.54
+2022-01-13 16:50:29,247 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:51:01,554 - main - INFO - learn_from_insts - 175 : Epoch 38: 10935.90039, Time is 32.26s
+2022-01-13 16:51:16,483 - main - INFO - evaluate - 216 : [dev set] Precision: 79.38, Recall: 77.46, F1: 78.41
+2022-01-13 16:51:48,775 - main - INFO - learn_from_insts - 175 : Epoch 39: 10648.86133, Time is 32.29s
+2022-01-13 16:52:03,654 - main - INFO - evaluate - 216 : [dev set] Precision: 78.73, Recall: 77.70, F1: 78.22
+2022-01-13 16:52:35,920 - main - INFO - learn_from_insts - 175 : Epoch 40: 10802.91602, Time is 32.26s
+2022-01-13 16:52:50,855 - main - INFO - evaluate - 216 : [dev set] Precision: 77.74, Recall: 78.07, F1: 77.90
+2022-01-13 16:53:23,189 - main - INFO - learn_from_insts - 175 : Epoch 41: 10144.86035, Time is 32.33s
+2022-01-13 16:53:38,107 - main - INFO - evaluate - 216 : [dev set] Precision: 78.63, Recall: 78.12, F1: 78.38
+2022-01-13 16:54:10,435 - main - INFO - learn_from_insts - 175 : Epoch 42: 10399.87695, Time is 32.32s
+2022-01-13 16:54:25,352 - main - INFO - evaluate - 216 : [dev set] Precision: 78.32, Recall: 77.94, F1: 78.13
+2022-01-13 16:54:57,633 - main - INFO - learn_from_insts - 175 : Epoch 43: 10124.77930, Time is 32.28s
+2022-01-13 16:55:12,535 - main - INFO - evaluate - 216 : [dev set] Precision: 78.96, Recall: 77.75, F1: 78.35
+2022-01-13 16:55:44,858 - main - INFO - learn_from_insts - 175 : Epoch 44: 10047.92578, Time is 32.32s
+2022-01-13 16:55:59,772 - main - INFO - evaluate - 216 : [dev set] Precision: 78.67, Recall: 78.23, F1: 78.45
+2022-01-13 16:56:32,593 - main - INFO - learn_from_insts - 175 : Epoch 45: 10140.22461, Time is 32.82s
+2022-01-13 16:56:47,635 - main - INFO - evaluate - 216 : [dev set] Precision: 80.16, Recall: 77.34, F1: 78.72
+2022-01-13 16:57:02,616 - main - INFO - evaluate - 216 : [test set] Precision: 80.16, Recall: 77.34, F1: 78.72
+2022-01-13 16:57:02,619 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 16:57:35,069 - main - INFO - learn_from_insts - 175 : Epoch 46: 9842.59277, Time is 32.40s
+2022-01-13 16:57:50,111 - main - INFO - evaluate - 216 : [dev set] Precision: 78.02, Recall: 78.37, F1: 78.20
+2022-01-13 16:58:22,574 - main - INFO - learn_from_insts - 175 : Epoch 47: 9838.38672, Time is 32.46s
+2022-01-13 16:58:37,531 - main - INFO - evaluate - 216 : [dev set] Precision: 78.82, Recall: 78.01, F1: 78.41
+2022-01-13 16:59:10,004 - main - INFO - learn_from_insts - 175 : Epoch 48: 9744.06934, Time is 32.47s
+2022-01-13 16:59:25,089 - main - INFO - evaluate - 216 : [dev set] Precision: 79.53, Recall: 78.15, F1: 78.84
+2022-01-13 16:59:40,069 - main - INFO - evaluate - 216 : [test set] Precision: 79.53, Recall: 78.15, F1: 78.84
+2022-01-13 16:59:40,072 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 17:00:12,577 - main - INFO - learn_from_insts - 175 : Epoch 49: 9640.52148, Time is 32.45s
+2022-01-13 17:00:27,527 - main - INFO - evaluate - 216 : [dev set] Precision: 79.61, Recall: 77.44, F1: 78.51
+2022-01-13 17:01:00,238 - main - INFO - learn_from_insts - 175 : Epoch 50: 9449.29883, Time is 32.71s
+2022-01-13 17:01:15,230 - main - INFO - evaluate - 216 : [dev set] Precision: 79.18, Recall: 78.23, F1: 78.70
+2022-01-13 17:01:47,547 - main - INFO - learn_from_insts - 175 : Epoch 51: 9380.00293, Time is 32.31s
+2022-01-13 17:02:02,381 - main - INFO - evaluate - 216 : [dev set] Precision: 79.02, Recall: 78.37, F1: 78.69
+2022-01-13 17:02:34,674 - main - INFO - learn_from_insts - 175 : Epoch 52: 9497.52344, Time is 32.29s
+2022-01-13 17:02:49,647 - main - INFO - evaluate - 216 : [dev set] Precision: 78.80, Recall: 78.36, F1: 78.58
+2022-01-13 17:03:21,910 - main - INFO - learn_from_insts - 175 : Epoch 53: 9006.36328, Time is 32.26s
+2022-01-13 17:03:36,754 - main - INFO - evaluate - 216 : [dev set] Precision: 78.27, Recall: 78.47, F1: 78.37
+2022-01-13 17:04:09,012 - main - INFO - learn_from_insts - 175 : Epoch 54: 9192.62012, Time is 32.25s
+2022-01-13 17:04:23,986 - main - INFO - evaluate - 216 : [dev set] Precision: 78.29, Recall: 78.59, F1: 78.44
+2022-01-13 17:04:56,296 - main - INFO - learn_from_insts - 175 : Epoch 55: 9019.00781, Time is 32.31s
+2022-01-13 17:05:11,133 - main - INFO - evaluate - 216 : [dev set] Precision: 79.49, Recall: 78.14, F1: 78.81
+2022-01-13 17:05:43,420 - main - INFO - learn_from_insts - 175 : Epoch 56: 8956.43555, Time is 32.28s
+2022-01-13 17:05:58,342 - main - INFO - evaluate - 216 : [dev set] Precision: 79.07, Recall: 78.02, F1: 78.54
+2022-01-13 17:06:30,592 - main - INFO - learn_from_insts - 175 : Epoch 57: 8701.66797, Time is 32.25s
+2022-01-13 17:06:45,500 - main - INFO - evaluate - 216 : [dev set] Precision: 79.54, Recall: 78.18, F1: 78.85
+2022-01-13 17:07:00,376 - main - INFO - evaluate - 216 : [test set] Precision: 79.54, Recall: 78.18, F1: 78.85
+2022-01-13 17:07:00,380 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 17:07:32,813 - main - INFO - learn_from_insts - 175 : Epoch 58: 8786.58496, Time is 32.39s
+2022-01-13 17:07:48,291 - main - INFO - evaluate - 216 : [dev set] Precision: 78.75, Recall: 78.74, F1: 78.74
+2022-01-13 17:08:21,598 - main - INFO - learn_from_insts - 175 : Epoch 59: 8947.62793, Time is 33.30s
+2022-01-13 17:08:37,023 - main - INFO - evaluate - 216 : [dev set] Precision: 79.21, Recall: 78.63, F1: 78.92
+2022-01-13 17:08:52,710 - main - INFO - evaluate - 216 : [test set] Precision: 79.21, Recall: 78.63, F1: 78.92
+2022-01-13 17:08:52,713 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 17:09:25,735 - main - INFO - learn_from_insts - 175 : Epoch 60: 8805.39453, Time is 32.98s
+2022-01-13 17:09:40,773 - main - INFO - evaluate - 216 : [dev set] Precision: 79.93, Recall: 78.23, F1: 79.07
+2022-01-13 17:09:55,716 - main - INFO - evaluate - 216 : [test set] Precision: 79.93, Recall: 78.23, F1: 79.07
+2022-01-13 17:09:55,719 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 17:10:28,181 - main - INFO - learn_from_insts - 175 : Epoch 61: 8494.73242, Time is 32.42s
+2022-01-13 17:10:43,269 - main - INFO - evaluate - 216 : [dev set] Precision: 79.48, Recall: 78.65, F1: 79.06
+2022-01-13 17:11:15,682 - main - INFO - learn_from_insts - 175 : Epoch 62: 8422.42188, Time is 32.41s
+2022-01-13 17:11:30,681 - main - INFO - evaluate - 216 : [dev set] Precision: 79.34, Recall: 78.58, F1: 78.95
+2022-01-13 17:12:03,111 - main - INFO - learn_from_insts - 175 : Epoch 63: 8583.21387, Time is 32.43s
+2022-01-13 17:12:18,115 - main - INFO - evaluate - 216 : [dev set] Precision: 80.00, Recall: 78.44, F1: 79.22
+2022-01-13 17:12:33,056 - main - INFO - evaluate - 216 : [test set] Precision: 80.00, Recall: 78.44, F1: 79.22
+2022-01-13 17:12:33,058 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 17:13:05,580 - main - INFO - learn_from_insts - 175 : Epoch 64: 8309.74414, Time is 32.47s
+2022-01-13 17:13:20,561 - main - INFO - evaluate - 216 : [dev set] Precision: 80.21, Recall: 78.65, F1: 79.42
+2022-01-13 17:13:35,492 - main - INFO - evaluate - 216 : [test set] Precision: 80.21, Recall: 78.65, F1: 79.42
+2022-01-13 17:13:35,495 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 17:14:08,053 - main - INFO - learn_from_insts - 175 : Epoch 65: 8507.06641, Time is 32.51s
+2022-01-13 17:14:23,034 - main - INFO - evaluate - 216 : [dev set] Precision: 79.56, Recall: 78.71, F1: 79.13
+2022-01-13 17:14:55,473 - main - INFO - learn_from_insts - 175 : Epoch 66: 8279.94531, Time is 32.43s
+2022-01-13 17:15:10,447 - main - INFO - evaluate - 216 : [dev set] Precision: 79.68, Recall: 78.49, F1: 79.08
+2022-01-13 17:15:42,842 - main - INFO - learn_from_insts - 175 : Epoch 67: 8276.73633, Time is 32.39s
+2022-01-13 17:15:57,791 - main - INFO - evaluate - 216 : [dev set] Precision: 79.47, Recall: 78.88, F1: 79.17
+2022-01-13 17:16:30,200 - main - INFO - learn_from_insts - 175 : Epoch 68: 8246.86133, Time is 32.40s
+2022-01-13 17:16:45,303 - main - INFO - evaluate - 216 : [dev set] Precision: 79.65, Recall: 79.20, F1: 79.43
+2022-01-13 17:17:00,275 - main - INFO - evaluate - 216 : [test set] Precision: 79.65, Recall: 79.20, F1: 79.43
+2022-01-13 17:17:00,278 - main - INFO - learn_from_insts - 182 : saving the best model...
+2022-01-13 17:17:32,789 - main - INFO - learn_from_insts - 175 : Epoch 69: 7930.94531, Time is 32.47s
+2022-01-13 17:17:47,776 - main - INFO - evaluate - 216 : [dev set] Precision: 79.67, Recall: 78.84, F1: 79.25
+2022-01-13 17:18:20,178 - main - INFO - learn_from_insts - 175 : Epoch 70: 8031.63770, Time is 32.40s
+2022-01-13 17:18:35,200 - main - INFO - evaluate - 216 : [dev set] Precision: 79.84, Recall: 78.68, F1: 79.25
+2022-01-13 17:19:08,261 - main - INFO - learn_from_insts - 175 : Epoch 71: 7954.07910, Time is 33.06s
+2022-01-13 17:19:23,850 - main - INFO - evaluate - 216 : [dev set] Precision: 80.15, Recall: 78.52, F1: 79.32
+2022-01-13 17:19:57,498 - main - INFO - learn_from_insts - 175 : Epoch 72: 8004.18750, Time is 33.64s

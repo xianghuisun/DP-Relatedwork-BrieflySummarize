@@ -22,6 +22,7 @@ class Reader:
         num_entity = 0
         # vocab = set() ## build the vocabulary
         find_root = False
+        label2id={}
         with open(file, 'r', encoding='utf-8') as f:
             words = []
             heads = []
@@ -60,8 +61,10 @@ class Reader:
                 tags.append(pos)
                 self.vocab.add(word)
                 labels.append(label)
+                label2id[label]=len(label2id)
                 if label.startswith("B-"):
                     num_entity +=1
+        print("label2id  :  ",label2id)
         print("number of sentences: {}, number of entities: {}".format(len(insts), num_entity))
         return insts
 
